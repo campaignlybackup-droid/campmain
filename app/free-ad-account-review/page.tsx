@@ -3,6 +3,7 @@ import { ButtonLink } from "@/components/Button";
 import { Faq } from "@/components/Faq";
 import { FormSection } from "@/components/FormSection";
 import { JsonLd } from "@/components/JsonLd";
+import { TableScroll } from "@/components/TableScroll";
 import { reviewFields } from "@/content/forms";
 import { getPage } from "@/content/pages";
 import { siteConfig } from "@/content/site.config";
@@ -69,8 +70,8 @@ export default function ReviewPage() {
           <h2 id="checks" className="text-display-lg">
             What do we check?
           </h2>
-          <div className="mt-10 overflow-x-auto">
-            <table className="table-site min-w-[32rem]">
+          <TableScroll label="Areas covered by the review" className="mt-10">
+            <table className="table-site">
               <caption className="sr-only">Areas covered by the review</caption>
               <thead>
                 <tr>
@@ -89,7 +90,7 @@ export default function ReviewPage() {
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
         </div>
       </section>
       <FormSection

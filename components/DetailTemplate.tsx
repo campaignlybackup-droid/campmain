@@ -4,6 +4,7 @@ import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { PageIntro } from "@/components/PageIntro";
 import { RelatedLinks } from "@/components/RelatedLinks";
+import { TableScroll } from "@/components/TableScroll";
 import type { DetailContent, Section } from "@/content/types";
 import { breadcrumbNode, faqNode, graph, serviceNode, webPageNode, type SchemaNode } from "@/lib/schema";
 
@@ -59,8 +60,8 @@ function Body({ section }: { section: Section }) {
       );
     case "table":
       return (
-        <div className="overflow-x-auto">
-          <table className="table-site min-w-[36rem]">
+        <TableScroll label={section.caption}>
+          <table className={`table-site ${section.columns.length > 2 ? "min-w-[36rem]" : ""}`}>
             <caption className="sr-only">{section.caption}</caption>
             <thead>
               <tr>
@@ -89,7 +90,7 @@ function Body({ section }: { section: Section }) {
               ))}
             </tbody>
           </table>
-        </div>
+        </TableScroll>
       );
     case "steps":
       return (
@@ -121,7 +122,7 @@ function Body({ section }: { section: Section }) {
     case "scope":
       return (
         <div className="grid gap-14 lg:grid-cols-12">
-          <div className="overflow-x-auto lg:col-span-8">
+          <TableScroll label="What is included" className="lg:col-span-8">
             <table className="table-site">
               <caption className="sr-only">What is included</caption>
               <thead>
@@ -141,7 +142,7 @@ function Body({ section }: { section: Section }) {
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
           <div className="lg:col-span-4">
             <h3 className="text-2xl">Not included by default</h3>
             <ul className="mt-6 border-t border-line">

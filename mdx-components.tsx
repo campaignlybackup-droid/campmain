@@ -1,6 +1,7 @@
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
-import type { AnchorHTMLAttributes } from "react";
+import { isValidElement, type AnchorHTMLAttributes, type ReactNode } from "react";
+import { TableScroll } from "@/components/TableScroll";
 
 function A({ href = "", children, ...rest }: AnchorHTMLAttributes<HTMLAnchorElement>) {
   const cls = "text-paper underline decoration-gold/60 underline-offset-4 hover:decoration-gold";
@@ -18,6 +19,21 @@ function A({ href = "", children, ...rest }: AnchorHTMLAttributes<HTMLAnchorElem
   );
 }
 
+/** Plain text of a React subtree, used to label tables by their header row. */
+function textOf(node: ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(textOf).join(" ");
+  if (isValidElement<{ children?: ReactNode }>(node)) return textOf(node.props.children);
+  return "";
+}
+
+function tableLabel(children: ReactNode): string {
+  const kids = Array.isArray(children) ? children : [children];
+  const head = kids.find((k) => isValidElement(k) && k.type === "thead");
+  const text = textOf(head ?? null).replace(/\s+/g, " ").trim();
+  return text ? `Table: ${text}` : "Table";
+}
+
 const components: MDXComponents = {
   // Posts never contain an H1; the page template renders it from frontmatter.
   h1: (p) => <h2 {...p} className="mt-14 text-display-md" />,
@@ -30,9 +46,9 @@ const components: MDXComponents = {
   strong: (p) => <strong {...p} className="font-medium text-paper" />,
   a: A,
   table: (p) => (
-    <div className="mt-8 overflow-x-auto">
+    <TableScroll label={tableLabel(p.children)} className="mt-8">
       <table {...p} className="table-site min-w-[32rem]" />
-    </div>
+    </TableScroll>
   ),
   blockquote: (p) => <blockquote {...p} className="mt-8 border-l-2 border-gold pl-6 text-lead" />,
   hr: () => <hr className="my-12 border-line" />,

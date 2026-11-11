@@ -62,16 +62,14 @@ ErrorDocument 404 /404.html
   <FilesMatch "\.(html|txt|xml)$">
     Header set Cache-Control "public, max-age=0, must-revalidate"
   </FilesMatch>
-  # OG images change rarely but are not hashed.
+  # OG images and icons change rarely but are not hashed.
   <FilesMatch "\.(png|jpg|jpeg|webp|avif|svg|ico)$">
     Header set Cache-Control "public, max-age=604800"
   </FilesMatch>
-</IfModule>
-# Hashed build assets: cache for a year.
-<IfModule mod_headers.c>
-  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+  # JS, CSS and fonts are only emitted under /_next/static/ with content hashes: cache for a year.
+  <FilesMatch "\.(js|css|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
-  </If>
+  </FilesMatch>
 </IfModule>
 
 # ---------- Security headers ----------

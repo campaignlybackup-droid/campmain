@@ -4,6 +4,7 @@ import { CtaBand } from "@/components/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
 import { MethodList } from "@/components/MethodList";
 import { StatsStrip } from "@/components/StatsStrip";
+import { TableScroll } from "@/components/TableScroll";
 import { industries, markets, services } from "@/content/catalog";
 import { brand } from "@/lib/brand";
 import { graph, webPageNode, websiteNode } from "@/lib/schema";
@@ -204,7 +205,7 @@ export default function HomePage() {
           <h2 id="markets-heading" className="mt-5 max-w-3xl text-display-lg">
             Four markets, each run on its own terms.
           </h2>
-          <div className="mt-14 overflow-x-auto">
+          <TableScroll label="Markets, billing and time zones" className="mt-14">
             <table className="table-site min-w-[40rem]">
               <caption className="sr-only">Markets Campaignly serves, with currency and time zone</caption>
               <thead>
@@ -230,7 +231,7 @@ export default function HomePage() {
                 ))}
               </tbody>
             </table>
-          </div>
+          </TableScroll>
         </div>
       </section>
 
