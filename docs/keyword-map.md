@@ -329,10 +329,10 @@ Per your decision: four location pages only. Service-by-market phrases are secon
 - **Market:** UAE (Dubai, Abu Dhabi)
 - **Difficulty (estimate):** High for "Dubai" (M+C Saatchi, Feedbax and Semrush directories). Medium for "UAE".
 - **Unique content:** AED billing, GST+1.5h overlap with India (a genuine operational advantage), Arabic and English creative, a market dominated by real estate and hospitality, and the platform mix there (Google has about 90% search share according to a local guide; Snapchat and TikTok matter).
-- **Title:** Performance Marketing Agency in the UAE | Campaignly
+- **Title:** Performance Marketing Agency for the UAE | Campaignly
 - **Meta:** Arabic and English campaigns for UAE businesses across Google, Meta, Snapchat and TikTok, with AED billing and same-day working hours.
 - **H1:** Performance marketing for businesses in the UAE
-- **Note:** "in the UAE" is in the title. If you have no UAE presence, I'll change it to "for UAE Businesses".
+- **Note:** uses "for the UAE" until you confirm a UAE presence; then it can become "in the UAE".
 
 ---
 
@@ -375,7 +375,7 @@ Per your decision: four location pages only. Service-by-market phrases are secon
 - **Intent:** Transactional (brand)
 - **Indexing:** indexable (a brand query), low priority in the sitemap.
 - **Title:** Apply to Partner with Campaignly
-- **Meta:** Tell us about your business, revenue range and growth goal. We review every application and reply within the time stated on this page.
+- **Meta:** Tell us about your business, revenue range and growth goal, and we will assess whether a growth partnership is the right fit.
 - **H1:** Apply to partner with Campaignly
 - **Note:** "within the time stated" needs a response-time commitment from you (config field).
 
