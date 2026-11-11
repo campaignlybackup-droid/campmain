@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { industries, services } from "@/content/catalog";
 import { hasCaseStudies } from "@/lib/contact";
-import { publishedPostCount } from "@/lib/content-flags";
+import { MIN_POSTS_FOR_NAV, publishedPostCountSync } from "@/lib/blog";
 import { SiteNav, type NavLink } from "@/components/SiteNav";
 import { Wordmark } from "@/components/Wordmark";
 
 export function Header() {
   const links: NavLink[] = [
     ...(hasCaseStudies ? [{ label: "Case studies", href: "/case-studies/" }] : []),
-    ...(publishedPostCount >= 3 ? [{ label: "Insights", href: "/blog/" }] : []),
+    ...(publishedPostCountSync() >= MIN_POSTS_FOR_NAV ? [{ label: "Insights", href: "/blog/" }] : []),
     { label: "About", href: "/about/" },
   ];
   return (

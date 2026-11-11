@@ -3,6 +3,10 @@ import { Fraunces, Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { AttributionOnly } from "@/components/AttributionOnly";
+import { Tracking } from "@/components/Tracking";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { publicEnv, trackingConfigured } from "@/lib/env";
 import { siteConfig } from "@/content/site.config";
 import { brand } from "@/lib/brand";
 import "./globals.css";
@@ -52,6 +56,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
+        {trackingConfigured ? <Tracking ga4Id={publicEnv.ga4Id} pixelId={publicEnv.metaPixelId} /> : <AttributionOnly />}
       </body>
     </html>
   );

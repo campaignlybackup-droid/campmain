@@ -75,12 +75,17 @@ export function websiteNode(): SchemaNode {
 
 export function webPageNode(path: PagePath, type: string = "WebPage"): SchemaNode {
   const page = getPage(path);
+  return webPageNodeFrom({ path, title: page.title, description: page.description, type });
+}
+
+export function webPageNodeFrom(p: { path: string; title: string; description: string; type?: string }): SchemaNode {
+  const { path } = p;
   return {
-    "@type": type,
+    "@type": p.type ?? "WebPage",
     "@id": ids.page(path),
     url: absoluteUrl(path),
-    name: page.title,
-    description: page.description,
+    name: p.title,
+    description: p.description,
     inLanguage: "en",
     isPartOf: { "@id": ids.website },
     about: { "@id": ids.org },
@@ -89,10 +94,14 @@ export function webPageNode(path: PagePath, type: string = "WebPage"): SchemaNod
 }
 
 export function breadcrumbNode(path: PagePath): SchemaNode {
+  return breadcrumbNodeFrom(path, trail(path).map((p) => ({ path: p.path, label: p.label })));
+}
+
+export function breadcrumbNodeFrom(path: string, items: { path: string; label: string }[]): SchemaNode {
   return {
     "@type": "BreadcrumbList",
     "@id": ids.breadcrumb(path),
-    itemListElement: trail(path).map((p, i) => ({
+    itemListElement: items.map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: p.label,

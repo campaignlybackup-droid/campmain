@@ -4,6 +4,8 @@ import { siteConfig } from "@/content/site.config";
 import { brand } from "@/lib/brand";
 import { telHref, whatsappHref } from "@/lib/contact";
 import { Wordmark } from "@/components/Wordmark";
+import { ConsentSettingsButton } from "@/components/ConsentSettingsButton";
+import { trackingConfigured } from "@/lib/env";
 
 const socialLabels: Record<keyof typeof siteConfig.social, string> = {
   linkedin: "LinkedIn",
@@ -110,6 +112,11 @@ export function Footer() {
                 Terms
               </Link>
             </li>
+            {trackingConfigured ? (
+              <li>
+                <ConsentSettingsButton />
+              </li>
+            ) : null}
           </ul>
         </div>
       </div>
