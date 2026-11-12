@@ -11,7 +11,7 @@ Production website for Campaignly (Campaignly Media). Next.js App Router, TypeSc
 | `npm run build` | Static export to `out/`, then `scripts/postbuild.mjs` removes placeholder routes |
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm run lint` | ESLint |
-| `npm run qa` | Crawl `out/` and run the quality gates (see `docs/qa-report.md`) |
+| `npm run qa` | Crawl `out/` and run the quality gates, including the client-anonymity audit (see `docs/qa-report.md`) |
 
 ## Where things live
 

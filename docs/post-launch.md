@@ -33,7 +33,6 @@ Everything below is `null` in `content/site.config.ts` (or empty in `.env.local`
 Also pending:
 
 - **Old URLs** for `docs/redirects.md` and `.htaccess`
-- **Client name list** in `.qa/client-names.txt` to complete QA gate 7
 - **Confirmation of the content claims** listed in `docs/qa-report.md`
 - **Legal review** of the privacy policy and terms
 

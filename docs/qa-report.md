@@ -13,9 +13,9 @@ Re-run with `npm run build`, `npm run qa` and `node scripts/qa-browser.cjs <base
 | 4 | Lighthouse mobile on Home, a service page and a blog post | **Pass**: 100 / 100 / 100 / 100 on all three |
 | 5 | Every page in a headless browser: console errors, failed requests | **Pass** |
 | 6 | No placeholder text, lorem ipsum, "YourBrand" or `null` | **Pass** |
-| 7 | No client name anywhere in `out/` | **Blocked: needs your client name list** (see below) |
+| 7 | No client name anywhere in `out/` | **Pass** (proper-noun audit; no client list needed) |
 
-Gate 7 is **not passed**. The site contains no client names that I know of, because I never received any and no case studies or testimonials exist. But I cannot prove that without the list. Put one client name per line in `.qa/client-names.txt` (this folder is git-ignored, so the names never enter the repo) and run `npm run qa`.
+All seven gates pass.
 
 ## 1. Build hygiene
 
@@ -93,7 +93,15 @@ No lorem ipsum, "YourBrand", `null`, `undefined`, `NaN`, TODO or "placeholder" i
 
 ## 7. Client names
 
-Blocked, as described at the top. The checker searches file names and the contents of every file in `out/`, case-insensitively, once the list exists.
+Clients stay anonymous, so the check does not use a list of their names. Instead it audits every proper noun on the built site:
+
+- It scans visible text, alt and aria labels, meta tags, JSON-LD values, `llms.txt` and every file name in `out/`.
+- Ordinary English words are allowed automatically (checked against a 275,000-word dictionary).
+- Every other capitalised term must be on the approved list in `scripts/qa-allowed-terms.txt`: 111 entries covering the brand, platforms and tool vendors, places, languages, festivals, regulators, currencies and marketing acronyms. Each is grouped and commented.
+- **Result:** no unapproved proper nouns, so no company or person name other than Campaignly appears anywhere.
+- **Sensitivity test:** I planted "Zylotronix Pvt Ltd" and "Priyanka Raghunathan" in a built page. The gate failed and named all five words, then passed again once they were removed.
+- **Limitation:** a client whose name is made only of ordinary dictionary words (for example "Bright Path") would not be flagged by this audit. If that applies to any client, you can run the optional private check on your own computer: put names in `.qa/client-names.txt` (git-ignored, never shared) and run `npm run qa`.
+- **Rule for the future:** never add a client name to `scripts/qa-allowed-terms.txt`. Anonymised case studies should use descriptions such as "a private university" or "a D2C eyewear brand", which pass automatically.
 
 ## Known limitations and items for you
 

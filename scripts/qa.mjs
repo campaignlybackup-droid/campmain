@@ -4,6 +4,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { parse } from "node-html-parser";
+import { createRequire } from "node:module";
+const englishWords = new Set(createRequire(import.meta.url)("an-array-of-english-words"));
 
 const OUT = path.resolve("out");
 const ORIGIN = "https://campaignlymedia.com";
@@ -206,19 +208,81 @@ for (const f of ["llms.txt", "robots.txt", "sitemap.xml"]) {
 ph.length ? fail("6. Placeholder text", ph.join("\n")) : pass("6. Placeholder text", `No lorem ipsum, YourBrand, null, undefined, NaN, TODO or placeholder strings in visible text, attributes, meta tags, JSON-LD, llms.txt, robots.txt or sitemap.xml`);
 
 // ---------- Gate 7: client names ----------
-if (fs.existsSync(namesFile)) {
-  const names = fs.readFileSync(namesFile, "utf8").split("\n").map((s) => s.trim()).filter(Boolean);
-  const hits = [];
-  const all = [];
-  (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); e.isDirectory() ? walk(p) : all.push(p); } })(OUT);
-  for (const f of all) {
-    const rel = path.relative(OUT, f);
-    const buf = /\.(png|jpg|jpeg|webp|avif|woff2?|ico)$/i.test(f) ? "" : fs.readFileSync(f, "utf8");
-    for (const n of names) if (rel.toLowerCase().includes(n.toLowerCase()) || buf.toLowerCase().includes(n.toLowerCase())) hits.push(`${rel}: ${n}`);
+// Clients stay anonymous, so no name list is needed. Every capitalised word in visible text,
+// metadata, JSON-LD, llms.txt and file names must be on the approved list in scripts/qa-allowed-terms.txt
+// (brand, platforms, places, regulators, ordinary words). Any other proper noun fails the gate for review.
+// Optional private check: a git-ignored .qa/client-names.txt is also searched if it exists.
+{
+  const allowed = new Set(
+    fs.readFileSync("scripts/qa-allowed-terms.txt", "utf8").split("\n").map((s) => s.replace(/#.*/, "").trim()).filter(Boolean),
+  );
+  const unknown = new Map();
+  // A capitalised token is generic if it is an ordinary English word or on the approved list; anything else is a name to review.
+  const isGeneric = (w) => allowed.has(w) || englishWords.has(w.toLowerCase()) || /^\d/.test(w);
+  const scan = (text, where) => {
+    for (const m of text.matchAll(/[A-Za-z0-9][A-Za-z0-9’'&+]*/g)) {
+      const raw = m[0].replace(/[’']s$/, "");
+      if (!/[A-Z]/.test(raw)) continue;
+      for (const w of raw.split(/(?<=[a-z])(?=[A-Z][a-z])/)) {
+        if (!/^[A-Z]/.test(w) && !/[A-Z]/.test(w.slice(1))) continue;
+        if (!isGeneric(w)) unknown.set(w, [...new Set([...(unknown.get(w) ?? []), where])]);
+      }
+    }
+  };
+  const textOfPage = (p) =>
+    p.html
+      .replace(/<!DOCTYPE[^>]*>/i, " ")
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<(meta|img|a|link)\b[^>]*?(content|alt|title|aria-label)="([^"]*)"[^>]*>/gi, " $3 ")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/&[a-z#0-9]+;/gi, " ");
+  for (const p of pages) {
+    scan(textOfPage(p), p.url);
+    for (const s of p.root.querySelectorAll('script[type="application/ld+json"]')) {
+      const vals = [];
+      (function walk(v) { if (typeof v === "string") vals.push(v); else if (v && typeof v === "object") Object.values(v).forEach(walk); })(JSON.parse(s.text));
+      scan(vals.filter((v) => !/^https?:/.test(v)).join(" "), `${p.url} (JSON-LD)`);
+    }
   }
-  hits.length ? fail("7. Client names", hits.slice(0, 20).join("; ")) : pass("7. Client names", `${names.length} client names checked against file names and contents of ${all.length} files in out/: none found`);
-} else {
-  fail("7. Client names", `No client name list at ${namesFile}. Add one name per line (this file is git-ignored) and rerun.`);
+  scan(fs.readFileSync(path.join(OUT, "llms.txt"), "utf8").replace(/https?:\S+/g, ""), "llms.txt");
+  const fileNames = [];
+  (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) walk(p); fileNames.push(path.relative(OUT, p)); } })(OUT);
+  const slugWords = new Set(fileNames.filter((f) => !f.startsWith("_next") && !path.basename(f).startsWith("__next")).flatMap((f) => f.split(/[\\/._-]+/)).filter(Boolean));
+  const allowedLower = new Set([...allowed].map((w) => w.toLowerCase()));
+  const extraSlugAllowed = new Set(fs.readFileSync("scripts/qa-allowed-terms.txt", "utf8").split("\n").map((s) => s.replace(/#.*/, "").trim().toLowerCase()).filter(Boolean));
+  const slugCommon = new Set("index html txt png ico xml og blog category services industries locations about apply contact terms privacy policy free ad account review case studies llms robots sitemap favicon icon apple next full tree page htaccess vs".split(" "));
+  // Lowercase slug words are checked against the dictionary and approved list; Next's internal payload names are skipped.
+  const odd = [...slugWords].filter(
+    (w) =>
+      !w.includes("$") &&
+      !/^\d+$/.test(w) &&
+      !slugCommon.has(w.toLowerCase()) &&
+      !allowedLower.has(w.toLowerCase()) &&
+      !extraSlugAllowed.has(w.toLowerCase()) &&
+      !englishWords.has(w.toLowerCase()),
+  );
+  for (const w of odd) unknown.set(w, ["file name"]);
+
+  let privateHits = [];
+  if (fs.existsSync(namesFile)) {
+    const names = fs.readFileSync(namesFile, "utf8").split("\n").map((s) => s.trim().toLowerCase()).filter(Boolean);
+    const all = [];
+    (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); e.isDirectory() ? walk(p) : all.push(p); } })(OUT);
+    for (const f of all) {
+      const rel = path.relative(OUT, f).toLowerCase();
+      const buf = /\.(png|jpg|jpeg|webp|avif|woff2?|ico)$/i.test(f) ? "" : fs.readFileSync(f, "utf8").toLowerCase();
+      for (const n of names) if (rel.includes(n) || buf.includes(n)) privateHits.push(`${path.relative(OUT, f)}`);
+    }
+  }
+  if (unknown.size || privateHits.length) {
+    fail("7. Client names", [
+      ...[...unknown].map(([w, where]) => `unapproved proper noun "${w}" on ${where.slice(0, 3).join(", ")}`),
+      ...privateHits.map((h) => `private list match in ${h}`),
+    ].join("\n"));
+  } else {
+    pass("7. Client names", `Every proper noun across ${pages.length} pages, JSON-LD, llms.txt and file names is an approved generic term (${allowed.size} terms: brand, platforms, places, regulators, ordinary words); no unknown company or person names${fs.existsSync(namesFile) ? "; private client list also checked" : ""}`);
+  }
 }
 
 // ---------- report ----------

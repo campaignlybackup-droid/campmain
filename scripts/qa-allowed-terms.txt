@@ -1,0 +1,132 @@
+# Approved proper nouns and acronyms for QA gate 7 (client anonymity).
+# Ordinary English words are allowed automatically. Anything capitalised that is not a dictionary word
+# and not listed here fails the gate, so an unexpected company or person name cannot slip through.
+# Add a term only if it is NOT a client: brands, platforms, places, regulators and industry terms.
+# Never add client names here.
+
+# Our brand
+Campaignly
+
+# Platforms and software vendors (tools, not clients)
+WhatsApp
+LinkedIn
+YouTube
+TikTok
+HubSpot
+WordPress
+Instagram
+Snapchat
+Tok          # TikTok, split by the tokenizer
+Microsoft
+Gmail
+Shopify
+Salesforce
+Zoho
+Hostinger
+
+# Places and peoples
+America
+American
+Arab
+Asian
+California
+Canadian
+Dubai
+Emirati
+Indian
+Indians
+Kochi
+Pune
+Toronto
+UAE
+USA
+
+# Languages
+Bengali
+Hindi
+Kannada
+Malayalam
+Marathi
+Tagalog
+Tamil
+Telugu
+
+# Calendar and festivals
+Monday
+Friday
+July
+Diwali
+Navratri
+Onam
+Pongal
+Ramadan
+Eid
+
+# Laws, regulators, permits and official sources
+CASL
+CCPA
+CPRA
+DPDP
+HIPAA
+PDPL
+PIPEDA
+RERA
+Trakheesi
+PIB          # Press Information Bureau, Government of India
+WAM          # Emirates News Agency
+
+# Currencies, time zones and tax
+AED
+INR
+USD
+GST
+IST
+PT
+UTC
+UTC+4
+UTC+5
+
+# Marketing and technical acronyms and terms
+ACV
+AOV
+API
+APIs
+B
+B2B
+CAC
+CLS
+CMS
+CPA
+CRM
+CRMs
+CRO
+D2C
+GA4
+INP
+IP
+LCP
+LTV
+MBA
+MER
+NRI
+NRIs
+OTA
+OTAs
+PDF
+PR
+QA
+ROAS
+RTO
+SEO
+SMS
+SQL
+SaaS
+UGC
+UPI
+UTM
+Advantage+   # Meta Advantage+ campaigns
+Contentful   # "Largest Contentful Paint"
+Crawlability
+Firmographics
+Walkthroughs
+FAQPage      # schema.org type name in JSON-LD
