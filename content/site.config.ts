@@ -83,8 +83,10 @@ export interface SiteConfig {
   legalName: string | null;
   /** Year the company was founded, e.g. 2023 */
   foundingYear: number | null;
-  /** Path to the logo in /public, SVG or PNG at least 112x112, e.g. "/brand/logo.svg" */
+  /** Path to the horizontal logo in /public, shown in the header and footer, e.g. "/brand/logo.png" */
   logo: string | null;
+  /** Path to a square logo mark in /public, at least 112x112, used for schema `logo` (falls back to `logo`) */
+  logoMark: string | null;
   social: {
     /** Full URL, e.g. "https://www.linkedin.com/company/campaignly-media/" */
     linkedin: string | null;
@@ -147,7 +149,8 @@ export const siteConfig: SiteConfig = {
   presence: { india: null, usa: null, canada: null, uae: null },
   legalName: null,
   foundingYear: null,
-  logo: null,
+  logo: "/brand/campaignly-logo.png",
+  logoMark: "/brand/campaignly-mark.png",
   social: {
     linkedin: null,
     instagram: null,

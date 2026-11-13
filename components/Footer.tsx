@@ -43,7 +43,7 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="container-site grid gap-14 py-16 md:py-20 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <Wordmark />
+          <Wordmark size="footer" />
           <p className="mt-5 max-w-sm text-mute">
             Campaignly Media is an advertising-first, AI-enabled growth partner for scaling businesses in India, the USA,
             Canada and the UAE.

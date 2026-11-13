@@ -49,7 +49,7 @@ export function organizationNode(): SchemaNode {
     slogan: brand.tagline,
     description:
       "Campaignly is an advertising-first, AI-enabled digital growth partner for scaling businesses in India, the USA, Canada and the UAE.",
-    ...(c.logo ? { logo: { "@type": "ImageObject", url: absoluteUrl(c.logo) } } : {}),
+    ...((c.logoMark ?? c.logo) ? { logo: { "@type": "ImageObject", url: absoluteUrl((c.logoMark ?? c.logo)!) } } : {}),
     ...(c.legalName ? { legalName: c.legalName } : {}),
     ...(c.foundingYear ? { foundingDate: String(c.foundingYear) } : {}),
     ...(c.email ? { email: c.email } : {}),
