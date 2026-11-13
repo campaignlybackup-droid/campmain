@@ -11,15 +11,15 @@ const content: DetailContent = {
   sections: [
     {
       kind: "prose",
-      heading: "Why does positioning matter for advertising?",
+      heading: "Positioning comes before advertising",
       paragraphs: [
         "Ads amplify whatever message you give them. If the message is vague, more budget buys more indifference. Clear positioning lowers acquisition cost because the right buyers recognise themselves faster and the wrong ones self-select out.",
-        "Our brand work is not a logo project. It is the strategic layer under every campaign: the audience, the problem, the promise, the proof and the words.",
+        "Our brand work is the strategic layer under every campaign: the audience, the problem, the promise, the proof and the words.",
       ],
     },
     {
       kind: "scope",
-      heading: "What is included in brand strategy?",
+      heading: "What is included",
       included: [
         { item: "Research", detail: "Customer interviews, sales call reviews, competitor messaging and search data." },
         { item: "Positioning", detail: "Target customer, category, alternatives, differentiators and proof." },
@@ -35,7 +35,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does a brand strategy engagement run?",
+      heading: "How an engagement runs",
       steps: [
         { title: "Listen", text: "Interviews with customers, lost prospects and your team." },
         { title: "Map the alternatives", text: "What buyers would do if you did not exist, including doing nothing." },
@@ -46,7 +46,7 @@ const content: DetailContent = {
     },
     {
       kind: "definitions",
-      heading: "Which brand strategy terms do we use?",
+      heading: "Terms we use",
       items: [
         { term: "Positioning", def: "The place you choose to occupy in the buyer's mind relative to the alternatives." },
         { term: "Value proposition", def: "The specific outcome you promise to a specific customer, and why it is believable." },

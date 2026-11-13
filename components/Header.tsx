@@ -24,9 +24,6 @@ export function Header() {
             links={links}
           />
           <div className="hidden items-center gap-6 lg:flex">
-            <Link href="/free-ad-account-review/" data-cta="header_review" className="link-quiet text-[0.95rem] text-mute hover:text-paper">
-              Free ad account review
-            </Link>
             <Link
               href="/apply/"
               data-cta="header_apply"

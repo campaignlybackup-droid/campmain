@@ -32,7 +32,7 @@ const beliefs = [
 ];
 
 const engagement = [
-  { t: "Apply or request a review", d: "Tell us about the business, or start with a free review of an ad account." },
+  { t: "Apply", d: "Tell us about the business, the budget and what has or has not worked so far." },
   { t: "Diagnostic conversation", d: "We discuss goals, numbers and constraints, and say plainly whether we are the right fit." },
   { t: "Written plan", d: "If we are, you receive a plan with priorities, channels, budget logic and how success will be measured." },
   { t: "Build and launch", d: "Tracking, accounts, creative and pages are prepared, then campaigns go live." },
@@ -74,7 +74,7 @@ export default function AboutPage() {
         <div className="container-site grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <h2 id="beliefs" className="text-display-lg">
-              What does Campaignly believe?
+              What we believe
             </h2>
             <p className="mt-6 font-display text-2xl">Outperform. Outshine. Outwin.</p>
           </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
       <section aria-labelledby="method" className="border-t border-line bg-ink-raised py-20 md:py-28">
         <div className="container-site">
           <h2 id="method" className="max-w-3xl text-display-lg">
-            What is the Campaignly method?
+            The Campaignly method
           </h2>
           <p className="prose-site mt-6 text-mute">
             Diagnose, Position, Acquire, Convert, Retain, Scale: six stages applied in order to every engagement, so
@@ -110,7 +110,7 @@ export default function AboutPage() {
         <div className="container-site grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <h2 id="engagement" className="text-display-lg">
-              How does an engagement start?
+              How an engagement starts
             </h2>
           </div>
           <ol className="border-t border-line lg:col-span-7 lg:col-start-6">
@@ -158,7 +158,7 @@ export default function AboutPage() {
       <section aria-labelledby="markets" className="border-t border-line py-20 md:py-28">
         <div className="container-site">
           <h2 id="markets" className="text-display-lg">
-            Where does Campaignly operate?
+            Where we work
           </h2>
           <ul className="mt-10 grid border-t border-line sm:grid-cols-2 lg:grid-cols-4">
             {markets.map((m) => (

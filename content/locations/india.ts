@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "How does working with Campaignly in India work?",
+      heading: "Working together in India",
       caption: "Engagement details for Indian businesses",
       columns: ["Item", "How it works"],
       rows: [
@@ -23,7 +23,7 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "What makes the Indian market different?",
+      heading: "The Indian market",
       items: [
         "WhatsApp is where buyers expect to talk to businesses, so lead follow-up and retention run on the WhatsApp Business Platform.",
         "Language matters: Hindi, Tamil, Telugu, Marathi, Bengali, Kannada and other regional-language creative often outperforms English outside the metros.",
@@ -34,7 +34,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which platforms matter most in India?",
+      heading: "Platforms in India",
       caption: "Platform roles in India",
       columns: ["Platform", "Typical role"],
       rows: [
@@ -46,7 +46,7 @@ const content: DetailContent = {
     },
     {
       kind: "prose",
-      heading: "Which rules affect marketing in India?",
+      heading: "Rules that apply in India",
       paragraphs: [
         "The Digital Personal Data Protection Act, 2023 and its Rules, notified in November 2025, set consent and data handling obligations that phase in over 18 months. Forms, WhatsApp opt-ins and CRM practices should be designed with them in mind now.",
         "Sector rules also apply: RERA registration details in property ads, medical advertising restrictions in healthcare, and the Advertising Standards Council of India's code for claims in all categories.",

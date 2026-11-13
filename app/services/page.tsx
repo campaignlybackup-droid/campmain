@@ -17,7 +17,7 @@ export default function ServicesHub() {
       <section aria-labelledby="method-h" className="border-t border-line bg-ink-raised py-20 md:py-28">
         <div className="container-site">
           <h2 id="method-h" className="max-w-3xl text-display-lg">
-            How do the services fit together?
+            How the services fit together
           </h2>
           <p className="prose-site mt-6 text-mute">
             Every engagement follows the same six-stage method. Which services you need depends on where the constraint

@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "prose",
-      heading: "Why is cost per lead the wrong metric for admissions?",
+      heading: "Cost per admission over cost per lead",
       paragraphs: [
         "Cheap leads are easy to buy. A form that asks for a phone number in exchange for a brochure will fill fast, and most of those enquiries will never apply. Counsellors then spend their time calling people who were never going to enrol.",
         "We optimise for the stages that matter: verified enquiry, counselling call, application, admission. When those outcomes are sent back to Meta and Google, the platforms learn to find more students like the ones who enrolled.",
@@ -18,7 +18,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "What does the admission funnel look like?",
+      heading: "The admission funnel",
       caption: "Admission funnel stages and measures",
       columns: ["Stage", "What happens", "Measure"],
       rows: [
@@ -31,7 +31,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does an admission campaign run?",
+      heading: "How an admission campaign runs",
       steps: [
         { title: "Map the intake calendar", text: "Campaigns are planned backwards from application deadlines and results dates." },
         { title: "Build programme pages", text: "Each course gets a page that answers fees, eligibility, outcomes and next steps." },
@@ -42,7 +42,7 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "What do education marketers need to watch?",
+      heading: "What to watch in education marketing",
       items: [
         "Claims about placements, rankings and salaries must be accurate and supportable; regulators and platforms treat misleading education claims seriously.",
         "Parents are often decision-makers, so creative and follow-up need to speak to them as well as to students.",

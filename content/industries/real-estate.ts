@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "Which rules apply to property advertising?",
+      heading: "Property advertising rules",
       intro: "Real estate ads are regulated in each of our markets. Campaigns are built to comply from the first draft.",
       caption: "Property advertising rules by market",
       columns: ["Market", "Rule", "What it means"],
@@ -23,7 +23,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does a project campaign run?",
+      heading: "How a project campaign runs",
       steps: [
         { title: "Understand the project", text: "Configurations, price bands, location advantages, possession timeline and the buyer each unit suits." },
         { title: "Build the project page", text: "Floor plans, pricing approach, location, approvals and a clear site-visit offer." },
@@ -35,7 +35,7 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "How do you reach NRI buyers?",
+      heading: "Reaching NRI buyers",
       intro: "Non-resident Indians in the UAE, USA, Canada and elsewhere are a significant audience for Indian projects.",
       items: [
         "Target by country and language, with creative that addresses remote buying: virtual tours, documentation and payment process.",

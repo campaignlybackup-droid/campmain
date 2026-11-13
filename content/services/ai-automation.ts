@@ -11,7 +11,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "scope",
-      heading: "What can be automated?",
+      heading: "What we automate",
       included: [
         { item: "Instant lead response", detail: "A WhatsApp or email reply the moment a form, ad lead or call comes in." },
         { item: "Lead qualification", detail: "Questions and AI scoring that separate buyers from browsers using your criteria." },
@@ -28,7 +28,7 @@ const content: DetailContent = {
     },
     {
       kind: "prose",
-      heading: "Why does WhatsApp automation have to use the official platform?",
+      heading: "Why we only use the official WhatsApp platform",
       paragraphs: [
         "Automated and bulk WhatsApp messaging is only permitted through Meta's WhatsApp Business Platform. Unofficial tools that automate the consumer or Business app put the number at risk of being banned, which can take years of customer conversations with it.",
         "The official platform has rules that shape the design. You need the customer's opt-in before sending business-initiated messages. Free-form replies are allowed within a 24-hour window after the customer last messaged you; outside it, you must use pre-approved message templates. Since 1 July 2025, Meta charges per delivered template message rather than per conversation.",
@@ -39,7 +39,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How is an automation built?",
+      heading: "How we build an automation",
       steps: [
         { title: "Map the lead journey", text: "We trace what happens from enquiry to sale today, and where leads wait or get lost." },
         { title: "Define qualification", text: "Your sales team's real criteria become questions and scoring rules." },
@@ -51,7 +51,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which businesses benefit most?",
+      heading: "Where automation pays off",
       caption: "Where lead automation has the most effect",
       columns: ["Business type", "What automation solves"],
       rows: [

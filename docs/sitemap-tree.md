@@ -33,7 +33,6 @@ Status: **Draft for approval (Phase 1)**
 ├── /blog/                          Hub: in nav only if 3+ posts
 │   ├── /blog/[post-slug]/
 │   └── /blog/category/[slug]/      indexable only with 3+ posts
-├── /free-ad-account-review/        Low-friction lead page
 ├── /apply/                         Apply to Partner
 ├── /contact/
 ├── /privacy-policy/
@@ -49,7 +48,7 @@ Status: **Draft for approval (Phase 1)**
 | Depth | Pages |
 |---|---|
 | 0 | Home |
-| 1 | About, Services hub, Industries hub, Locations hub, Case studies hub, Blog hub, Free review, Apply, Contact (header or footer). Privacy and Terms (footer). |
+| 1 | About, Services hub, Industries hub, Locations hub, Case studies hub, Blog hub, Apply, Contact (header or footer). Privacy and Terms (footer). |
 | 2 | All 9 services, 7 industries and 4 locations. Home also links to each directly (services grid, industries row, footer markets), so these are reachable in 1 click. Blog posts and case studies are linked from their hubs and from Home's "latest" strip. |
 | 3 | Blog category pages, older posts |
 
@@ -85,3 +84,5 @@ Every link uses descriptive anchor text, e.g. "Meta ads management for D2C brand
 | Social icons and `sameAs` | each URL is set |
 | GA4, Meta Pixel, Search Console tag | the respective ID is set |
 | Testimonials | `testimonials[]` has entries; no `Review` schema is emitted in any case |
+
+> 13 November 2026: `/free-ad-account-review/` was removed. Header buttons are now Apply to Partner only.

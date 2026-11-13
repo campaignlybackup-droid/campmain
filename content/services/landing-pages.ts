@@ -11,7 +11,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "list",
-      heading: "What does every Campaignly landing page include?",
+      heading: "What every page includes",
       items: [
         "Message match: the headline repeats the promise of the ad or search query that brought the visitor.",
         "One goal per page: a single primary action, with secondary links removed or demoted.",
@@ -23,7 +23,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "What are the Core Web Vitals targets?",
+      heading: "Speed targets",
       intro: "Google's thresholds for a good experience, measured at the 75th percentile of real page loads.",
       caption: "Core Web Vitals good thresholds",
       columns: ["Metric", "Measures", "Good"],
@@ -36,7 +36,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How is a landing page project delivered?",
+      heading: "How a project is delivered",
       steps: [
         { title: "Brief from the campaign", text: "We start from the ads, audience and offer the page must convert." },
         { title: "Copy first", text: "The argument of the page is written and approved before design." },
@@ -47,7 +47,7 @@ const content: DetailContent = {
     },
     {
       kind: "scope",
-      heading: "What is in scope for websites?",
+      heading: "Website scope",
       included: [
         { item: "Landing pages", detail: "Single-purpose pages for paid campaigns." },
         { item: "Marketing websites", detail: "Service, industry and location pages structured for SEO." },
@@ -90,7 +90,7 @@ const content: DetailContent = {
     },
     {
       q: "How fast should a landing page load?",
-      a: "Google's good threshold for Largest Contentful Paint is 2.5 seconds or less at the 75th percentile of real visits. Paid traffic is mostly mobile, so we test on mid-range phone conditions, not just desktop.",
+      a: "Google's good threshold for Largest Contentful Paint is 2.5 seconds or less at the 75th percentile of real visits. Paid traffic is mostly mobile, so we test on mid-range phones over a typical mobile connection.",
     },
     {
       q: "Do you write the copy?",

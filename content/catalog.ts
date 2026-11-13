@@ -25,7 +25,7 @@ export const services = [
   {
     href: "/services/ad-creative/",
     label: "Video and ad creative",
-    summary: "Video, UGC and static ads produced as testable variants, not one-offs.",
+    summary: "Video, UGC and static ads produced in variants so they can be tested.",
   },
   {
     href: "/services/ecommerce-growth/",
@@ -58,7 +58,7 @@ export const industries = [
   {
     href: "/industries/ecommerce-d2c/",
     label: "Ecommerce and D2C",
-    summary: "Profitable scale measured on contribution margin, not ROAS alone.",
+    summary: "Growth measured on contribution margin, with ROAS as one input.",
   },
   {
     href: "/industries/education/",

@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "How does the engagement work across time zones?",
+      heading: "Working across time zones",
       intro: "India Standard Time is 9.5 to 10.5 hours ahead of US Eastern Time, and 12.5 to 13.5 hours ahead of Pacific Time, depending on US daylight saving.",
       caption: "Engagement details for US businesses",
       columns: ["Item", "How it works"],
@@ -24,7 +24,7 @@ const content: DetailContent = {
     },
     {
       kind: "prose",
-      heading: "Why work with a team outside the US?",
+      heading: "Working with a team outside the US",
       paragraphs: [
         "Not to save money on quality. US companies work with us for senior attention, transparent reporting and a team that runs paid media, creative, pages and automation as one system, without the layers of account management common in larger agencies.",
         "The time difference becomes an advantage when it is planned: launches and changes can be prepared while your team sleeps, and decisions are made together in your morning.",
@@ -32,7 +32,7 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "Which US rules shape campaigns?",
+      heading: "Rules that apply in the US",
       items: [
         "Meta's Special Ad Categories apply to housing, employment, financial products and services, and social issues, elections or politics, restricting targeting options for those ads.",
         "State privacy laws, led by California's CCPA as amended by the CPRA, give residents rights over personal data and affect tracking and consent.",
@@ -43,7 +43,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which platforms matter in the US?",
+      heading: "Platforms in the US",
       caption: "Platform roles in the US",
       columns: ["Platform", "Typical role"],
       rows: [

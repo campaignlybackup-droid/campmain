@@ -11,7 +11,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "scope",
-      heading: "What is included in SEO services?",
+      heading: "What is included",
       included: [
         { item: "Technical audit", detail: "Crawlability, indexing, Core Web Vitals, structured data, canonicals and internal links." },
         { item: "Keyword and intent map", detail: "One primary query per page, matched to the content type that already wins it." },
@@ -29,7 +29,7 @@ const content: DetailContent = {
     },
     {
       kind: "prose",
-      heading: "How is SEO different now that AI answers appear in search?",
+      heading: "SEO when search engines answer with AI",
       paragraphs: [
         "The fundamentals have not changed: Google states that the same SEO best practices apply to its AI features, and that there are no extra requirements to appear in them. What has changed is the reward for clarity. Pages that answer a question in the first sentence, use accurate structured data and state specifics are easier to summarise and cite.",
         "So we write for two readers at once: the buyer skimming on a phone, and the system deciding which source to quote. Both want a direct answer, then evidence.",
@@ -38,20 +38,20 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does an SEO engagement run?",
+      heading: "How an engagement runs",
       steps: [
         { title: "Technical audit", text: "We fix what stops pages being crawled, indexed or loaded quickly before writing anything new." },
         { title: "Keyword and intent map", text: "Every target page gets one primary query, so pages stop competing with each other." },
         { title: "Fix the commercial pages", text: "Service and industry pages are rewritten to answer the buying question and convert the visit." },
         { title: "Publish answers to buyer questions", text: "A content plan built from the questions your sales team hears, each linked to a commercial page." },
-        { title: "Earn citations, not shortcuts", text: "Digital PR, partner listings and useful assets that other sites have a reason to reference." },
-        { title: "Measure leads by page", text: "Reporting shows which pages produce enquiries, not just traffic." },
+        { title: "Earn citations", text: "Digital PR, partner listings and useful assets that other sites have a reason to reference." },
+        { title: "Measure leads by page", text: "Reporting shows which pages produce enquiries." },
       ],
     },
     {
       kind: "table",
-      heading: "What results can you expect from SEO, and when?",
-      intro: "SEO compounds slowly. Exact timing depends on your domain's history and competition, so these are typical stages, not promises.",
+      heading: "Typical timeline",
+      intro: "SEO compounds slowly. Exact timing depends on your domain's history and competition, so treat these as typical stages. We do not promise dates.",
       caption: "Typical stages of an SEO programme",
       columns: ["Stage", "What happens", "What to measure"],
       rows: [
@@ -98,7 +98,7 @@ const content: DetailContent = {
     },
     {
       q: "Is an llms.txt file worth adding?",
-      a: "It is a low-cost proposal for summarising a site for AI tools, not an official standard, and search engines do not require it. We add one because it is cheap, but it does not replace well-structured pages.",
+      a: "It is a low-cost proposal for summarising a site for AI tools. It is not an official standard, and search engines do not require it. We add one because it is cheap, but it does not replace well-structured pages.",
     },
   ],
 };

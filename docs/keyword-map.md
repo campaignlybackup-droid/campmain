@@ -358,7 +358,7 @@ Per your decision: four location pages only. Service-by-market phrases are secon
 - **Post pages:** one primary keyword each; see `docs/content-plan.md`.
 - **Category pages** `/blog/category/[slug]/`: four proposed categories (Paid Media, Search, Automation, Growth Strategy). Each is indexable only with at least 3 posts, otherwise `noindex` and left out of the sitemap. No category targets a query that a service page owns. Title pattern: `{Category} Articles | Campaignly`.
 
-### `/free-ad-account-review/`
+### `/free-ad-account-review/` (removed 13 November 2026; the page no longer exists)
 - **Primary:** free ad account audit
 - **Secondary:** free Meta ads audit; free Google Ads audit; PPC account review; ad account health check
 - **Intent:** Transactional

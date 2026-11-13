@@ -56,7 +56,7 @@ const pages = [
     primaryKeyword: "Meta ads agency",
     title: "Meta Ads Agency: Facebook and Instagram Ads | Campaignly",
     description:
-      "Meta ads managed for revenue, not reach: account structure, creative testing, conversion tracking and weekly reporting you can audit.",
+      "Meta ads managed for revenue: account structure, creative testing, conversion tracking and weekly reporting you can audit.",
     h1: "Meta ads agency for businesses that measure revenue",
   },
   {
@@ -76,7 +76,7 @@ const pages = [
     primaryKeyword: "SEO services for lead generation",
     title: "SEO Services for Lead Generation and AI Search | Campaignly",
     description:
-      "Technical SEO, content and AI-answer optimisation aimed at pipeline, not rankings for their own sake. Clear scope, timelines and reports.",
+      "Technical SEO, content and AI-answer optimisation aimed at pipeline and revenue. Clear scope, timelines and reports.",
     h1: "SEO services that build pipeline, in Google and in AI answers",
   },
   {
@@ -156,7 +156,7 @@ const pages = [
     primaryKeyword: "D2C marketing agency",
     title: "D2C Marketing Agency for Scaling Brands | Campaignly",
     description:
-      "Paid acquisition, creative and retention for D2C and ecommerce brands, managed against contribution margin, not just ROAS.",
+      "Paid acquisition, creative and retention for D2C and ecommerce brands, managed against contribution margin.",
     h1: "D2C marketing for brands that want profitable scale",
   },
   {
@@ -166,7 +166,7 @@ const pages = [
     primaryKeyword: "student admission lead generation",
     title: "Student Admission Lead Generation | Campaignly",
     description:
-      "Admission campaigns for universities, colleges and edtech, measured on applications and enrolments, not form fills.",
+      "Admission campaigns for universities, colleges and edtech, measured on applications and enrolments.",
     h1: "Student admission lead generation, measured on enrolments",
   },
   {
@@ -186,7 +186,7 @@ const pages = [
     primaryKeyword: "real estate lead generation",
     title: "Real Estate Lead Generation for Developers | Campaignly",
     description:
-      "Meta and Google campaigns for developers and brokers in India and the UAE, built for site visits and bookings, not cheap leads.",
+      "Meta and Google campaigns for developers and brokers in India and the UAE, built for site visits and bookings.",
     h1: "Real estate lead generation built for site visits",
   },
   {
@@ -197,7 +197,7 @@ const pages = [
     title: "B2B Lead Generation Agency | Campaignly",
     description:
       "Qualified pipeline for B2B and professional services firms through search, LinkedIn, content and automated follow-up.",
-    h1: "B2B lead generation that sales teams actually want",
+    h1: "B2B lead generation your sales team will follow up",
   },
   {
     path: "/industries/saas/",
@@ -288,16 +288,6 @@ const pages = [
     description:
       "Specific answers to the questions founders and marketing heads ask about Meta, Google, SEO, creative and AI automation.",
     h1: "Insights",
-  },
-  {
-    path: "/free-ad-account-review/",
-    label: "Free ad account review",
-    parent: "/",
-    primaryKeyword: "free ad account audit",
-    title: "Free Ad Account Review: Meta and Google | Campaignly",
-    description:
-      "A senior review of your Meta or Google Ads account with read-only access. What we check, what you receive and how long it takes.",
-    h1: "Free ad account review",
   },
   {
     path: "/apply/",

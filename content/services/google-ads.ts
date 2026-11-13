@@ -11,7 +11,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "scope",
-      heading: "What is included in Google Ads management?",
+      heading: "What is included",
       intro: "Everything inside the account and the measurement that feeds bidding. Creative production and page builds are scoped separately.",
       included: [
         { item: "Account audit", detail: "Structure, search terms, match types, negatives, bidding, conversion actions and wasted spend." },
@@ -32,8 +32,8 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which Google Ads campaign types should you use?",
-      intro: "The campaign type follows the buyer's intent and your data. Most accounts need two or three types, not all of them.",
+      heading: "Choosing campaign types",
+      intro: "The campaign type follows the buyer's intent and your data. Most accounts need two or three of them.",
       caption: "Google Ads campaign types and when they fit",
       columns: ["Campaign type", "Best for", "Watch out for"],
       rows: [
@@ -46,11 +46,11 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does Campaignly manage a Google Ads account?",
+      heading: "How we manage an account",
       steps: [
         { title: "Audit search terms and tracking", text: "We find where money goes on irrelevant queries and whether conversions measure anything that matters." },
         { title: "Fix measurement first", text: "Conversion actions are cleaned up and offline outcomes imported, so smart bidding optimises for revenue." },
-        { title: "Restructure around intent", text: "Campaigns are grouped by what the searcher wants, not by how the old account grew." },
+        { title: "Restructure around intent", text: "Campaigns are grouped by what the searcher wants." },
         { title: "Write ads and assets per theme", text: "Headlines, descriptions and sitelinks answer the query and match the landing page." },
         { title: "Set bids from margins", text: "Target CPA or ROAS comes from your unit economics, then tightens as data accumulates." },
         { title: "Expand where it holds", text: "New keywords, campaign types and markets are added only once the core is profitable." },
@@ -58,12 +58,12 @@ const content: DetailContent = {
     },
     {
       kind: "definitions",
-      heading: "Which Google Ads terms matter most?",
+      heading: "Terms we use in reporting",
       items: [
         { term: "Search terms", def: "The actual queries that triggered your ads. Keywords are what you bid on; search terms are what you paid for." },
         { term: "Offline conversion import", def: "Sending CRM outcomes such as qualified lead or closed deal back to Google so bidding learns from them." },
         { term: "Enhanced conversions", def: "A Google feature that uses hashed first-party data, such as email, to improve conversion measurement." },
-        { term: "Impression share", def: "The share of eligible impressions your ads received. Useful for diagnosis, not as a goal." },
+        { term: "Impression share", def: "The share of eligible impressions your ads received. Useful for diagnosis. We do not set it as a target." },
       ],
     },
   ],

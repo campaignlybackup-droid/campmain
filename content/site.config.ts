@@ -83,7 +83,7 @@ export interface SiteConfig {
   legalName: string | null;
   /** Year the company was founded, e.g. 2023 */
   foundingYear: number | null;
-  /** Path to the horizontal logo in /public, shown in the header and footer, e.g. "/brand/logo.png" */
+  /** Path to the logo symbol in /public, shown in the header and footer, e.g. "/brand/symbol.png" */
   logo: string | null;
   /** Path to a square logo mark in /public, at least 112x112, used for schema `logo` (falls back to `logo`) */
   logoMark: string | null;
@@ -112,8 +112,6 @@ export interface SiteConfig {
   hours: string | null;
   /** Hours within which you commit to reply to an application, e.g. 24 */
   applicationResponseHours: number | null;
-  /** Business days to deliver a free ad account review, e.g. 3 */
-  reviewTurnaroundDays: number | null;
   /** Verified headline stats. Section is hidden while null or empty. */
   stats: Stat[] | null;
   /** Anonymised case studies. Hub and nav item are hidden while null or empty. */
@@ -149,7 +147,7 @@ export const siteConfig: SiteConfig = {
   presence: { india: null, usa: null, canada: null, uae: null },
   legalName: null,
   foundingYear: null,
-  logo: "/brand/campaignly-logo.png",
+  logo: "/brand/campaignly-symbol.png",
   logoMark: "/brand/campaignly-mark.png",
   social: {
     linkedin: null,
@@ -166,7 +164,6 @@ export const siteConfig: SiteConfig = {
   leadNotificationEmail: null,
   hours: null,
   applicationResponseHours: null,
-  reviewTurnaroundDays: null,
   stats: null,
   caseStudies: null,
   testimonials: null,

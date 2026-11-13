@@ -122,9 +122,9 @@ function Body({ section }: { section: Section }) {
     case "scope":
       return (
         <div className="grid gap-14 lg:grid-cols-12">
-          <TableScroll label="What is included" className="lg:col-span-8">
+          <TableScroll label="Scope: included items" className="lg:col-span-8">
             <table className="table-site">
-              <caption className="sr-only">What is included</caption>
+              <caption className="sr-only">Scope: included items</caption>
               <thead>
                 <tr>
                   <th scope="col">Included</th>
@@ -217,7 +217,7 @@ export function DetailTemplate({ content, extraSchema = [] }: { content: DetailC
       ) : null}
       {content.faqs.length ? (
         <div className="border-t border-line">
-          <Faq items={content.faqs} heading={`${content.eyebrow}: frequently asked questions`} />
+          <Faq items={content.faqs} heading="Frequently asked questions" />
         </div>
       ) : null}
       <CtaBand {...(content.cta ?? {})} />

@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "How does working with Campaignly in Canada work?",
+      heading: "Working together from Canada",
       caption: "Engagement details for Canadian businesses",
       columns: ["Item", "How it works"],
       rows: [
@@ -22,7 +22,7 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "What makes the Canadian market different?",
+      heading: "The Canadian market",
       items: [
         "Audiences are smaller and more concentrated than in the US, so campaigns reach saturation faster and creative needs refreshing sooner.",
         "Quebec's Charter of the French Language requires commercial advertising aimed at Quebec to be available in French, so bilingual creative and landing pages are planned from the start.",
@@ -33,7 +33,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which platforms matter most in Canada?",
+      heading: "Platforms in Canada",
       caption: "Platform roles in Canada",
       columns: ["Platform", "Typical role"],
       rows: [

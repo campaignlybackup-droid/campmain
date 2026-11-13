@@ -20,8 +20,8 @@ export default function NotFound() {
         <ButtonLink href="/services/" variant="text">
           Performance marketing services
         </ButtonLink>
-        <ButtonLink href="/free-ad-account-review/" variant="text">
-          Free ad account review
+        <ButtonLink href="/contact/" variant="text">
+          Contact
         </ButtonLink>
       </div>
     </section>

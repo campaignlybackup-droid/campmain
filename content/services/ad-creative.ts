@@ -6,12 +6,12 @@ const content: DetailContent = {
   eyebrow: "Video and ad creative",
   question: "What does a performance ad creative agency do?",
   answer:
-    "A performance ad creative agency produces video, UGC-style and static ads designed to be tested against each other, not admired. Campaignly writes hooks and scripts from your ad account data, produces variants in the formats each placement needs, and uses results to decide what to make next, so creative becomes a system rather than a one-off shoot.",
+    "A performance ad creative agency produces video, UGC-style and static ads designed to be tested against each other. Campaignly writes hooks and scripts from your ad account data, produces variants in the formats each placement needs, and uses results to decide what to make next, so creative becomes a system rather than a one-off shoot.",
   service: { name: "Performance ad creative production", serviceType: "Advertising creative production" },
   sections: [
     {
       kind: "scope",
-      heading: "What is included in ad creative production?",
+      heading: "What we produce",
       included: [
         { item: "Creative audit", detail: "Which hooks, formats and angles have worked in your account, and why." },
         { item: "Concepts and scripts", detail: "Angles built from customer language, objections and proof." },
@@ -29,7 +29,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which ad formats does each placement need?",
+      heading: "Formats by placement",
       intro: "One master asset rarely fits every placement. These are the common ratios we deliver.",
       caption: "Common ad aspect ratios by placement",
       columns: ["Placement", "Recommended ratio", "Note"],
@@ -42,10 +42,10 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does Campaignly's creative testing work?",
+      heading: "How we test creative",
       steps: [
         { title: "Mine the data", text: "Account results, reviews, sales calls and support tickets supply the angles worth testing." },
-        { title: "Write concepts, not just ads", text: "Each concept is a single idea, such as a problem, a proof point or an objection answered." },
+        { title: "Write concepts first", text: "Each concept is a single idea, such as a problem, a proof point or an objection answered." },
         { title: "Produce variants", text: "Each concept gets several hooks and formats so tests isolate what made the difference." },
         { title: "Test against the current winner", text: "New creative competes with what already works instead of replacing it blind." },
         { title: "Feed results into the next brief", text: "Winning hooks and angles become the starting point of the next round." },
@@ -53,7 +53,7 @@ const content: DetailContent = {
     },
     {
       kind: "definitions",
-      heading: "How is creative performance measured?",
+      heading: "How creative is measured",
       items: [
         { term: "Hook rate", def: "The share of impressions where viewers watched past the first few seconds. Shows whether the opening stops the scroll." },
         { term: "Hold rate", def: "The share of viewers who keep watching to a later point. Shows whether the story holds attention." },
@@ -92,7 +92,7 @@ const content: DetailContent = {
     },
     {
       q: "Can you produce ads in regional Indian languages or Arabic?",
-      a: "Yes. Scripts are written for the market, not translated word for word, and reviewed by native speakers before production.",
+      a: "Yes. Scripts are written for each market from the start and reviewed by native speakers before production.",
     },
     {
       q: "Do I own the creative you produce?",

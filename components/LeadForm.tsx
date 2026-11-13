@@ -41,7 +41,7 @@ export function LeadForm({
   successBody,
   fallback,
 }: {
-  formType: "apply" | "ad_account_review";
+  formType: "apply";
   endpoint: string;
   fields: FieldDef[];
   submitLabel: string;

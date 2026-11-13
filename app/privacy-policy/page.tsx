@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
         {
           heading: "How we use it",
           items: [
-            "To review your application or ad account review request and reply to you.",
+            "To review your application and reply to you.",
             "To understand which pages and campaigns bring enquiries, so we can improve the site and our marketing.",
             "To measure and improve our own advertising, only if you have accepted advertising cookies.",
             "To keep the site secure and comply with legal obligations.",

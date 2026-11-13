@@ -119,7 +119,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </dl>
         </header>
         <div className="mt-12 max-w-[46rem] border-l-2 border-gold pl-6">
-          <p className="text-sm font-medium tracking-wide text-mute">The short answer</p>
+          <p className="text-sm font-medium tracking-wide text-mute">Summary</p>
           <p className="mt-3 text-lead">{meta.answer}</p>
         </div>
         <div className="mt-6 max-w-[46rem] text-[1.0625rem] leading-relaxed md:text-lg">

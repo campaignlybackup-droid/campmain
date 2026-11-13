@@ -10,15 +10,15 @@ const content: DetailContent = {
   sections: [
     {
       kind: "prose",
-      heading: "Why is ROAS not enough for D2C brands?",
+      heading: "Managing to margin",
       paragraphs: [
         "Platform ROAS counts revenue the ad platform attributes to itself. It ignores product cost, shipping, payment fees, returns and the customers who would have bought anyway. A brand can hit its ROAS target and still lose money on every order.",
-        "We plan D2C growth around contribution margin per order and marketing efficiency ratio (total revenue over total marketing spend). ROAS stays in the dashboard as a diagnostic, not the goal.",
+        "We plan D2C growth around contribution margin per order and marketing efficiency ratio (total revenue over total marketing spend). ROAS stays in the dashboard as a diagnostic.",
       ],
     },
     {
       kind: "table",
-      heading: "What does a D2C growth programme cover?",
+      heading: "What the programme covers",
       caption: "D2C growth programme components",
       columns: ["Stage", "What we do"],
       rows: [
@@ -32,7 +32,7 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "What changes for D2C brands selling in India?",
+      heading: "Selling D2C in India",
       items: [
         "Cash on delivery remains common, so order confirmation and return-to-origin tracking belong in the acquisition plan.",
         "Festive seasons concentrate demand and raise ad costs; creative and inventory need planning weeks ahead.",
@@ -42,7 +42,7 @@ const content: DetailContent = {
     },
     {
       kind: "definitions",
-      heading: "Which numbers does a D2C brand need to know?",
+      heading: "The numbers we track",
       items: [
         { term: "CAC", def: "Customer acquisition cost: marketing spend divided by new customers acquired." },
         { term: "Contribution margin", def: "What is left from an order after product, fulfilment, fees, returns and marketing." },

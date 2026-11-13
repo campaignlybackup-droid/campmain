@@ -15,7 +15,7 @@ export const metadata = buildMetadata("/");
 const principles = [
   {
     title: "Strategy before spend",
-    text: "Every engagement starts with a diagnosis of your accounts, tracking, funnel and margins. Budget follows the plan, not the other way round.",
+    text: "Every engagement starts with a diagnosis of your accounts, tracking, funnel and margins. The budget is set once the plan is clear.",
   },
   {
     title: "Execution across the funnel",
@@ -65,9 +65,6 @@ export default function HomePage() {
             <ButtonLink href="/apply/" ctaId="hero_apply">
               Apply to Partner
             </ButtonLink>
-            <ButtonLink href="/free-ad-account-review/" variant="text" ctaId="hero_review">
-              Get a free ad account review
-            </ButtonLink>
           </div>
         </div>
       </section>
@@ -89,7 +86,7 @@ export default function HomePage() {
           <div className="md:col-span-5">
             <p className="eyebrow">What Campaignly is</p>
             <h2 id="different-heading" className="mt-5 text-display-lg">
-              A growth partner, not a social media agency.
+              A growth partner built around paid advertising.
             </h2>
           </div>
           <p className="text-lead text-mute md:col-span-6 md:col-start-7 md:self-end">
@@ -119,7 +116,7 @@ export default function HomePage() {
             <div>
               <p className="eyebrow">Services</p>
               <h2 id="services-heading" className="mt-5 text-display-lg">
-                Nine disciplines, one growth system.
+                Nine services, planned and reported together.
               </h2>
             </div>
             <ButtonLink href="/services/" variant="text">
@@ -156,7 +153,7 @@ export default function HomePage() {
           <div className="md:col-span-6">
             <p className="eyebrow">The method</p>
             <h2 id="method-heading" className="mt-5 text-display-lg">
-              Diagnose. Position. Acquire. Convert. Retain. Scale.
+              How every engagement runs.
             </h2>
           </div>
           <p className="text-mute md:col-span-5 md:col-start-8 md:self-end">
@@ -175,7 +172,7 @@ export default function HomePage() {
           <div className="md:col-span-4">
             <p className="eyebrow">Industries</p>
             <h2 id="industries-heading" className="mt-5 text-display-lg">
-              Built for how your buyers decide.
+              Shaped around how each industry buys.
             </h2>
             <div className="mt-8">
               <ButtonLink href="/industries/" variant="text">
@@ -203,7 +200,7 @@ export default function HomePage() {
         <div className="container-site">
           <p className="eyebrow">Markets</p>
           <h2 id="markets-heading" className="mt-5 max-w-3xl text-display-lg">
-            Four markets, each run on its own terms.
+            Four markets, each with its own billing, hours and creative.
           </h2>
           <TableScroll label="Markets, billing and time zones" className="mt-14">
             <table className="table-site min-w-[40rem]">

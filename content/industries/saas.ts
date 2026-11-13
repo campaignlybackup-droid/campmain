@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "Which channels fit which SaaS model?",
+      heading: "Channels by SaaS model",
       intro: "Channel choice follows the economics. A tool that costs a little per month cannot afford the same acquisition as an enterprise platform.",
       caption: "SaaS channel fit by business model",
       columns: ["Model", "Typical motion", "Channels that usually fit"],
@@ -22,7 +22,7 @@ const content: DetailContent = {
     },
     {
       kind: "definitions",
-      heading: "Which SaaS metrics guide paid acquisition?",
+      heading: "The metrics that guide spend",
       items: [
         { term: "ACV", def: "Annual contract value: average yearly revenue per customer. Sets how much you can spend to acquire one." },
         { term: "CAC", def: "Customer acquisition cost: sales and marketing spend divided by new customers." },
@@ -32,7 +32,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does a SaaS acquisition programme run?",
+      heading: "How the programme runs",
       steps: [
         { title: "Model the economics", text: "ACV, conversion rates by stage and payback target set the maximum cost per demo or trial." },
         { title: "Capture high-intent search", text: "Category, competitor-alternative and problem queries on Google." },

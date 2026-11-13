@@ -105,7 +105,7 @@ Clients stay anonymous, so the check does not use a list of their names. Instead
 
 ## Known limitations and items for you
 
-1. **Forms do not render** until `NEXT_PUBLIC_FORM_ENDPOINT` is set (or an email is added to config as a fallback). The Apply and Free review pages currently show their explanatory content only. **This blocks launch.**
+1. **Forms do not render** until `NEXT_PUBLIC_FORM_ENDPOINT` is set (or an email is added to config as a fallback). The Apply page currently shows their explanatory content only. **This blocks launch.**
 2. The **redirect map** is empty until you send the old URLs (`docs/redirects.md`).
 3. **Content claims to confirm** before launch. These describe how Campaignly operates and are written as fact on the site:
    - "Ad accounts, pixels and data stay in your name"; "you can remove our access at any time" (Home, Meta ads, FAQs)
@@ -114,7 +114,14 @@ Clients stay anonymous, so the check does not use a list of their names. Instead
    - India: Monday to Friday IST hours, a shared WhatsApp group, weekly notes and a monthly review
    - USA: calls in the US morning; work progressed overnight; weekly written updates and a monthly call
    - "Native speakers" write and review regional-language and Arabic creative
-   - "A limited number of businesses at a time" (Apply); "a senior specialist's written assessment" (Free review)
+   - "A limited number of businesses at a time" (Apply)
    - Scope tables on each service page (what is included and not included)
    - Microsoft Ads, LinkedIn Ads, Snapchat and TikTok as platforms you manage
 4. **Legal pages** are drafted from how the site actually processes data. They should be reviewed by someone qualified for India's DPDP Act and for any other market you serve.
+
+## Update, 13 November 2026
+
+- The free ad account review page and every link to it were removed at your request. Every page now ends with Apply to Partner, plus WhatsApp once a number is configured. The site has 45 pages.
+- The header and footer show the Campaignly C symbol, and the favicons match your current site.
+- Copy pass: removed about 50 "X, not Y" constructions, replaced question-style section headings with plain headings (FAQ sections keep their questions), and removed the question label above each page intro.
+- Re-run on the new build: build and lint clean; crawl, JSON-LD, placeholder and client-name gates pass; 45 pages load with 0 errors; axe 0 violations at 360px and 1280px; Lighthouse mobile on Home 100 / 100 / 100 / 100, LCP 1.0 s.

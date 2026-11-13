@@ -46,5 +46,5 @@ export interface DetailContent {
   related: { heading: string; items: RelatedItem[] }[];
   /** Service schema for service pages */
   service?: { name: string; serviceType: string };
-  cta?: { heading: string; body: string; lowFriction?: "review" | "whatsapp" };
+  cta?: { heading: string; body: string };
 }

@@ -9,7 +9,7 @@ import { publicEnv } from "@/lib/env";
  * Without one, it falls back to direct contact details if those exist.
  */
 export function FormSection(props: {
-  formType: "apply" | "ad_account_review";
+  formType: "apply";
   fields: FieldDef[];
   submitLabel: string;
   successHeading: string;

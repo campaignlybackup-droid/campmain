@@ -11,7 +11,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "scope",
-      heading: "What does Meta ads management include?",
+      heading: "What is included",
       intro:
         "Management covers everything inside the ad account and the tracking that feeds it. Production and page builds are scoped separately so you only pay for what you need.",
       included: [
@@ -21,7 +21,7 @@ const content: DetailContent = {
         { item: "Audience and offer strategy", detail: "Who to reach, what to offer them and which angle to lead with, per market." },
         { item: "Creative strategy and testing", detail: "Briefs, hooks and a testing roadmap; results feed the next round of creative." },
         { item: "Budget, bids and pacing", detail: "Spend moved toward what returns a qualified result at a cost you can sustain." },
-        { item: "Lead quality loop", detail: "CRM outcomes sent back to Meta so delivery optimises for buyers, not form fills." },
+        { item: "Lead quality loop", detail: "CRM outcomes sent back to Meta so delivery optimises toward people who buy." },
         { item: "Reporting", detail: "Revenue, cost per qualified result and what we are changing next, in plain language." },
       ],
       excluded: [
@@ -33,7 +33,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does Campaignly run a Meta ads account?",
+      heading: "How we run an account",
       intro:
         "In six steps, in this order. Tracking and structure come before new creative, because creative tests are meaningless on broken data.",
       steps: [
@@ -48,7 +48,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Is Meta advertising right for your business?",
+      heading: "When Meta is the right channel",
       intro:
         "Meta is strongest when it creates demand for something people do not yet search for. It is weaker where buyers already search, or where the audience is a narrow set of job titles.",
       caption: "Where Meta advertising usually fits",
@@ -64,11 +64,11 @@ const content: DetailContent = {
     },
     {
       kind: "definitions",
-      heading: "How is Meta ads performance measured?",
-      intro: "By the numbers your finance team uses. Platform-reported ROAS is one input, not the verdict.",
+      heading: "How performance is measured",
+      intro: "By the numbers your finance team uses. Platform-reported ROAS is one input among several.",
       items: [
         { term: "ROAS", def: "Return on ad spend: revenue attributed to ads divided by ad spend." },
-        { term: "Cost per qualified lead", def: "Ad spend divided by leads that meet the qualification criteria you set, not all form fills." },
+        { term: "Cost per qualified lead", def: "Ad spend divided by leads that meet the qualification criteria you set." },
         { term: "Contribution margin", def: "Revenue minus product, fulfilment and ad costs. The number that says whether growth is profitable." },
         { term: "MER", def: "Marketing efficiency ratio: total revenue divided by total marketing spend, across every channel." },
       ],
@@ -78,7 +78,7 @@ const content: DetailContent = {
     {
       heading: "Meta ads by industry",
       items: [
-        { href: "/industries/ecommerce-d2c/", label: "Meta ads for D2C and ecommerce brands", summary: "Profitable scale measured on contribution margin, not ROAS alone." },
+        { href: "/industries/ecommerce-d2c/", label: "Meta ads for D2C and ecommerce brands", summary: "Growth measured on contribution margin, with ROAS as one input." },
         { href: "/industries/education/", label: "Meta ads for student admissions", summary: "Admission campaigns measured on applications and enrolments." },
         { href: "/industries/real-estate/", label: "Meta ads for real estate developers", summary: "Campaigns built for site visits and bookings, in India and the UAE." },
       ],
@@ -125,7 +125,7 @@ const content: DetailContent = {
   ],
   cta: {
     heading: "Find out what your Meta account is leaving on the table.",
-    body: "Start with a free review of your ad account, or apply for a full growth partnership if you are ready to scale.",
+    body: "Apply to partner and we will start with a diagnosis of your account, tracking and funnel before proposing any change.",
   },
 };
 

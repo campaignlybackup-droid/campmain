@@ -26,12 +26,6 @@ export default function Terms() {
           ],
         },
         {
-          heading: "Free ad account reviews",
-          paragraphs: [
-            "Free reviews are offered at our discretion. We may decline a request. We will only request the access needed for the review, and you can remove that access at any time. A review is an opinion based on the data available to us; decisions about your account remain yours.",
-          ],
-        },
-        {
           heading: "Intellectual property",
           paragraphs: [
             "The text, design and code of this site belong to Campaignly or its licensors. You may share links to our pages and quote short extracts with attribution. Other reproduction requires our written permission.",

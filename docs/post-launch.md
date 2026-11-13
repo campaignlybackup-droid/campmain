@@ -6,7 +6,7 @@ Everything below is `null` in `content/site.config.ts` (or empty in `.env.local`
 
 | Field | Where it shows | Priority |
 |---|---|---|
-| `formEndpoint` / `NEXT_PUBLIC_FORM_ENDPOINT` | Apply and Free review forms | **Blocks launch** |
+| `formEndpoint` / `NEXT_PUBLIC_FORM_ENDPOINT` | Apply form | **Blocks launch** |
 | `email` | Footer, Contact, schema `contactPoint`, form error fallback, privacy policy | **Blocks launch** |
 | `leadNotificationEmail` | Used in the Apps Script `NOTIFY_EMAIL` property | **Blocks launch** |
 | `phone` | Footer, Contact, schema | High |
@@ -22,7 +22,6 @@ Everything below is `null` in `content/site.config.ts` (or empty in `.env.local`
 | `metaPixelId` / `NEXT_PUBLIC_META_PIXEL_ID` | Pixel, after consent | Medium |
 | `hours` | Contact page | Low |
 | `applicationResponseHours` | Apply page promise and success message | Medium |
-| `reviewTurnaroundDays` | Free review FAQ | Medium |
 | `foundingYear` | Schema | Low |
 | `stats` | Home and About results strip | When verified |
 | `caseStudies` | Case studies hub, cross-links | When available |
@@ -40,7 +39,7 @@ Also pending:
 
 1. Go to [search.google.com/search-console](https://search.google.com/search-console) and add a **Domain** property for `campaignlymedia.com` (verify with a DNS TXT record). Optionally also add a **URL prefix** property for `https://campaignlymedia.com/` and verify it with the HTML tag value in `searchConsoleVerification`.
 2. **Sitemaps** → submit `https://campaignlymedia.com/sitemap.xml`.
-3. **URL Inspection** → inspect and **Request indexing** for, in order: `/`, `/about/`, `/services/`, the nine service pages, `/free-ad-account-review/`, `/apply/`, then the industries and locations hubs.
+3. **URL Inspection** → inspect and **Request indexing** for, in order: `/`, `/about/`, `/services/`, the nine service pages, `/apply/`, then the industries and locations hubs.
 4. After a few days, check **Pages** (indexing) and **Enhancements** for breadcrumbs and FAQ structured data errors.
 5. Run five URLs through the [Rich Results Test](https://search.google.com/test/rich-results) and the [Schema Markup Validator](https://validator.schema.org/): Home, a service page, an industry page, a blog post, `/about/`. (This could not be done from the build environment.)
 6. After 28 days, check **Core Web Vitals** for field LCP, CLS and INP.

@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "prose",
-      heading: "Why do direct bookings matter for hotels?",
+      heading: "The case for direct bookings",
       paragraphs: [
         "Online travel agents bring reach, but they charge commission on every booking and keep much of the guest relationship. Every booking moved to your own website keeps more revenue and gives you the guest's details for future stays.",
         "The goal is not to abandon travel agents. It is to win the guests who would happily book direct if your website, rates and follow-up made it easy.",
@@ -18,7 +18,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which channels drive hotel direct bookings?",
+      heading: "Channels that drive direct bookings",
       caption: "Hotel direct booking channels",
       columns: ["Channel", "Role"],
       rows: [
@@ -31,7 +31,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does a direct booking programme run?",
+      heading: "How the programme runs",
       steps: [
         { title: "Audit the booking path", text: "Speed, rate display, booking engine steps and mobile experience." },
         { title: "Protect the brand search", text: "Brand campaigns and Google hotel listings so searches for you lead to you." },
@@ -70,7 +70,7 @@ const content: DetailContent = {
     },
     {
       q: "Do you work with restaurants?",
-      a: "Our hospitality focus is hotels, resorts and serviced stays. Restaurant groups with a meaningful acquisition budget can be assessed case by case.",
+      a: "Our hospitality focus is hotels, resorts and serviced stays. Restaurant groups with a substantial acquisition budget can be assessed case by case.",
     },
     {
       q: "How do you measure hotel campaigns?",

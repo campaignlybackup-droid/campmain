@@ -6,7 +6,6 @@ import { getPage } from "@/content/pages";
 import { siteConfig } from "@/content/site.config";
 import { breadcrumbNode, graph, webPageNode } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
-import { ButtonLink } from "@/components/Button";
 
 export const metadata = buildMetadata("/apply/");
 
@@ -27,7 +26,7 @@ export default function ApplyPage() {
         <h1 className="mt-6 max-w-4xl text-display-xl">{getPage("/apply/").h1}</h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">
           Campaignly works with a limited number of businesses at a time so each one gets senior attention. This form
-          takes about three minutes and tells us enough to decide whether we can genuinely help.
+          takes about three minutes and tells us enough to decide whether we can help.
           {hours ? ` We reply to every application within ${hours} hours.` : ""}
         </p>
       </section>
@@ -43,7 +42,7 @@ export default function ApplyPage() {
         }
         aside={
           <div>
-            <h2 className="text-2xl">What happens next?</h2>
+            <h2 className="text-2xl">What happens next</h2>
             <ol className="mt-6 border-t border-line">
               {next.map((n, i) => (
                 <li key={n} className="grid grid-cols-[2.5rem_1fr] gap-3 border-b border-line py-5 text-mute">
@@ -54,12 +53,6 @@ export default function ApplyPage() {
                 </li>
               ))}
             </ol>
-            <p className="mt-8 text-mute">Not ready for a partnership yet?</p>
-            <div className="mt-3">
-              <ButtonLink href="/free-ad-account-review/" variant="text" ctaId="apply_review">
-                Start with a free ad account review
-              </ButtonLink>
-            </div>
           </div>
         }
       />

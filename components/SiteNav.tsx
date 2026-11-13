@@ -203,13 +203,6 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
             >
               Apply to Partner
             </Link>
-            <Link
-              href="/free-ad-account-review/"
-              data-cta="nav_mobile_review"
-              className="inline-flex min-h-12 items-center justify-center border border-line-strong px-6 font-medium"
-            >
-              Free ad account review
-            </Link>
           </div>
         </nav>
       </div>

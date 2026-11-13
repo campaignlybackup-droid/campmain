@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "How does working with Campaignly in the UAE work?",
+      heading: "Working together in the UAE",
       caption: "Engagement details for UAE businesses",
       columns: ["Item", "How it works"],
       rows: [
@@ -22,10 +22,10 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "What makes the UAE market different?",
+      heading: "The UAE market",
       items: [
-        "The population is highly international, so audiences are segmented by language and nationality, not just location.",
-        "Arabic and English creative serve different audiences; Arabic ads are written for the market, not translated.",
+        "The population is highly international, so audiences are segmented by language and nationality as well as location.",
+        "Arabic and English creative serve different audiences; Arabic ads are written in Arabic from the brief.",
         "Snapchat and TikTok matter more here than in many markets, alongside Google and Meta.",
         "Real estate and hospitality are major advertising categories with their own permit rules.",
         "Ramadan and the Eid holidays change media consumption and buying patterns, so campaigns are planned around them.",
@@ -33,7 +33,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which UAE rules affect advertising?",
+      heading: "Rules that apply in the UAE",
       caption: "UAE advertising rules",
       columns: ["Rule", "What it means"],
       rows: [
@@ -67,7 +67,7 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Do you create Arabic ads?",
-      a: "Yes. Arabic creative is written by native speakers for the target audience, rather than translated from English, and reviewed before launch.",
+      a: "Yes. Arabic creative is written by native speakers for the target audience and reviewed before launch.",
     },
     {
       q: "How does the time difference work?",

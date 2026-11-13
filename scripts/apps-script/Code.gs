@@ -11,12 +11,10 @@
 
 var FORM_TABS = {
   apply: "Apply to Partner",
-  ad_account_review: "Free Ad Account Review",
 };
 
 var FIELD_ORDER = {
   apply: ["name", "email", "company", "website", "industry", "revenue", "goal"],
-  ad_account_review: ["name", "email", "website", "platform", "spend"],
 };
 
 var ATTRIBUTION_FIELDS = [

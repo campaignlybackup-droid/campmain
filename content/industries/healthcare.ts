@@ -10,13 +10,13 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "Which rules shape healthcare advertising?",
+      heading: "Advertising rules in healthcare",
       intro: "Healthcare is one of the most restricted advertising categories. These are the main constraints we plan around; your legal and medical teams have the final word on claims.",
       caption: "Key healthcare advertising constraints",
       columns: ["Rule", "What it means for campaigns"],
       rows: [
         ["Google healthcare and medicines policy", "Some treatments, medicines and services are restricted or need certification before ads can run."],
-        ["Meta personal attributes policy", "Ads cannot assert or imply a person has a medical condition, so copy speaks to the topic, not the reader's diagnosis."],
+        ["Meta personal attributes policy", "Ads cannot assert or imply a person has a medical condition, so copy speaks to the topic and never to the reader's own diagnosis."],
         ["Meta health and wellness data restrictions", "Since early 2025, Meta limits the conversion events some health advertisers can send and optimise for, which changes campaign setup."],
         ["India: Drugs and Magic Remedies Act, 1954", "Prohibits advertisements claiming to cure or treat listed diseases and conditions."],
         ["India: National Medical Commission conduct rules", "Restrict how registered medical practitioners may promote themselves."],
@@ -28,19 +28,19 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does a patient acquisition programme run?",
+      heading: "How the programme runs",
       steps: [
         { title: "Choose the services to promote", text: "We start with treatments people search for and that your capacity and margins support." },
         { title: "Check policy before creative", text: "Each service is checked against platform policy and local rules before ads are written." },
         { title: "Build service pages", text: "Clear pages covering the treatment, the doctors, what to expect and how to book." },
         { title: "Run search and local", text: "Google Search and Maps visibility capture patients ready to book." },
         { title: "Automate appointment follow-up", text: "WhatsApp confirmations and reminders reduce missed appointments." },
-        { title: "Measure booked consultations", text: "Reporting follows enquiries through to appointments, not just clicks." },
+        { title: "Measure booked consultations", text: "Reporting follows each enquiry through to a booked appointment." },
       ],
     },
     {
       kind: "list",
-      heading: "What do we never do in healthcare marketing?",
+      heading: "Lines we do not cross",
       items: [
         "Promise outcomes or cures, or use before-and-after claims that policy or law prohibits.",
         "Target or imply a person's health condition in ad copy.",

@@ -11,7 +11,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "table",
-      heading: "Which levers move ecommerce revenue?",
+      heading: "The levers that move ecommerce revenue",
       intro: "Revenue is traffic multiplied by conversion rate and average order value, then repeated. Ads only control the first.",
       caption: "Ecommerce growth levers",
       columns: ["Lever", "What we work on", "Measured by"],
@@ -24,7 +24,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does an ecommerce growth programme run?",
+      heading: "How the programme runs",
       steps: [
         { title: "Funnel and data audit", text: "We trace where buyers drop between landing, product page, cart and checkout, and check tracking accuracy." },
         { title: "Prioritise by impact", text: "Fixes are ranked by expected revenue effect and effort, so the first month pays for itself where possible." },
@@ -36,7 +36,7 @@ const content: DetailContent = {
     },
     {
       kind: "list",
-      heading: "What does India-specific ecommerce work involve?",
+      heading: "Selling online in India",
       intro: "Indian ecommerce has operational issues that other markets do not, and they belong in the growth plan.",
       items: [
         "Cash on delivery: confirming orders by WhatsApp before dispatch and nudging prepaid payment to reduce returned shipments.",
@@ -47,7 +47,7 @@ const content: DetailContent = {
     },
     {
       kind: "definitions",
-      heading: "Which ecommerce metrics matter most?",
+      heading: "The metrics we manage to",
       items: [
         { term: "Conversion rate", def: "Orders divided by sessions. Read by device and traffic source, never as one site-wide number." },
         { term: "AOV", def: "Average order value: revenue divided by number of orders." },
@@ -85,7 +85,7 @@ const content: DetailContent = {
     },
     {
       q: "Can you reduce cash-on-delivery returns?",
-      a: "We can reduce them, not remove them. Order confirmation by WhatsApp, prepaid incentives and excluding high-RTO areas from ad targeting are the usual levers.",
+      a: "We can reduce them. No one can remove them entirely. Order confirmation by WhatsApp, prepaid incentives and excluding high-RTO areas from ad targeting are the usual levers.",
     },
     {
       q: "Do you run A/B tests on our store?",

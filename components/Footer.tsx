@@ -83,7 +83,6 @@ export function Footer() {
             items={[
               { href: "/about/", label: "About" },
               { href: "/apply/", label: "Apply to Partner" },
-              { href: "/free-ad-account-review/", label: "Free ad account review" },
               { href: "/contact/", label: "Contact" },
             ]}
           />

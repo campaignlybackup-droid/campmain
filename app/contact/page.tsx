@@ -28,15 +28,12 @@ export default function ContactPage() {
         <p className="eyebrow">Contact</p>
         <h1 className="mt-6 text-display-xl">{getPage("/contact/").h1}</h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">
-          The fastest way to start is to apply to partner or request a free ad account review. Both forms go straight to
-          the team and ask only what we need to give you a useful answer.
+          The fastest way to start is the partner application. It goes straight to the team and asks only what we need
+          to give you a useful answer.
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
           <ButtonLink href="/apply/" ctaId="contact_apply">
             Apply to Partner
-          </ButtonLink>
-          <ButtonLink href="/free-ad-account-review/" variant="text" ctaId="contact_review">
-            Get a free ad account review
           </ButtonLink>
         </div>
       </section>
@@ -77,7 +74,7 @@ export default function ContactPage() {
           </div>
         </section>
       ) : null}
-      <CtaBand lowFriction="whatsapp" />
+      <CtaBand />
     </>
   );
 }

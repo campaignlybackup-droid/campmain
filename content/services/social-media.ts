@@ -11,15 +11,15 @@ const content: DetailContent = {
   sections: [
     {
       kind: "prose",
-      heading: "Why does Campaignly treat social media as part of advertising?",
+      heading: "Social media as part of advertising",
       paragraphs: [
         "Organic reach on most platforms is limited, so organic social rarely grows a business on its own. Its real value is different: it shows buyers who check you out that you are credible and active, it tests messages cheaply, and it supplies proof and creative that paid campaigns then scale.",
-        "That is why our social programmes sit beside paid media, not apart from it. We are not a posting service, and we do not sell follower growth as a goal.",
+        "That is why our social programmes are planned alongside paid media. We are not a posting service, and we do not sell follower growth as a goal.",
       ],
     },
     {
       kind: "scope",
-      heading: "What is included?",
+      heading: "What is included",
       included: [
         { item: "Channel strategy", detail: "Which platforms matter for your buyers, and what role each plays." },
         { item: "Content pillars", detail: "Topics tied to positioning, objections and proof." },
@@ -36,7 +36,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which platforms suit which businesses?",
+      heading: "Platforms by business type",
       caption: "Platform fit by business type",
       columns: ["Platform", "Strongest for"],
       rows: [
@@ -48,7 +48,7 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does the programme run?",
+      heading: "How the programme runs",
       steps: [
         { title: "Audit and positioning", text: "We review what you post, what competitors post and what your buyers respond to." },
         { title: "Content system", text: "Pillars, formats and a calendar that a small team can sustain." },

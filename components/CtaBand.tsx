@@ -1,18 +1,15 @@
 import { ButtonLink } from "@/components/Button";
 import { whatsappHref } from "@/lib/contact";
 
-/** Every page ends with one primary CTA (Apply) and one low-friction CTA (review, or WhatsApp when configured). */
+/** Every page ends with one primary CTA (Apply), plus WhatsApp when a number is configured. */
 export function CtaBand({
   heading = "Grow with a partner that shows you the numbers.",
   body = "Tell us where the business is today and where it needs to be. If we are the right fit, you get a written plan built on your own data.",
-  lowFriction = "review",
 }: {
   heading?: string;
   body?: string;
-  lowFriction?: "review" | "whatsapp";
 }) {
   const wa = whatsappHref();
-  const useWa = lowFriction === "whatsapp" && wa;
   return (
     <section aria-labelledby="cta-heading" className="border-t border-line bg-ink-raised">
       <div className="container-site grid gap-10 py-20 md:grid-cols-12 md:py-28">
@@ -28,15 +25,11 @@ export function CtaBand({
             <ButtonLink href="/apply/" ctaId="cta_band_apply">
               Apply to Partner
             </ButtonLink>
-            {useWa ? (
+            {wa ? (
               <ButtonLink href={wa} external variant="text" ctaId="cta_band_whatsapp">
                 Message us on WhatsApp
               </ButtonLink>
-            ) : (
-              <ButtonLink href="/free-ad-account-review/" variant="text" ctaId="cta_band_review">
-                Get a free ad account review
-              </ButtonLink>
-            )}
+            ) : null}
           </div>
         </div>
       </div>

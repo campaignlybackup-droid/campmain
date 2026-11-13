@@ -10,7 +10,7 @@ const content: DetailContent = {
   sections: [
     {
       kind: "prose",
-      heading: "Why do B2B marketing and sales disagree about leads?",
+      heading: "Agreeing what a lead is",
       paragraphs: [
         "Because they rarely agree what a lead is. Marketing counts form fills; sales counts people who are ready to talk about a budget. Campaigns optimised for the first produce a lot of the wrong thing.",
         "We start by writing down the qualification criteria with your sales team: company size, role, need and timing. Those criteria shape targeting, forms and follow-up, and they decide what we send back to the ad platforms as a conversion.",
@@ -18,7 +18,7 @@ const content: DetailContent = {
     },
     {
       kind: "table",
-      heading: "Which channels work for B2B lead generation?",
+      heading: "Channels for B2B lead generation",
       caption: "B2B acquisition channels",
       columns: ["Channel", "Strength", "Limitation"],
       rows: [
@@ -31,10 +31,10 @@ const content: DetailContent = {
     },
     {
       kind: "steps",
-      heading: "How does a B2B programme run?",
+      heading: "How the programme runs",
       steps: [
         { title: "Define the ideal customer", text: "Firmographics, roles and triggers agreed with sales." },
-        { title: "Build the offer", text: "A useful entry point such as an audit, benchmark or consultation, not a generic contact form." },
+        { title: "Build the offer", text: "A useful entry point such as an audit, benchmark or consultation. A generic contact form converts poorly here." },
         { title: "Launch search and LinkedIn", text: "Search for active demand, LinkedIn for the accounts you want to reach." },
         { title: "Qualify and route", text: "Automated qualification and routing to the right salesperson with context." },
         { title: "Close the loop", text: "CRM opportunity data imported to the ad platforms so they optimise for pipeline." },
