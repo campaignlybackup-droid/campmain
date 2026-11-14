@@ -9,7 +9,7 @@ export default function LocationsHub() {
     <HubTemplate
       path="/locations/"
       eyebrow="Markets"
-      intro="Campaignly runs growth programmes for businesses in India, the USA, Canada and the UAE. Each market has its own platforms, languages, regulations, currency and working hours, so each gets its own plan rather than a copy of another market's campaigns."
+      intro="Campaignly runs growth programmes for businesses in India, the USA, Canada and the UAE. Each market has its own platforms, languages, regulations, currency and working hours, and each gets a plan built for it from the ground up."
       listHeading="Four markets"
       items={markets.map((m) => ({
         href: m.href,

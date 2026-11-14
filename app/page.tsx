@@ -14,15 +14,15 @@ export const metadata = buildMetadata("/");
 
 /** Homepage copy is deliberately short; the detail lives on each service, industry and market page. */
 const principles: { icon: IconName; title: string; text: string }[] = [
-  { icon: "compass", title: "Strategy before spend", text: "Diagnosis first. Budget second." },
-  { icon: "layers", title: "One funnel, one team", text: "Ads, creative, pages and follow-up, run together." },
-  { icon: "eye", title: "Transparent by default", text: "Accounts and data stay in your name." },
+  { icon: "compass", title: "Strategy before spend", text: "We diagnose first. Budget follows the plan." },
+  { icon: "layers", title: "One funnel, one team", text: "Ads, creative, pages and follow-up, owned end to end." },
+  { icon: "eye", title: "Transparent by default", text: "Your accounts, your data, your numbers. Always." },
   { icon: "zap", title: "Built for speed", text: "Leads answered and qualified in minutes." },
 ];
 
 const fit = {
-  good: ["Accountable for revenue or pipeline", "An existing product, offer and budget", "Want a long-term partner"],
-  notYet: ["One-off boosted posts", "Choosing on the lowest fee", "No budget for testing"],
+  good: ["You own a revenue or pipeline number", "You have a proven product, offer and budget", "You want a partner for the long term"],
+  notYet: ["One-off boosted posts", "A search for the lowest fee", "No budget set aside for testing"],
 };
 
 const channels = [
@@ -119,7 +119,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="fade-up mt-8 max-w-xl text-lead text-mute" style={{ animationDelay: "120ms" }}>
-                Paid media, search, creative and automation, run as one system.
+                Paid media, search, creative and automation, engineered as one system and measured in revenue.
               </p>
               <div
                 className="fade-up mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4"
@@ -182,7 +182,7 @@ export default function HomePage() {
             </h2>
           </div>
           <p className="reveal text-lead text-mute lg:col-span-4 lg:col-start-9">
-            We compete on strategy, execution, transparency and technology. Never on price.
+            Advertising is where spend, data and revenue meet. We built the company around it, and we compete on the quality of the work. Never on price.
           </p>
         </div>
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -208,7 +208,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow reveal">Services</p>
             <h2 id="services-heading" className="reveal mt-6 max-w-2xl text-display-lg">
-              Nine services, <span className="text-gradient animate">one plan.</span>
+              Nine services. <span className="text-gradient animate">One plan.</span>
             </h2>
           </div>
           <ButtonLink href="/services/" variant="text">
@@ -295,7 +295,7 @@ export default function HomePage() {
               className="group panel-ink on-ink flex h-full flex-col justify-between rounded-[1.75rem] p-6 transition-transform duration-500 hover:-translate-y-1"
             >
               <span className="font-display text-2xl font-bold tracking-[-0.03em]">
-                <span className="text-gradient">Not sure where to start?</span>
+                <span className="text-gradient">Start with a diagnosis.</span>
               </span>
               <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-soft">
                 Apply to Partner
@@ -314,7 +314,7 @@ export default function HomePage() {
           <div aria-hidden="true" className="grid-fade" />
           <p className="eyebrow">The method</p>
           <h2 id="method-heading" className="mt-6 max-w-2xl text-display-lg">
-            <span className="text-gradient animate">How every engagement runs.</span>
+            <span className="text-gradient animate">Six stages. Always in this order.</span>
           </h2>
           <ol className="relative mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-6 lg:gap-6">
             <span aria-hidden="true" className="rail hidden lg:block" />
@@ -322,7 +322,7 @@ export default function HomePage() {
               <li key={m.step} className="relative">
                 <span
                   aria-hidden="true"
-                  className="relative z-10 grid size-10 place-items-center rounded-full border border-gold/50 bg-[#0e0d13] font-display text-sm font-bold text-gold-soft"
+                  className="relative z-10 grid size-10 place-items-center rounded-full border border-gold/50 bg-[#0a1626] font-display text-sm font-bold text-gold-soft"
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
@@ -340,7 +340,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow reveal">Industries</p>
             <h2 id="industries-heading" className="reveal mt-6 text-display-md">
-              Shaped around how each <span className="text-gradient animate">industry buys.</span>
+              Built around how <span className="text-gradient animate">your buyers decide.</span>
             </h2>
             <ul className="mt-8 flex flex-wrap gap-2.5">
               {industries.map((ind, i) => (
@@ -362,7 +362,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow reveal">Markets</p>
             <h2 id="markets-heading" className="reveal mt-6 text-display-md">
-              Four markets, <span className="text-gradient animate">local by design.</span>
+              Four markets. <span className="text-gradient animate">Local by design.</span>
             </h2>
             <ul className="mt-8 grid grid-cols-2 gap-3">
               {markets.map((m, i) => (
@@ -391,11 +391,11 @@ export default function HomePage() {
       {/* Fit */}
       <section aria-labelledby="fit-heading" className="container-site pb-8 md:pb-12">
         <h2 id="fit-heading" className="reveal text-display-md">
-          Who we work <span className="text-gradient animate">best with.</span>
+          Built for teams that <span className="text-gradient animate">own the number.</span>
         </h2>
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           <div className="card reveal p-7 md:p-9">
-            <h3 className="text-xl">A strong fit</h3>
+            <h3 className="text-xl">We are a strong fit when</h3>
             <ul className="mt-5 grid gap-3">
               {fit.good.map((f) => (
                 <li key={f} className="flex items-center gap-3">
@@ -408,7 +408,7 @@ export default function HomePage() {
             </ul>
           </div>
           <div className="reveal rounded-[1.75rem] border border-dashed border-line-strong p-7 md:p-9" style={{ ["--i" as string]: 1 }}>
-            <h3 className="text-xl">Not the right fit yet</h3>
+            <h3 className="text-xl">We are not the right fit for</h3>
             <ul className="mt-5 grid gap-3 text-mute">
               {fit.notYet.map((f) => (
                 <li key={f} className="flex items-center gap-3">

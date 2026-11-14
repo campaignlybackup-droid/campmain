@@ -112,7 +112,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
                 <div
                   id={panelId}
                   hidden={!expanded}
-                  className="absolute top-full -left-4 z-50 mt-4 w-80 rounded-2xl border border-line bg-paper p-2 shadow-[0_24px_60px_-20px_rgb(40_30_90/0.3)]"
+                  className="absolute top-full -left-4 z-50 mt-4 w-80 rounded-2xl border border-line bg-paper p-2 shadow-[0_24px_60px_-20px_rgb(13_27_46/0.3)]"
                 >
                   <ul>
                     {g.items.map((it) => (
@@ -167,7 +167,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
       <div
         id={`${baseId}-mobile`}
         hidden={!mobileOpen}
-        className="fixed inset-x-3 top-[5.25rem] bottom-3 z-40 overflow-y-auto rounded-3xl border border-line bg-paper shadow-[0_24px_60px_-20px_rgb(40_30_90/0.35)] lg:hidden"
+        className="fixed inset-x-3 top-[5.25rem] bottom-3 z-40 overflow-y-auto rounded-3xl border border-line bg-paper shadow-[0_24px_60px_-20px_rgb(13_27_46/0.35)] lg:hidden"
       >
         <nav aria-label="Main mobile" className="px-6 py-4">
           {groups.map((g) => (

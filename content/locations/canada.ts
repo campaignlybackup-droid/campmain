@@ -6,7 +6,7 @@ const content: DetailContent = {
   eyebrow: "Canada",
   question: "What should Canadian businesses expect from a performance marketing partner?",
   answer:
-    "Canadian businesses need a partner that plans for smaller audience pools than the US, English and French campaigns where Quebec matters, and follow-up that complies with Canada's Anti-Spam Legislation. Campaignly runs Google, Meta and LinkedIn programmes for Canadian companies, invoiced in CAD, with live calls scheduled in the Canadian morning.",
+    "Canadian businesses need a partner that plans for smaller audience pools than the US, runs English and French campaigns where Quebec matters, and builds follow-up that complies with Canada's Anti-Spam Legislation. Campaignly runs Google, Meta and LinkedIn programmes for Canadian companies, invoiced in CAD, with live calls in the Canadian morning.",
   sections: [
     {
       kind: "table",
@@ -24,7 +24,7 @@ const content: DetailContent = {
       kind: "list",
       heading: "The Canadian market",
       items: [
-        "Audiences are smaller and more concentrated than in the US, so campaigns reach saturation faster and creative needs refreshing sooner.",
+        "Audiences are smaller and more concentrated than in the US, so campaigns saturate faster and creative is refreshed sooner.",
         "Quebec's Charter of the French Language requires commercial advertising aimed at Quebec to be available in French, so bilingual creative and landing pages are planned from the start.",
         "Canada's Anti-Spam Legislation (CASL) requires consent before sending commercial electronic messages, including email and text messages, and every message must identify the sender and offer an unsubscribe.",
         "Meta's Special Ad Categories apply to housing, employment and financial services ads in Canada, restricting targeting.",
@@ -77,7 +77,7 @@ const content: DetailContent = {
     },
     {
       q: "Is Canada treated as part of a US campaign?",
-      a: "No. Canadian campaigns get their own budgets, language, creative and compliance, because audience size, regulation and buyer behaviour differ.",
+      a: "No. Canadian campaigns get their own budgets, language, creative and compliance, because audience size, regulation and buyer behaviour are distinct.",
     },
   ],
 };

@@ -6,13 +6,13 @@ const content: DetailContent = {
   eyebrow: "Ecommerce growth",
   question: "What does an ecommerce growth agency do beyond running ads?",
   answer:
-    "An ecommerce growth agency improves the economics behind the ad account: conversion rate, average order value, repeat purchase and margin per order. Campaignly audits your store and funnel, fixes what loses buyers between click and checkout, builds retention through email and WhatsApp, and ties every change to contribution margin, so more ad spend produces more profit.",
+    "An ecommerce growth agency strengthens the economics behind the ad account: conversion rate, average order value, repeat purchase and margin per order. Campaignly audits your store and funnel, fixes every leak between click and checkout, builds retention through email and WhatsApp, and ties each change to contribution margin. More spend then means more profit.",
   service: { name: "Ecommerce growth and conversion optimisation", serviceType: "Ecommerce conversion and retention marketing" },
   sections: [
     {
       kind: "table",
       heading: "The levers that move ecommerce revenue",
-      intro: "Revenue is traffic multiplied by conversion rate and average order value, then repeated. Ads only control the first.",
+      intro: "Revenue is traffic multiplied by conversion rate and average order value, then repeated. Ads control only the first. We work all four.",
       caption: "Ecommerce growth levers",
       columns: ["Lever", "What we work on", "Measured by"],
       rows: [
@@ -26,18 +26,18 @@ const content: DetailContent = {
       kind: "steps",
       heading: "How the programme runs",
       steps: [
-        { title: "Funnel and data audit", text: "We trace where buyers drop between landing, product page, cart and checkout, and check tracking accuracy." },
-        { title: "Prioritise by impact", text: "Fixes are ranked by expected revenue effect and effort, so the first month pays for itself where possible." },
-        { title: "Fix the store", text: "Page speed, product page content, checkout steps and payment methods are improved in order." },
-        { title: "Test offers and bundles", text: "Order value experiments run with clear success criteria and enough traffic to read them." },
+        { title: "Funnel and data audit", text: "We trace exactly where buyers drop between landing, product page, cart and checkout, and verify every number we rely on." },
+        { title: "Prioritise by impact", text: "Fixes are ranked by revenue impact and effort, so the earliest work carries the biggest return." },
+        { title: "Fix the store", text: "Page speed, product content, checkout steps and payment methods, improved in order of impact." },
+        { title: "Test offers and bundles", text: "Order value experiments run with clear success criteria and enough traffic to read them with confidence." },
         { title: "Build retention flows", text: "Welcome, abandoned cart, post-purchase and win-back flows by email and WhatsApp." },
-        { title: "Scale acquisition", text: "With better conversion and retention, paid budgets can rise at the same or better efficiency." },
+        { title: "Scale acquisition", text: "With stronger conversion and retention, paid budgets rise at the same or better efficiency." },
       ],
     },
     {
       kind: "list",
       heading: "Selling online in India",
-      intro: "Indian ecommerce has operational issues that other markets do not, and they belong in the growth plan.",
+      intro: "Indian ecommerce carries operational realities other markets do not. We build them into the growth plan from day one.",
       items: [
         "Cash on delivery: confirming orders by WhatsApp before dispatch and nudging prepaid payment to reduce returned shipments.",
         "Return to origin (RTO): tracking undelivered orders by pin code and channel so ad spend avoids loss-making areas.",
@@ -77,19 +77,19 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Do you work only with Shopify stores?",
-      a: "No. Shopify is the most common platform we see, but the same work applies to WooCommerce and custom stores. Platform-specific changes are scoped after the audit.",
+      a: "No. Shopify is the most common platform we work on, and the same discipline applies to WooCommerce and custom stores. Platform-specific changes are scoped after the audit.",
     },
     {
       q: "What is a good ecommerce conversion rate?",
-      a: "It depends on category, price, device and traffic source, so a single benchmark is misleading. We compare your rate against your own history by channel and device, then set targets for each.",
+      a: "It depends on category, price, device and traffic source, so any single benchmark misleads. We measure your rate against your own history by channel and device, then set a target for each.",
     },
     {
       q: "Can you reduce cash-on-delivery returns?",
-      a: "We can reduce them. No one can remove them entirely. Order confirmation by WhatsApp, prepaid incentives and excluding high-RTO areas from ad targeting are the usual levers.",
+      a: "Yes, we reduce them. No one can remove them entirely. WhatsApp order confirmation, prepaid incentives and excluding high-RTO areas from ad targeting are the levers that work.",
     },
     {
       q: "Do you run A/B tests on our store?",
-      a: "Yes, where traffic is high enough to reach a reliable result in a reasonable time. Where it is not, we make changes based on evidence and monitor before-and-after performance.",
+      a: "Yes, wherever traffic can reach a reliable result in a reasonable time. Where it cannot, we make evidence-based changes and track before-and-after performance closely.",
     },
     {
       q: "Is this the same as your D2C industry service?",

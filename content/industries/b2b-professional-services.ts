@@ -6,14 +6,14 @@ const content: DetailContent = {
   eyebrow: "B2B and professional services",
   question: "What does a B2B lead generation agency do?",
   answer:
-    "A B2B lead generation agency builds a predictable flow of qualified sales conversations for companies selling to other businesses. Campaignly combines Google search, LinkedIn advertising, content and automated follow-up, agrees the definition of a qualified lead with your sales team, and reports on meetings, opportunities and pipeline value rather than form fills.",
+    "A B2B lead generation agency builds a predictable flow of qualified sales conversations for companies that sell to other businesses. Campaignly combines Google search, LinkedIn advertising, content and automated follow-up, agrees the definition of a qualified lead with your sales team, and reports on meetings, opportunities and pipeline value. Form fills are only the first signal.",
   sections: [
     {
       kind: "prose",
       heading: "Agreeing what a lead is",
       paragraphs: [
-        "Because they rarely agree what a lead is. Marketing counts form fills; sales counts people who are ready to talk about a budget. Campaigns optimised for the first produce a lot of the wrong thing.",
-        "We start by writing down the qualification criteria with your sales team: company size, role, need and timing. Those criteria shape targeting, forms and follow-up, and they decide what we send back to the ad platforms as a conversion.",
+        "Because they rarely agree on what a lead is. Marketing counts form fills; sales counts people ready to discuss a budget. Campaigns optimised for the first deliver plenty of the wrong thing.",
+        "We fix that on day one by writing down the qualification criteria with your sales team: company size, role, need and timing. Those criteria drive targeting, forms and follow-up, and decide exactly what counts as a conversion in the ad platforms.",
       ],
     },
     {
@@ -33,10 +33,10 @@ const content: DetailContent = {
       kind: "steps",
       heading: "How the programme runs",
       steps: [
-        { title: "Define the ideal customer", text: "Firmographics, roles and triggers agreed with sales." },
-        { title: "Build the offer", text: "A useful entry point such as an audit, benchmark or consultation. A generic contact form converts poorly here." },
+        { title: "Define the ideal customer", text: "Firmographics, roles and buying triggers, agreed with sales." },
+        { title: "Build the offer", text: "A valuable entry point such as an audit, benchmark or consultation. Generic contact forms underperform in B2B." },
         { title: "Launch search and LinkedIn", text: "Search for active demand, LinkedIn for the accounts you want to reach." },
-        { title: "Qualify and route", text: "Automated qualification and routing to the right salesperson with context." },
+        { title: "Qualify and route", text: "Automated qualification and routing to the right salesperson, with full context." },
         { title: "Close the loop", text: "CRM opportunity data imported to the ad platforms so they optimise for pipeline." },
       ],
     },
@@ -63,7 +63,7 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Is LinkedIn advertising worth it for B2B?",
-      a: "When your deal value can absorb its higher cost per click and the audience is defined by job title or company. For low-value services, Google Search and Meta are often more efficient.",
+      a: "When your deal value can absorb its higher cost per click and your audience is defined by job title or company. For lower-value services, Google Search and Meta usually deliver more efficiently.",
     },
     {
       q: "What counts as a qualified B2B lead?",
@@ -71,7 +71,7 @@ const content: DetailContent = {
     },
     {
       q: "How long is the typical B2B lead-to-customer cycle?",
-      a: "It varies widely by deal size, from days for small services to many months for enterprise contracts. We measure leading indicators such as meetings and opportunities so progress is visible before deals close.",
+      a: "It ranges from days for smaller services to many months for enterprise contracts. We track leading indicators such as meetings and opportunities, so progress is visible long before deals close.",
     },
     {
       q: "Do you do cold outreach?",

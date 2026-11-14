@@ -58,7 +58,7 @@ export function Footer() {
         <div className="lg:col-span-4">
           <Wordmark size="footer" />
           <p className="mt-5 max-w-sm text-mute">
-            Advertising-first growth partner for India, the USA, Canada and the UAE.
+            The advertising-first growth partner for ambitious businesses in India, the USA, Canada and the UAE.
           </p>
                     {(c.email || tel || wa || c.address) && (
             <address className="mt-8 grid gap-2 text-[0.95rem] not-italic text-mute">

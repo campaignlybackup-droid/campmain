@@ -11,7 +11,7 @@ export function IntroOrnament() {
     >
       <div className="stage-enter">
         <div className="[transform:rotateX(calc(10deg+var(--px)))_rotateY(calc(-22deg+var(--py)))] [transform-style:preserve-3d] transition-transform duration-700">
-          <div className="float-a relative mx-auto grid size-56 place-items-center rounded-[3rem] bg-ink shadow-[0_50px_80px_-30px_rgb(20_18_28/0.6),inset_0_1px_0_rgb(255_255_255/0.15)]">
+          <div className="float-a relative mx-auto grid size-56 place-items-center rounded-[3rem] bg-ink shadow-[0_50px_80px_-30px_rgb(13_27_46/0.6),inset_0_1px_0_rgb(255_255_255/0.15)]">
             <div className="absolute inset-0 rounded-[3rem] bg-[radial-gradient(circle_at_30%_20%,rgb(255_255_255/0.14),transparent_55%)]" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={siteConfig.logo} alt="" width={121} height={108} className="w-28 [transform:translateZ(40px)]" />
@@ -32,8 +32,8 @@ export function IntroOrnament() {
               />
               <defs>
                 <linearGradient id="io-g" x1="0" x2="1">
-                  <stop offset="0%" stopColor="#14121c" />
-                  <stop offset="100%" stopColor="#c9a84c" />
+                  <stop offset="0%" stopColor="#0d1b2e" />
+                  <stop offset="100%" stopColor="#c9a24a" />
                 </linearGradient>
               </defs>
             </svg>

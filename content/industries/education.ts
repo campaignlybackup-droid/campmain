@@ -6,14 +6,14 @@ const content: DetailContent = {
   eyebrow: "Education",
   question: "How does student admission lead generation work?",
   answer:
-    "Student admission lead generation uses search, social ads, landing pages and fast follow-up to turn prospective students into applications and enrolments. Campaignly runs campaigns for universities, colleges and edtech providers around each intake, qualifies enquiries automatically on WhatsApp, and measures cost per application and per admission instead of cost per lead.",
+    "Student admission lead generation uses search, social ads, landing pages and fast follow-up to turn prospective students into applications and enrolments. Campaignly runs campaigns for universities, colleges and edtech providers around every intake, qualifies enquiries automatically on WhatsApp, and measures cost per application and per admission. Cost per lead is only the starting point.",
   sections: [
     {
       kind: "prose",
       heading: "Cost per admission over cost per lead",
       paragraphs: [
-        "Cheap leads are easy to buy. A form that asks for a phone number in exchange for a brochure will fill fast, and most of those enquiries will never apply. Counsellors then spend their time calling people who were never going to enrol.",
-        "We optimise for the stages that matter: verified enquiry, counselling call, application, admission. When those outcomes are sent back to Meta and Google, the platforms learn to find more students like the ones who enrolled.",
+        "Cheap leads are easy to buy. A form that trades a brochure for a phone number fills fast, and most of those enquiries never apply. Your counsellors then spend their days calling people who were never going to enrol.",
+        "We optimise for the stages that count: verified enquiry, counselling call, application, admission. Those outcomes flow back to Meta and Google, and the platforms learn to find more students like the ones who enrolled.",
       ],
     },
     {
@@ -33,8 +33,8 @@ const content: DetailContent = {
       kind: "steps",
       heading: "How an admission campaign runs",
       steps: [
-        { title: "Map the intake calendar", text: "Campaigns are planned backwards from application deadlines and results dates." },
-        { title: "Build programme pages", text: "Each course gets a page that answers fees, eligibility, outcomes and next steps." },
+        { title: "Map the intake calendar", text: "Every campaign is planned backwards from application deadlines and results dates." },
+        { title: "Build programme pages", text: "Each course gets a page that answers fees, eligibility, outcomes and next steps with total clarity." },
         { title: "Launch search and social", text: "Google captures students searching for courses; Meta and YouTube reach those still deciding." },
         { title: "Qualify on WhatsApp", text: "Automated flows confirm course, eligibility and intake, then hand over to counsellors." },
         { title: "Feed back outcomes", text: "Applications and admissions are sent to ad platforms so bidding favours real students." },
@@ -46,7 +46,7 @@ const content: DetailContent = {
       items: [
         "Claims about placements, rankings and salaries must be accurate and supportable; regulators and platforms treat misleading education claims seriously.",
         "Parents are often decision-makers, so creative and follow-up need to speak to them as well as to students.",
-        "Peak season brings lead spikes; response time falls apart unless follow-up is automated.",
+        "Peak season brings lead spikes, and response times collapse unless follow-up is automated.",
         "Study-abroad and international programmes need campaigns timed to other countries' academic calendars.",
       ],
     },
@@ -76,11 +76,11 @@ const content: DetailContent = {
     },
     {
       q: "When should admission campaigns start?",
-      a: "Well before the application deadline. Search demand and decision-making start months earlier than most institutions advertise, so we plan backwards from each intake.",
+      a: "Well before the application deadline. Search demand and decision-making begin months earlier than most institutions advertise, so we plan backwards from every intake.",
     },
     {
       q: "How do you improve lead quality for admissions?",
-      a: "Better forms with qualifying questions, course-specific landing pages, instant WhatsApp qualification, and sending application and admission data back to the ad platforms.",
+      a: "Sharper forms with qualifying questions, course-specific landing pages, instant WhatsApp qualification, and application and admission data sent back to the ad platforms.",
     },
     {
       q: "Can you integrate with our admissions CRM?",

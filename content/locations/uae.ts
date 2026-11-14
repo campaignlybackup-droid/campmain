@@ -6,7 +6,7 @@ const content: DetailContent = {
   eyebrow: "UAE",
   question: "How does performance marketing work for UAE businesses?",
   answer:
-    "Performance marketing in the UAE means reaching a multinational, bilingual population across Google, Meta, Snapchat and TikTok, often in both Arabic and English, while following local advertising permits and data rules. Campaignly runs these programmes for UAE businesses, invoiced in AED, in a time zone only 90 minutes behind India for same-day collaboration.",
+    "Performance marketing in the UAE means reaching a multinational, bilingual population across Google, Meta, Snapchat and TikTok, often in Arabic and English at once, while honouring local advertising permits and data rules. Campaignly runs these programmes for UAE businesses, invoiced in AED, from a time zone just 90 minutes away for same-day collaboration.",
   sections: [
     {
       kind: "table",
@@ -25,10 +25,10 @@ const content: DetailContent = {
       heading: "The UAE market",
       items: [
         "The population is highly international, so audiences are segmented by language and nationality as well as location.",
-        "Arabic and English creative serve different audiences; Arabic ads are written in Arabic from the brief.",
-        "Snapchat and TikTok matter more here than in many markets, alongside Google and Meta.",
+        "Arabic and English creative serve different audiences. Arabic ads are written in Arabic from the brief, never translated after the fact.",
+        "Snapchat and TikTok carry more weight here than in most markets, alongside Google and Meta.",
         "Real estate and hospitality are major advertising categories with their own permit rules.",
-        "Ramadan and the Eid holidays change media consumption and buying patterns, so campaigns are planned around them.",
+        "Ramadan and the Eid holidays reshape media consumption and buying patterns, and every campaign is planned around them.",
       ],
     },
     {

@@ -10,27 +10,27 @@ export const services = [
   {
     href: "/services/meta-ads/",
     label: "Meta ads",
-    summary: "Facebook and Instagram campaigns run against qualified leads and revenue.",
+    summary: "Facebook and Instagram campaigns engineered for qualified leads and revenue.",
   },
   {
     href: "/services/google-ads/",
     label: "Google Ads",
-    summary: "Search, Performance Max, Shopping and YouTube, structured around intent.",
+    summary: "Search, Performance Max, Shopping and YouTube, built to capture intent.",
   },
   {
     href: "/services/seo/",
     label: "SEO and AI search",
-    summary: "Technical SEO and content built to be found in Google and in AI answers.",
+    summary: "Technical SEO and content that earns visibility in Google and AI answers.",
   },
   {
     href: "/services/ad-creative/",
     label: "Video and ad creative",
-    summary: "Video, UGC and static ads produced in variants so they can be tested.",
+    summary: "Video, UGC and static ads produced in variants, ready to test.",
   },
   {
     href: "/services/ecommerce-growth/",
     label: "Ecommerce growth",
-    summary: "Conversion rate, order value and repeat purchase, joined to acquisition.",
+    summary: "Conversion rate, order value and repeat purchase, run alongside acquisition.",
   },
   {
     href: "/services/ai-automation/",
@@ -40,12 +40,12 @@ export const services = [
   {
     href: "/services/social-media/",
     label: "Social media growth",
-    summary: "Organic social planned around positioning and commercial goals.",
+    summary: "Organic social that builds the brand your ads depend on.",
   },
   {
     href: "/services/landing-pages/",
     label: "Landing pages and web",
-    summary: "Fast, message-matched pages and sites built to convert paid traffic.",
+    summary: "Fast, message-matched pages that turn paid clicks into customers.",
   },
   {
     href: "/services/brand-strategy/",
@@ -68,17 +68,17 @@ export const industries = [
   {
     href: "/industries/healthcare/",
     label: "Healthcare",
-    summary: "Patient acquisition within platform policy and local rules.",
+    summary: "Patient acquisition that respects platform policy and local regulation.",
   },
   {
     href: "/industries/real-estate/",
     label: "Real estate",
-    summary: "Campaigns built for site visits and bookings, in India and the UAE.",
+    summary: "Campaigns built for site visits and bookings in India and the UAE.",
   },
   {
     href: "/industries/b2b-professional-services/",
     label: "B2B and professional services",
-    summary: "Pipeline that sales teams accept, from search, LinkedIn and content.",
+    summary: "Pipeline your sales team accepts, from search, LinkedIn and content.",
   },
   {
     href: "/industries/saas/",
@@ -88,7 +88,7 @@ export const industries = [
   {
     href: "/industries/hospitality/",
     label: "Hospitality",
-    summary: "Direct bookings that reduce dependence on online travel agents.",
+    summary: "Direct bookings that cut your dependence on online travel agents.",
   },
 ] as const satisfies readonly CatalogItem[];
 
@@ -132,19 +132,19 @@ export const markets = [
 export const method = [
   {
     step: "Diagnose",
-    text: "Audit the accounts, tracking, funnel and unit economics before touching spend.",
+    text: "Audit accounts, tracking, funnel and unit economics before a rupee or dollar moves.",
   },
   {
     step: "Position",
-    text: "Decide what you say, to whom, and why it should win against the alternatives.",
+    text: "Define what you say, to whom, and why it wins against the alternatives.",
   },
   {
     step: "Acquire",
-    text: "Run paid media and search against the customers worth acquiring.",
+    text: "Put paid media and search behind the customers worth acquiring.",
   },
   {
     step: "Convert",
-    text: "Fix the pages, offers and follow-up that turn attention into revenue.",
+    text: "Sharpen the pages, offers and follow-up that turn attention into revenue.",
   },
   {
     step: "Retain",
@@ -152,6 +152,6 @@ export const method = [
   },
   {
     step: "Scale",
-    text: "Increase budget only where the numbers hold, market by market.",
+    text: "Raise budget only where the numbers hold, market by market.",
   },
 ] as const;

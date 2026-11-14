@@ -128,7 +128,7 @@ export function LeadForm({
 
   const errorList = fields.filter((f) => errors[f.name]);
   const inputCls =
-    "mt-2 block w-full rounded-xl border border-line-strong bg-paper px-4 py-3 text-ink transition-shadow placeholder:text-mute/70 focus:border-gold focus:shadow-[0_0_0_4px_rgb(201_168_76/0.18)] focus:outline-none aria-[invalid=true]:border-red-text";
+    "mt-2 block w-full rounded-xl border border-line-strong bg-paper px-4 py-3 text-ink transition-shadow placeholder:text-mute/70 focus:border-gold focus:shadow-[0_0_0_4px_rgb(201_162_74/0.18)] focus:outline-none aria-[invalid=true]:border-red-text";
 
   return (
     <form noValidate onSubmit={onSubmit} aria-describedby={`${uid}-req`} className="grid gap-7">

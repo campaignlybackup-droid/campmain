@@ -32,7 +32,7 @@ export function PageIntro({
         </h1>
         <div className="mt-12 grid gap-10 md:mt-14 md:grid-cols-12">
           <div
-            className="fade-up rounded-3xl border border-white/80 bg-white/70 p-6 shadow-[0_20px_50px_-30px_rgb(40_30_90/0.35)] backdrop-blur md:col-span-9 md:p-8 lg:col-span-8"
+            className="fade-up rounded-3xl border border-white/80 bg-white/70 p-6 shadow-[0_20px_50px_-30px_rgb(13_27_46/0.35)] backdrop-blur md:col-span-9 md:p-8 lg:col-span-8"
             style={{ animationDelay: "150ms" }}
           >
             <p className="text-lead">{answer}</p>

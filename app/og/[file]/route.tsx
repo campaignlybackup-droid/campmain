@@ -32,7 +32,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ file: s
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#030303",
+          background: "linear-gradient(135deg, #0a1626 0%, #0d1b2e 60%, #1a2a40 100%)",
           color: "#ffffff",
           padding: "72px 80px",
           fontFamily: "Inter",
@@ -40,14 +40,14 @@ export async function GET(_req: Request, { params }: { params: Promise<{ file: s
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", fontFamily: "Fraunces", fontSize: 40 }}>
-            Campaignly<span style={{ color: "#C9A84C" }}>.</span>
+            Campaignly<span style={{ color: "#C9A24A" }}>.</span>
           </div>
-          <div style={{ display: "flex", fontSize: 22, letterSpacing: 4, color: "#C9A84C", textTransform: "uppercase" }}>{eyebrow}</div>
+          <div style={{ display: "flex", fontSize: 22, letterSpacing: 4, color: "#C9A24A", textTransform: "uppercase" }}>{eyebrow}</div>
         </div>
         <div style={{ display: "flex", fontFamily: "Fraunces", fontSize: size, lineHeight: 1.08, maxWidth: 1000 }}>{heading}</div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 24, color: "#a3a3a3" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 24, color: "#a9b6c8" }}>
           <div style={{ display: "flex" }}>Outperform. Outshine. Outwin.</div>
-          <div style={{ display: "flex", width: 120, height: 2, background: "#C9A84C" }} />
+          <div style={{ display: "flex", width: 120, height: 2, background: "#C9A24A" }} />
         </div>
       </div>
     ),

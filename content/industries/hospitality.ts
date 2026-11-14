@@ -6,14 +6,14 @@ const content: DetailContent = {
   eyebrow: "Hospitality",
   question: "How does hotel digital marketing increase direct bookings?",
   answer:
-    "Hotel digital marketing increases direct bookings by reaching travellers before they settle on an online travel agent, then making booking on your own website easier and better value. Campaignly runs Google Search and hotel campaigns, social video for discovery, and retargeting, and improves the booking path, measuring direct revenue and the share of bookings you keep.",
+    "Hotel digital marketing grows direct bookings by reaching travellers before they settle on an online travel agent, then making your own website the easier, better-value way to book. Campaignly runs Google Search and hotel campaigns, social video for discovery and retargeting, and sharpens the booking path. We measure direct revenue and the share of bookings you keep.",
   sections: [
     {
       kind: "prose",
       heading: "The case for direct bookings",
       paragraphs: [
-        "Online travel agents bring reach, but they charge commission on every booking and keep much of the guest relationship. Every booking moved to your own website keeps more revenue and gives you the guest's details for future stays.",
-        "The goal is not to abandon travel agents. It is to win the guests who would happily book direct if your website, rates and follow-up made it easy.",
+        "Online travel agents bring reach, and they charge commission on every booking while keeping much of the guest relationship. Every booking won on your own website keeps more revenue and gives you the guest's details for every future stay.",
+        "Travel agents keep their place in the mix. Our job is to win every guest who would happily book direct once your website, rates and follow-up make it the obvious choice.",
       ],
     },
     {
@@ -35,7 +35,7 @@ const content: DetailContent = {
       steps: [
         { title: "Audit the booking path", text: "Speed, rate display, booking engine steps and mobile experience." },
         { title: "Protect the brand search", text: "Brand campaigns and Google hotel listings so searches for you lead to you." },
-        { title: "Build reasons to book direct", text: "Perks and flexible terms that are only available on your own site." },
+        { title: "Build reasons to book direct", text: "Perks and flexible terms available only on your own site." },
         { title: "Run discovery and retargeting", text: "Video and social for travellers still choosing, retargeting for those comparing rates." },
         { title: "Bring guests back", text: "Past-guest campaigns by email and WhatsApp with consent." },
       ],
@@ -62,11 +62,11 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Can a hotel reduce its dependence on online travel agents?",
-      a: "Yes, gradually. Protecting brand searches, showing a direct rate in Google, offering direct-only perks and re-marketing to past guests all shift share toward direct bookings.",
+      a: "Yes, steadily. Protecting brand searches, showing a direct rate in Google, offering direct-only perks and re-marketing to past guests all shift share toward direct bookings.",
     },
     {
       q: "Should hotels bid on their own brand name?",
-      a: "Usually yes. Other advertisers, including intermediaries, may appear on your brand searches; a brand campaign keeps the top result pointing to your own website.",
+      a: "Usually yes. Other advertisers, including intermediaries, can appear on your brand searches. A brand campaign keeps the top result pointing to your own website.",
     },
     {
       q: "Do you work with restaurants?",

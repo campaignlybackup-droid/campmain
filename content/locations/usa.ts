@@ -6,7 +6,7 @@ const content: DetailContent = {
   eyebrow: "USA",
   question: "How does Campaignly work with US businesses?",
   answer:
-    "Campaignly works with US companies as a remote, senior paid media and growth team. We run Google, Meta, LinkedIn and Microsoft Ads inside your own accounts, invoice in USD, schedule calls in your morning to use the time zone overlap, and plan campaigns around US privacy laws and ad platform rules for regulated categories.",
+    "Campaignly works with US companies as a remote, senior paid media and growth team. We run Google, Meta, LinkedIn and Microsoft Ads inside your own accounts, invoice in USD, meet in your morning to make the most of the time zone overlap, and build every campaign around US privacy laws and ad platform rules for regulated categories.",
   sections: [
     {
       kind: "table",
@@ -26,8 +26,8 @@ const content: DetailContent = {
       kind: "prose",
       heading: "Working with a team outside the US",
       paragraphs: [
-        "Not to save money on quality. US companies work with us for senior attention, transparent reporting and a team that runs paid media, creative, pages and automation as one system, without the layers of account management common in larger agencies.",
-        "The time difference becomes an advantage when it is planned: launches and changes can be prepared while your team sleeps, and decisions are made together in your morning.",
+        "For the quality, first. US companies choose us for senior attention, transparent reporting and one team that runs paid media, creative, pages and automation as a single system, without the layers of account management common in larger agencies.",
+        "Planned well, the time difference is an advantage. Launches and changes are prepared while your team sleeps, and decisions are made together in your morning.",
       ],
     },
     {

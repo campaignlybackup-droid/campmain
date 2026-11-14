@@ -25,8 +25,8 @@ export default function ApplyPage() {
         <p className="eyebrow">Apply to Partner</p>
         <h1 className="rise mt-6 max-w-4xl text-display-xl"><span className="text-gradient animate">{getPage("/apply/").h1}</span></h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">
-          Campaignly works with a limited number of businesses at a time so each one gets senior attention. This form
-          takes about three minutes and tells us enough to decide whether we can help.
+          Campaignly partners with a limited number of businesses at a time, so every one gets senior attention. This
+          form takes about three minutes and tells us enough to judge whether we can make a real difference.
           {hours ? ` We reply to every application within ${hours} hours.` : ""}
         </p>
       </section>

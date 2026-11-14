@@ -6,12 +6,12 @@ const content: DetailContent = {
   eyebrow: "Real estate",
   question: "How does real estate lead generation work for developers?",
   answer:
-    "Real estate lead generation for developers combines Meta and Google campaigns, project landing pages and fast qualification to turn interest into site visits and bookings. Campaignly runs project campaigns in India and the UAE, including NRI audiences, qualifies buyers on WhatsApp by budget, configuration and timeline, and reports cost per site visit and per booking.",
+    "Real estate lead generation for developers combines Meta and Google campaigns, project landing pages and fast qualification to turn interest into site visits and bookings. Campaignly runs project campaigns across India and the UAE, including NRI audiences, qualifies every buyer on WhatsApp by budget, configuration and timeline, and reports cost per site visit and per booking.",
   sections: [
     {
       kind: "table",
       heading: "Property advertising rules",
-      intro: "Real estate ads are regulated in each of our markets. Campaigns are built to comply from the first draft.",
+      intro: "Real estate advertising is regulated in every market we serve. Our campaigns comply from the very first draft.",
       caption: "Property advertising rules by market",
       columns: ["Market", "Rule", "What it means"],
       rows: [
@@ -27,19 +27,19 @@ const content: DetailContent = {
       steps: [
         { title: "Understand the project", text: "Configurations, price bands, location advantages, possession timeline and the buyer each unit suits." },
         { title: "Build the project page", text: "Floor plans, pricing approach, location, approvals and a clear site-visit offer." },
-        { title: "Launch Meta and Google", text: "Meta builds interest among likely buyers; Google captures people searching by location and configuration." },
-        { title: "Qualify on WhatsApp", text: "Budget, configuration, timeline and financing questions answered before the sales call." },
-        { title: "Book site visits", text: "Qualified buyers are offered visit slots, with reminders to reduce no-shows." },
+        { title: "Launch Meta and Google", text: "Meta builds desire among likely buyers; Google captures people searching by location and configuration." },
+        { title: "Qualify on WhatsApp", text: "Budget, configuration, timeline and financing settled before your sales team picks up the phone." },
+        { title: "Book site visits", text: "Qualified buyers choose a visit slot, with reminders that cut no-shows." },
         { title: "Report on bookings", text: "Cost per qualified lead, per site visit and per booking, by campaign." },
       ],
     },
     {
       kind: "list",
       heading: "Reaching NRI buyers",
-      intro: "Non-resident Indians in the UAE, USA, Canada and elsewhere are a significant audience for Indian projects.",
+      intro: "Non-resident Indians in the UAE, USA, Canada and beyond are a major audience for Indian projects, and they buy differently.",
       items: [
         "Target by country and language, with creative that addresses remote buying: virtual tours, documentation and payment process.",
-        "Follow up in the buyer's time zone; automation answers instantly and books calls at times that suit them.",
+        "Follow up in the buyer's time zone. Automation answers instantly and books calls at hours that suit them.",
         "Offer video walkthroughs and live video site visits as an alternative to physical visits.",
         "Make the RERA registration and approvals easy to verify, since remote buyers need more trust signals.",
       ],
@@ -66,7 +66,7 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Are Meta ads good for real estate leads in India?",
-      a: "Meta is a high-volume source of residential leads in India, but quality varies widely. Results depend on qualifying questions in forms, fast WhatsApp follow-up and sending site-visit outcomes back to Meta.",
+      a: "Yes. Meta is a high-volume source of residential leads in India, and quality is what separates winners. It comes from qualifying questions in forms, fast WhatsApp follow-up and site-visit outcomes sent back to Meta.",
     },
     {
       q: "Do real estate ads in India need the RERA number?",
@@ -74,11 +74,11 @@ const content: DetailContent = {
     },
     {
       q: "Do you work with brokers or only developers?",
-      a: "Both, but developers with a defined project, inventory and sales team are the best fit for full campaigns.",
+      a: "Both. Developers with a defined project, inventory and sales team get the most from full campaigns.",
     },
     {
       q: "How do you measure real estate campaign success?",
-      a: "Cost per qualified lead, cost per site visit and cost per booking. Raw lead counts and cost per lead are tracked but are not the goal.",
+      a: "Cost per qualified lead, cost per site visit and cost per booking. Raw lead counts are tracked, and they never define success.",
     },
     {
       q: "Can you run campaigns for Dubai property?",

@@ -47,12 +47,12 @@ export function HeroStage() {
                 <svg viewBox="0 0 400 170" preserveAspectRatio="none" className="mt-3 h-full w-full flex-1">
                   <defs>
                     <linearGradient id="hs-area" x1="0" x2="0" y1="0" y2="1">
-                      <stop offset="0%" stopColor="#c9a84c" stopOpacity="0.35" />
-                      <stop offset="100%" stopColor="#c9a84c" stopOpacity="0" />
+                      <stop offset="0%" stopColor="#c9a24a" stopOpacity="0.35" />
+                      <stop offset="100%" stopColor="#c9a24a" stopOpacity="0" />
                     </linearGradient>
                     <linearGradient id="hs-line" x1="0" x2="1">
-                      <stop offset="0%" stopColor="#14121c" />
-                      <stop offset="100%" stopColor="#c9a84c" />
+                      <stop offset="0%" stopColor="#0d1b2e" />
+                      <stop offset="100%" stopColor="#c9a24a" />
                     </linearGradient>
                   </defs>
                   {[40, 80, 120].map((y) => (
@@ -78,15 +78,15 @@ export function HeroStage() {
                     strokeWidth="2"
                     strokeDasharray="5 6"
                   />
-                  <circle cx="400" cy="16" r="5" fill="#c9a84c" />
+                  <circle cx="400" cy="16" r="5" fill="#c9a24a" />
                 </svg>
               </div>
               {/* Channel mix */}
               <div className="col-span-4 hidden flex-col gap-3 rounded-2xl border border-line/70 bg-white p-4 sm:flex md:p-5">
                 <span className="text-[0.7rem] font-semibold tracking-wide text-mute uppercase">Channel mix</span>
                 {[
-                  ["Meta ads", "w-[82%]", "from-[#14121c] to-[#e9a46a]"],
-                  ["Google Ads", "w-[68%]", "from-[#c9a84c] to-[#e4cf8c]"],
+                  ["Meta ads", "w-[82%]", "from-[#0d1b2e] to-[#e9a46a]"],
+                  ["Google Ads", "w-[68%]", "from-[#c9a24a] to-[#e4cf8c]"],
                   ["SEO and AI", "w-[46%]", "from-[#3fb5d6] to-[#8fe0f2]"],
                   ["WhatsApp", "w-[58%]", "from-[#22a05a] to-[#6fd39a]"],
                 ].map(([label, w, grad]) => (

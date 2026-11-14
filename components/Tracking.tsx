@@ -109,7 +109,7 @@ export function Tracking({ ga4Id, pixelId }: { ga4Id: string | null; pixelId: st
     <section
       role="region"
       aria-label="Cookie consent"
-      className="fixed inset-x-3 bottom-3 z-[60] rounded-2xl border border-line bg-paper shadow-[0_24px_60px_-20px_rgb(40_30_90/0.35)]"
+      className="fixed inset-x-3 bottom-3 z-[60] rounded-2xl border border-line bg-paper shadow-[0_24px_60px_-20px_rgb(13_27_46/0.35)]"
     >
       <div className="container-site flex flex-col gap-5 py-6 md:flex-row md:items-center md:justify-between">
         <p className="max-w-2xl text-[0.95rem] text-mute">

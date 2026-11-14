@@ -37,7 +37,7 @@ export function FormSection(props: {
       <div className="container-site grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-7">
           <h2 id="form-heading" className="text-display-md">
-            {endpoint ? "Your details" : "Get in touch"}
+            {endpoint ? "Tell us about the business" : "Get in touch"}
           </h2>
           <div className="mt-8">
             {endpoint ? (

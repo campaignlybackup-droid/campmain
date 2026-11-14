@@ -148,3 +148,17 @@ and FAQs unchanged.
 - QA gates 2, 3, 5, 6, 7: pass. axe: 45 pages x 2 widths, 0 violations.
 - Lighthouse (mobile): Home 99 / 100 / 100 / 100 (one run 92 on TBT variance; two reruns 99), 260 KiB, LCP 1.1 s, CLS 0.
 - Reference site measured the same way: 50 / 86 / 77 / 92, 14.7 MB, LCP 7.0 s, contrast, heading-order and image-alt audits failing.
+
+## Update, 14 November 2026: copy rewrite and navy palette
+
+Every page's copy rewritten in a confident, declarative voice: homepage, catalog summaries, 9 services,
+7 industries, 4 markets, about, hubs, apply, contact, CTA band, footer and 404. Titles, meta descriptions,
+H1s, primary keywords, schema, sources and FAQ questions unchanged; every direct answer still 40 to 60 words.
+No new claims added. Blog articles and legal pages left as they were.
+
+Palette: black replaced by midnight navy (#0d1b2e) for trust and authority, gold kept for value and
+achievement, warm ivory canvas, emerald reserved for live and positive signals. App icons, favicon and
+social images regenerated on navy.
+
+- QA gates: 15 pass. axe: 45 pages x 2 widths, 0 violations. Headless load: 0 errors.
+- Lighthouse (mobile): Home 98 / 100 / 100 / 100, LCP 1.2 s, CLS 0; Meta ads 99 / 100 / 100 / 100.

@@ -6,7 +6,7 @@ const content: DetailContent = {
   eyebrow: "Landing pages and web",
   question: "What makes a landing page convert paid traffic?",
   answer:
-    "A landing page converts paid traffic when it matches the ad's promise, loads fast on a mid-range phone, states the offer and proof above the fold, and asks for one action. Campaignly designs and builds landing pages and websites around those rules, with tracking, A/B testing and clean code your team can maintain.",
+    "A landing page converts paid traffic when it keeps the ad's promise, loads fast on a mid-range phone, puts the offer and proof above the fold, and asks for one action. Campaignly designs and builds landing pages and websites on exactly those rules, with tracking, A/B testing and clean code your team can maintain.",
   service: { name: "Landing page and website development", serviceType: "Conversion-focused web design and development" },
   sections: [
     {
@@ -16,7 +16,7 @@ const content: DetailContent = {
         "Message match: the headline repeats the promise of the ad or search query that brought the visitor.",
         "One goal per page: a single primary action, with secondary links removed or demoted.",
         "Speed: built to meet Google's Core Web Vitals thresholds on mobile.",
-        "Proof near the ask: real results, process and guarantees placed beside the form or button.",
+        "Proof beside the ask: real results, process and guarantees placed next to the form or button.",
         "Accessible forms: labelled fields, clear errors and no surprises after submit.",
         "Tracking: conversions sent to GA4 and the ad platforms, with UTM parameters captured.",
       ],
@@ -24,7 +24,7 @@ const content: DetailContent = {
     {
       kind: "table",
       heading: "Speed targets",
-      intro: "Google's thresholds for a good experience, measured at the 75th percentile of real page loads.",
+      intro: "Google's thresholds for a good experience, measured at the 75th percentile of real page loads. Every page we ship is built to clear them.",
       caption: "Core Web Vitals good thresholds",
       columns: ["Metric", "Measures", "Good"],
       rows: [
@@ -38,11 +38,11 @@ const content: DetailContent = {
       kind: "steps",
       heading: "How a project is delivered",
       steps: [
-        { title: "Brief from the campaign", text: "We start from the ads, audience and offer the page must convert." },
-        { title: "Copy first", text: "The argument of the page is written and approved before design." },
+        { title: "Brief from the campaign", text: "We start from the ads, the audience and the offer the page has to convert." },
+        { title: "Copy first", text: "The page's argument is written and approved before a pixel is designed." },
         { title: "Design and build", text: "Responsive design, accessible components and fast, static-first code." },
         { title: "Tracking and QA", text: "Conversion events, UTM capture, speed and accessibility checks before launch." },
-        { title: "Test and iterate", text: "Variants of headline, offer or form are tested once traffic allows." },
+        { title: "Test and iterate", text: "Headline, offer and form variants go head to head as soon as traffic allows." },
       ],
     },
     {
@@ -82,11 +82,11 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Should I send ads to my homepage or a landing page?",
-      a: "Usually a landing page. A homepage serves many audiences; a landing page matches one ad's promise and asks for one action, which generally converts better and is easier to test.",
+      a: "A landing page, almost always. A homepage serves many audiences. A landing page keeps one ad's promise and asks for one action, which converts better and tests cleaner.",
     },
     {
       q: "Which platform do you build on?",
-      a: "We choose by your needs. For speed and security we often build static sites with modern frameworks; we also work in WordPress, Shopify and common landing page builders when your team needs to edit them directly.",
+      a: "Whatever serves the business best. For speed and security we often build static sites on modern frameworks. We also build in WordPress, Shopify and leading page builders when your team needs to edit directly.",
     },
     {
       q: "How fast should a landing page load?",
@@ -94,7 +94,7 @@ const content: DetailContent = {
     },
     {
       q: "Do you write the copy?",
-      a: "Yes. Copy is written before design, because the page's argument decides its layout. You approve the copy, then we design around it.",
+      a: "Yes. Copy comes before design, because the argument decides the layout. You approve the words, then we design around them.",
     },
     {
       q: "Can we edit the pages ourselves after launch?",

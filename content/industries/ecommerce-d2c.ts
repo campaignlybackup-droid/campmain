@@ -6,14 +6,14 @@ const content: DetailContent = {
   eyebrow: "Ecommerce and D2C",
   question: "What does a D2C marketing agency do?",
   answer:
-    "A D2C marketing agency acquires customers for brands that sell directly online, then makes each customer more profitable. Campaignly runs Meta and Google acquisition, produces performance creative, improves store conversion and builds WhatsApp and email retention, managing everything against contribution margin so growth in revenue also means growth in profit.",
+    "A D2C marketing agency acquires customers for brands that sell directly online, then makes every customer more profitable. Campaignly runs Meta and Google acquisition, produces performance creative, lifts store conversion and builds WhatsApp and email retention. Everything is managed against contribution margin, so every gain in revenue is a gain in profit.",
   sections: [
     {
       kind: "prose",
       heading: "Managing to margin",
       paragraphs: [
-        "Platform ROAS counts revenue the ad platform attributes to itself. It ignores product cost, shipping, payment fees, returns and the customers who would have bought anyway. A brand can hit its ROAS target and still lose money on every order.",
-        "We plan D2C growth around contribution margin per order and marketing efficiency ratio (total revenue over total marketing spend). ROAS stays in the dashboard as a diagnostic.",
+        "Platform ROAS counts the revenue an ad platform credits to itself. It ignores product cost, shipping, payment fees, returns and the customers who would have bought anyway. A brand can hit its ROAS target and still lose money on every single order.",
+        "So we plan D2C growth around contribution margin per order and marketing efficiency ratio (total revenue over total marketing spend). ROAS stays on the dashboard as a diagnostic. Profit makes the decisions.",
       ],
     },
     {
@@ -35,9 +35,9 @@ const content: DetailContent = {
       heading: "Selling D2C in India",
       items: [
         "Cash on delivery remains common, so order confirmation and return-to-origin tracking belong in the acquisition plan.",
-        "Festive seasons concentrate demand and raise ad costs; creative and inventory need planning weeks ahead.",
-        "Marketplaces compete with your own site for the same buyer, so pricing and product mix need a clear rule.",
-        "WhatsApp is often the most effective retention channel, ahead of email.",
+        "Festive seasons concentrate demand and push up ad costs. Creative and inventory are planned weeks ahead.",
+        "Marketplaces compete with your own site for the same buyer, so pricing and product mix follow a clear rule.",
+        "WhatsApp is frequently the strongest retention channel, ahead of email.",
       ],
     },
     {
@@ -73,19 +73,19 @@ const content: DetailContent = {
   faqs: [
     {
       q: "What size of D2C brand do you work with?",
-      a: "Brands that already sell, have a product customers reorder or recommend, and have a monthly acquisition budget they want to grow. Pre-launch brands with no budget for testing are usually better served later.",
+      a: "Brands that already sell, have a product customers reorder or recommend, and hold a monthly acquisition budget they intend to grow. Pre-launch brands with no testing budget are best served a little later.",
     },
     {
       q: "Should a D2C brand sell on marketplaces too?",
-      a: "Often yes, but with a rule. Marketplaces bring volume and trust; your own site brings data and margin. We decide which products and prices belong where so the channels do not undercut each other.",
+      a: "Often yes, with a rule. Marketplaces bring volume and trust; your own site brings data and margin. We set which products and prices belong where, so the channels strengthen each other.",
     },
     {
       q: "How do you measure success for D2C?",
-      a: "Contribution margin, new customer acquisition cost, payback period and marketing efficiency ratio. Platform ROAS is tracked as a diagnostic.",
+      a: "Contribution margin, new customer acquisition cost, payback period and marketing efficiency ratio. Platform ROAS is tracked as a diagnostic only.",
     },
     {
       q: "Can you reduce our cash-on-delivery returns?",
-      a: "We can reduce them through WhatsApp order confirmation, prepaid incentives and excluding high-return areas from targeting. We track return-to-origin rates by channel to see what works.",
+      a: "Yes. WhatsApp order confirmation, prepaid incentives and excluding high-return areas from targeting all bring them down, and we track return-to-origin rates by channel to prove what works.",
     },
     {
       q: "Do you handle email and WhatsApp retention?",

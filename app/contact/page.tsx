@@ -28,8 +28,8 @@ export default function ContactPage() {
         <p className="eyebrow">Contact</p>
         <h1 className="rise mt-6 text-display-xl"><span className="text-gradient animate">{getPage("/contact/").h1}</span></h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">
-          The fastest way to start is the partner application. It goes straight to the team and asks only what we need
-          to give you a useful answer.
+          The fastest route is the partner application. It goes straight to the team and asks only what we need to
+          give you a clear, useful answer.
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
           <ButtonLink href="/apply/" ctaId="contact_apply">

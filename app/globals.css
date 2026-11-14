@@ -2,20 +2,20 @@
 
 /* ---------- Design tokens: light theme, gold brand, soft aurora accents ---------- */
 @theme {
-  --color-canvas: #f7f5f2;
+  --color-canvas: #f8f6f1; /* warm ivory: calm and premium, softer than white */
   --color-paper: #ffffff;
-  --color-ink: #14121c;
-  --color-ink-soft: #2a2636;
-  --color-mute: #5c5866; /* 6.9:1 on white */
-  --color-mute-on-ink: #a8a3b3; /* 7.5:1 on ink */
-  --color-line: #e8e3da;
+  --color-ink: #0d1b2e; /* midnight navy: trust and competence, with the authority of black */
+  --color-ink-soft: #1f3350;
+  --color-mute: #546072; /* 6.4:1 on white */
+  --color-mute-on-ink: #a9b6c8; /* 8.8:1 on navy */
+  --color-line: #e6e2d8;
   --color-line-strong: #d2cbbe;
-  --color-gold: #c9a84c; /* fills and accents only; never small text on white */
+  --color-gold: #c9a24a; /* gold: value, achievement, prosperity */ /* fills and accents only; never small text on white */
   --color-gold-soft: #e4cf8c;
   --color-gold-tint: #fbf3df;
   --color-gold-deep: #85600f; /* 5.7:1 on white: gold text */
-  --color-violet: #5b47d6;
-  --color-violet-tint: #efecff;
+  --color-success: #1d7a45; /* emerald: growth and go, used sparingly for live signals */
+  --color-success-tint: #e7f6ee;
   --color-sky-tint: #e6f6fb;
   --color-red: #c4161c;
   --color-red-text: #c4161c; /* 6.0:1 on white */
@@ -38,8 +38,8 @@
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --shadow-card: 0 1px 2px rgb(20 18 28 / 0.04), 0 8px 24px -12px rgb(20 18 28 / 0.12);
-  --shadow-float: 0 2px 6px rgb(20 18 28 / 0.05), 0 24px 60px -20px rgb(40 30 90 / 0.25);
+  --shadow-card: 0 1px 2px rgb(13 27 46 / 0.04), 0 8px 24px -12px rgb(13 27 46 / 0.12);
+  --shadow-float: 0 2px 6px rgb(13 27 46 / 0.05), 0 24px 60px -20px rgb(13 27 46 / 0.25);
 }
 
 /* ---------- Base ---------- */
@@ -152,7 +152,7 @@
 
   /* Gradient headline text. Darkest stop is ink, lightest stop keeps 4.6:1 on white. */
   .text-gradient {
-    background: linear-gradient(100deg, var(--color-ink) 0%, #4a3410 55%, #9a6b12 100%);
+    background: linear-gradient(100deg, var(--color-ink) 0%, #1f3a5f 45%, #9a6b12 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -192,7 +192,7 @@
   .btn-primary {
     background: var(--color-ink);
     color: #fff;
-    box-shadow: 0 8px 24px -10px rgb(20 18 28 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.12);
+    box-shadow: 0 8px 24px -10px rgb(13 27 46 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.12);
   }
   .btn-primary::after {
     /* light sweep on hover */
@@ -206,7 +206,7 @@
   }
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 34px -12px rgb(20 18 28 / 0.65), 0 0 0 4px rgb(201 168 76 / 0.18);
+    box-shadow: 0 14px 34px -12px rgb(13 27 46 / 0.65), 0 0 0 4px rgb(201 162 74 / 0.18);
   }
   .btn-primary:hover::after {
     transform: translateX(120%);
@@ -214,7 +214,7 @@
   .btn-gold {
     background: var(--color-gold);
     color: var(--color-ink);
-    box-shadow: 0 10px 30px -12px rgb(201 168 76 / 0.8);
+    box-shadow: 0 10px 30px -12px rgb(201 162 74 / 0.8);
   }
   .btn-gold:hover {
     transform: translateY(-2px);
@@ -268,8 +268,8 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: radial-gradient(90% 70% at 85% 0%, rgb(201 168 76 / 0.28) 0%, transparent 60%),
-      radial-gradient(70% 60% at 0% 100%, rgb(201 168 76 / 0.12) 0%, transparent 60%), #0e0d13;
+    background: radial-gradient(90% 70% at 85% 0%, rgb(201 162 74 / 0.28) 0%, transparent 60%),
+      radial-gradient(70% 60% at 0% 100%, rgb(64 120 190 / 0.22) 0%, transparent 60%), #0a1626;
     color: #fff;
     border-radius: 2rem;
   }
@@ -292,7 +292,7 @@
     border-radius: inherit;
     opacity: 0;
     transition: opacity 300ms;
-    background: radial-gradient(28rem circle at var(--mx) var(--my), rgb(201 168 76 / 0.16), rgb(201 168 76 / 0.04) 45%, transparent 70%);
+    background: radial-gradient(28rem circle at var(--mx) var(--my), rgb(201 162 74 / 0.16), rgb(201 162 74 / 0.04) 45%, transparent 70%);
   }
   .spot:hover::before {
     opacity: 1;
@@ -304,7 +304,7 @@
       border-color 300ms;
   }
   .card-hover:hover {
-    border-color: rgb(201 168 76 / 0.45);
+    border-color: rgb(201 162 74 / 0.45);
     box-shadow: var(--shadow-float);
   }
 
@@ -324,7 +324,7 @@
     border-radius: 1rem;
     color: var(--color-gold-deep);
     background: linear-gradient(140deg, var(--color-gold-tint), #fff);
-    border: 1px solid rgb(201 168 76 / 0.25);
+    border: 1px solid rgb(201 162 74 / 0.25);
   }
 
   /* Small pill tag */
@@ -410,7 +410,7 @@
   will-change: transform;
 }
 .aurora > span:nth-child(1) {
-  --c: rgb(201 168 76 / 0.34);
+  --c: rgb(201 162 74 / 0.34);
   --s: 44rem;
   top: -18rem;
   left: -10rem;
@@ -422,7 +422,7 @@
   right: -12rem;
 }
 .aurora > span:nth-child(3) {
-  --c: rgb(150 205 225 / 0.22);
+  --c: rgb(140 185 230 / 0.26);
   --s: 36rem;
   bottom: -18rem;
   right: 8%;
@@ -440,8 +440,8 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: linear-gradient(to right, rgb(20 18 28 / 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(20 18 28 / 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgb(13 27 46 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(13 27 46 / 0.05) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
 }
@@ -491,7 +491,7 @@
 .glass {
   background: rgb(255 255 255 / 0.86);
   border: 1px solid rgb(255 255 255 / 0.9);
-  box-shadow: 0 1px 1px rgb(20 18 28 / 0.04), 0 30px 60px -24px rgb(40 30 90 / 0.35);
+  box-shadow: 0 1px 1px rgb(13 27 46 / 0.04), 0 30px 60px -24px rgb(13 27 46 / 0.35);
   border-radius: 1.25rem;
 }
 .bar {
@@ -735,7 +735,7 @@
 }
 .method-card:hover {
   transform: translateY(-4px);
-  border-color: rgb(201 168 76 / 0.5);
+  border-color: rgb(201 162 74 / 0.5);
 }
 .on-ink .method-card {
   background: rgb(255 255 255 / 0.04);

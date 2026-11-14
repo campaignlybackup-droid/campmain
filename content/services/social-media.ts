@@ -6,30 +6,30 @@ const content: DetailContent = {
   eyebrow: "Social media growth",
   question: "What does social media strategy and management include?",
   answer:
-    "Social media strategy and management means deciding what your brand says on social channels, to whom and why, then running the content system that delivers it. Campaignly plans organic social around positioning and commercial goals, connects it to paid campaigns, and measures it by enquiries, demand signals and creative insight rather than follower counts.",
+    "Social media strategy and management means deciding what your brand says on social channels, to whom and why, then running the content system that delivers it. Campaignly plans organic social around positioning and commercial goals, connects it directly to paid campaigns, and measures it by enquiries, demand signals and creative insight. Follower counts are never the scoreboard.",
   service: { name: "Social media strategy and management", serviceType: "Social media marketing" },
   sections: [
     {
       kind: "prose",
       heading: "Social media as part of advertising",
       paragraphs: [
-        "Organic reach on most platforms is limited, so organic social rarely grows a business on its own. Its real value is different: it shows buyers who check you out that you are credible and active, it tests messages cheaply, and it supplies proof and creative that paid campaigns then scale.",
-        "That is why our social programmes are planned alongside paid media. We are not a posting service, and we do not sell follower growth as a goal.",
+        "Organic reach on most platforms is limited, so organic social rarely grows a business on its own. Its real power lies elsewhere. It proves to every buyer who checks you out that you are credible and active, it tests messages at almost no cost, and it supplies the proof and creative that paid campaigns then scale.",
+        "That is why every social programme we run is planned alongside paid media. We build commercial content systems. Posting for the sake of posting has no place in them.",
       ],
     },
     {
       kind: "scope",
       heading: "What is included",
       included: [
-        { item: "Channel strategy", detail: "Which platforms matter for your buyers, and what role each plays." },
-        { item: "Content pillars", detail: "Topics tied to positioning, objections and proof." },
-        { item: "Content calendar", detail: "Planned around launches, seasons and campaigns." },
+        { item: "Channel strategy", detail: "The platforms your buyers actually use, and the job each one does." },
+        { item: "Content pillars", detail: "Topics anchored to positioning, objections and proof." },
+        { item: "Content calendar", detail: "Built around launches, seasons and campaigns." },
         { item: "Production and publishing", detail: "Posts, short video and carousels in your brand system." },
-        { item: "Founder and leadership content", detail: "LinkedIn content for founders who sell through their own credibility." },
+        { item: "Founder and leadership content", detail: "LinkedIn content for founders who sell on their own credibility." },
         { item: "Reporting", detail: "Profile visits, enquiries, saves and shares, and what content to promote with paid spend." },
       ],
       excluded: [
-        { item: "Buying followers or engagement", detail: "We never do this." },
+        { item: "Buying followers or engagement", detail: "Never. Not once, not for anyone." },
         { item: "Influencer contracts", detail: "Scoped separately when needed." },
         { item: "Paid social management", detail: "Covered by Meta ads management.", href: "/services/meta-ads/" },
       ],
@@ -50,10 +50,10 @@ const content: DetailContent = {
       kind: "steps",
       heading: "How the programme runs",
       steps: [
-        { title: "Audit and positioning", text: "We review what you post, what competitors post and what your buyers respond to." },
-        { title: "Content system", text: "Pillars, formats and a calendar that a small team can sustain." },
+        { title: "Audit and positioning", text: "We study what you post, what competitors post and what your buyers actually respond to." },
+        { title: "Content system", text: "Pillars, formats and a calendar a lean team can sustain." },
         { title: "Produce and publish", text: "Content is batched, approved and scheduled in advance." },
-        { title: "Promote what works", text: "Posts that earn attention organically are tested as paid ads." },
+        { title: "Promote what works", text: "Posts that earn attention organically graduate to paid ads." },
       ],
     },
   ],
@@ -78,19 +78,19 @@ const content: DetailContent = {
   faqs: [
     {
       q: "How often should a business post on social media?",
-      a: "As often as you can sustain good work. A consistent, realistic cadence beats bursts of activity followed by silence. We set frequency from your goals and capacity.",
+      a: "As often as you can sustain excellent work. A consistent, realistic cadence beats bursts of activity followed by silence. We set frequency from your goals and your capacity.",
     },
     {
       q: "Will you grow our follower count?",
-      a: "Followers may grow as a side effect, but we do not treat them as the goal. We measure enquiries, profile visits, saves, shares and how well content performs when promoted.",
+      a: "Followers often grow as a by-product. We aim higher: enquiries, profile visits, saves, shares and how strongly content performs when promoted.",
     },
     {
       q: "Do you create the content or do we?",
-      a: "Either. We can produce everything, or plan and edit content your team captures. Many businesses get the best results from a mix, with real team footage edited by us.",
+      a: "Either. We can produce everything, or plan and edit what your team captures. The strongest results usually come from a mix: real team footage, edited by us.",
     },
     {
       q: "Do you reply to comments and messages?",
-      a: "Community management can be included, with clear rules on what we answer and what goes to your team. Sales enquiries are routed to you quickly.",
+      a: "Community management can be included, with clear rules on what we answer and what goes to your team. Sales enquiries reach you fast.",
     },
   ],
 };

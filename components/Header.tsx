@@ -14,7 +14,7 @@ export function Header() {
   ];
   return (
     <header className="sticky top-0 z-50 px-3 pt-3 md:px-6 md:pt-4">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 rounded-2xl border border-white/70 bg-white/75 pr-2 pl-4 shadow-[0_10px_40px_-18px_rgb(40_30_90/0.35)] backdrop-blur-xl backdrop-saturate-150 md:pl-5">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 rounded-2xl border border-white/70 bg-white/75 pr-2 pl-4 shadow-[0_10px_40px_-18px_rgb(13_27_46/0.35)] backdrop-blur-xl backdrop-saturate-150 md:pl-5">
         <Wordmark />
         <div className="flex items-center gap-6">
           <SiteNav

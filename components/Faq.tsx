@@ -14,7 +14,7 @@ export function Faq({ items, heading = "Frequently asked questions" }: { items: 
           <ul className="grid gap-3">
             {items.map((f) => (
               <li key={f.q} className="reveal">
-                <details className="group card overflow-hidden px-5 transition-shadow open:shadow-[0_24px_50px_-28px_rgb(40_30_90/0.35)] md:px-7">
+                <details className="group card overflow-hidden px-5 transition-shadow open:shadow-[0_24px_50px_-28px_rgb(13_27_46/0.35)] md:px-7">
                   <summary className="flex min-h-14 cursor-pointer list-none items-start justify-between gap-6 py-5 text-lg font-medium [&::-webkit-details-marker]:hidden">
                     <h3 className="font-display text-[1.0625rem] font-semibold tracking-[-0.01em] md:text-lg">{f.q}</h3>
                     <span

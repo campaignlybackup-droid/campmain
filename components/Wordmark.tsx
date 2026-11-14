@@ -8,7 +8,7 @@ export function Wordmark({ className = "", size = "header" }: { className?: stri
       {siteConfig.logo ? (
         // The gold C sits on an ink tile, like the app icon, so it holds contrast on the light theme.
         <span
-          className={`grid place-items-center rounded-xl bg-ink shadow-[0_8px_20px_-8px_rgb(20_18_28/0.6),inset_0_1px_0_rgb(255_255_255/0.12)] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-rotate-6 group-hover:scale-105 ${size === "footer" ? "size-14 rounded-2xl" : "size-10"}`}
+          className={`grid place-items-center rounded-xl bg-ink shadow-[0_8px_20px_-8px_rgb(13_27_46/0.6),inset_0_1px_0_rgb(255_255_255/0.12)] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-rotate-6 group-hover:scale-105 ${size === "footer" ? "size-14 rounded-2xl" : "size-10"}`}
         >
           {/* Source is 121x108; width/height reserve the space so the header does not shift. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}

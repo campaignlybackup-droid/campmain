@@ -36,7 +36,7 @@ function Logo({ className }: { className: string }) {
 export function MetaArt({ className }: { className?: string }) {
   return (
     <Frame tone="violet" className={className}>
-      <div className="mx-auto w-[46%] rounded-[1.6rem] border-[5px] border-ink bg-white p-2 shadow-[0_30px_60px_-25px_rgb(40_30_90/0.45)] [transform:translateZ(40px)]">
+      <div className="mx-auto w-[46%] rounded-[1.6rem] border-[5px] border-ink bg-white p-2 shadow-[0_30px_60px_-25px_rgb(13_27_46/0.45)] [transform:translateZ(40px)]">
         <div className="mx-auto mb-2 h-1.5 w-10 rounded-full bg-ink/80" />
         <div className="flex items-center gap-1.5 px-1">
           <span className="size-5 rounded-full bg-gradient-to-br from-gold to-[#e9a46a]" />
@@ -59,7 +59,7 @@ export function MetaArt({ className }: { className?: string }) {
       <div className="glass float-b absolute top-[12%] right-[6%] w-[30%] p-2.5 [transform:translateZ(80px)]">
         <span className="text-[0.55rem] font-semibold text-mute uppercase">Audience</span>
         <div className="mt-1.5 flex -space-x-1.5">
-          {["#c9a84c", "#e9a46a", "#3fb5d6", "#ff8fa8"].map((c) => (
+          {["#c9a24a", "#e9a46a", "#3fb5d6", "#ff8fa8"].map((c) => (
             <span key={c} className="size-5 rounded-full border-2 border-white" style={{ background: c }} />
           ))}
         </div>
@@ -77,7 +77,7 @@ export function MetaArt({ className }: { className?: string }) {
 export function GoogleArt({ className }: { className?: string }) {
   return (
     <Frame tone="gold" className={className}>
-      <div className="mx-auto w-[78%] rounded-2xl bg-white p-4 shadow-[0_30px_60px_-25px_rgb(40_30_90/0.4)] [transform:translateZ(30px)]">
+      <div className="mx-auto w-[78%] rounded-2xl bg-white p-4 shadow-[0_30px_60px_-25px_rgb(13_27_46/0.4)] [transform:translateZ(30px)]">
         <div className="flex items-center gap-2 rounded-full border border-line px-3 py-2">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#5c5866" strokeWidth="2.5">
             <circle cx="11" cy="11" r="7" />
@@ -123,14 +123,14 @@ export function CreativeArt({ className }: { className?: string }) {
         ].map(([pos, grad, label, z]) => (
           <div
             key={label}
-            className={`absolute inset-0 rounded-2xl border-4 border-white bg-gradient-to-br shadow-[0_30px_50px_-25px_rgb(40_30_90/0.45)] ${pos} ${grad}`}
+            className={`absolute inset-0 rounded-2xl border-4 border-white bg-gradient-to-br shadow-[0_30px_50px_-25px_rgb(13_27_46/0.45)] ${pos} ${grad}`}
             style={{ transform: z }}
           >
             <span className="absolute top-2 left-2 rounded-full bg-white/90 px-2 py-0.5 text-[0.55rem] font-bold">
               Variant {label}
             </span>
             <span className="absolute inset-0 m-auto grid size-10 place-items-center rounded-full bg-white/90 shadow-lg">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#14121c">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#0d1b2e">
                 <path d="M8 5v14l11-7L8 5Z" />
               </svg>
             </span>

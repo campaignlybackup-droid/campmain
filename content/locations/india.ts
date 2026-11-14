@@ -6,7 +6,7 @@ const content: DetailContent = {
   eyebrow: "India",
   question: "What does a performance marketing agency in India do differently?",
   answer:
-    "A performance marketing agency in India has to plan for a market where WhatsApp is the main conversation channel, buyers switch between English and regional languages, cash on delivery shapes ecommerce, and festive seasons move demand and ad costs. Campaignly runs Meta, Google and automation programmes built for those conditions, priced in INR and worked in IST.",
+    "A performance marketing agency in India must master a market where WhatsApp is the main conversation channel, buyers move between English and regional languages, cash on delivery shapes ecommerce, and festive seasons swing demand and ad costs. Campaignly runs Meta, Google and automation programmes built for exactly those conditions, priced in INR and worked in IST.",
   sections: [
     {
       kind: "table",
@@ -25,11 +25,11 @@ const content: DetailContent = {
       kind: "list",
       heading: "The Indian market",
       items: [
-        "WhatsApp is where buyers expect to talk to businesses, so lead follow-up and retention run on the WhatsApp Business Platform.",
+        "WhatsApp is where Indian buyers expect to talk to businesses, so lead follow-up and retention run on the WhatsApp Business Platform.",
         "Language matters: Hindi, Tamil, Telugu, Marathi, Bengali, Kannada and other regional-language creative often outperforms English outside the metros.",
-        "Festive seasons such as Diwali, Navratri, Onam and Pongal change demand and auction costs; campaigns and creative are planned weeks ahead.",
+        "Festive seasons such as Diwali, Navratri, Onam and Pongal reshape demand and auction costs. Campaigns and creative are ready weeks ahead.",
         "Cash on delivery and return-to-origin rates affect ecommerce profitability, so targeting is reviewed by region and pin code.",
-        "Price sensitivity varies sharply between metro, tier-2 and tier-3 cities, so offers and messaging are tested by geography.",
+        "Price sensitivity shifts sharply between metro, tier-2 and tier-3 cities, so offers and messaging are tested city tier by city tier.",
       ],
     },
     {
@@ -85,7 +85,7 @@ const content: DetailContent = {
     },
     {
       q: "Do you work only with businesses in certain cities?",
-      a: "No. We work with businesses across India remotely, and plan campaigns by city tier and region rather than one national approach.",
+      a: "No. We work with businesses across India remotely, and every campaign is planned by city tier and region. One national template never fits India.",
     },
     {
       q: "How does the DPDP Act affect lead generation?",

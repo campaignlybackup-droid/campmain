@@ -10,7 +10,7 @@ export default function ServicesHub() {
     <HubTemplate
       path="/services/"
       eyebrow="Services"
-      intro="Performance marketing services are the paid media, search, creative, conversion and automation work that turns marketing spend into measurable revenue. Campaignly offers nine of them, planned and reported as one system, so you can start with one and add others only when the numbers say so."
+      intro="Performance marketing services are the paid media, search, creative, conversion and automation work that turns marketing spend into measurable revenue. Campaignly offers nine of them, planned and reported as one system. Start with one, and add others only when the numbers make the case."
       listHeading="Nine services"
       items={services.map((s) => ({ href: s.href, label: s.label, summary: s.summary }))}
     >
@@ -20,8 +20,8 @@ export default function ServicesHub() {
             How the services fit together
           </h2>
           <p className="prose-site mt-6 text-mute">
-            Every engagement follows the same six-stage method. Which services you need depends on where the constraint
-            sits: in the message, the traffic, the conversion or the follow-up.
+            Every engagement follows the same six-stage method. The services you need depend on where growth is
+            constrained: the message, the traffic, the conversion or the follow-up. We find it, then fix it.
           </p>
           <div className="mt-12">
             <MethodList />

@@ -6,12 +6,12 @@ const content: DetailContent = {
   eyebrow: "Healthcare",
   question: "What does a healthcare digital marketing agency do?",
   answer:
-    "A healthcare digital marketing agency helps hospitals, clinics and health brands attract patients through search, social and local visibility while staying within platform policies and medical advertising rules. Campaignly plans patient acquisition around services people actively look for, writes compliant ads, and automates appointment follow-up so enquiries become booked consultations.",
+    "A healthcare digital marketing agency helps hospitals, clinics and health brands attract patients through search, social and local visibility, fully within platform policy and medical advertising rules. Campaignly plans patient acquisition around the services people actively seek, writes compliant ads, and automates appointment follow-up so every enquiry has the best chance of becoming a booked consultation.",
   sections: [
     {
       kind: "table",
       heading: "Advertising rules in healthcare",
-      intro: "Healthcare is one of the most restricted advertising categories. These are the main constraints we plan around; your legal and medical teams have the final word on claims.",
+      intro: "Healthcare is one of the most tightly regulated advertising categories. We plan around every constraint below, and your legal and medical teams keep the final word on claims.",
       caption: "Key healthcare advertising constraints",
       columns: ["Rule", "What it means for campaigns"],
       rows: [
@@ -30,12 +30,12 @@ const content: DetailContent = {
       kind: "steps",
       heading: "How the programme runs",
       steps: [
-        { title: "Choose the services to promote", text: "We start with treatments people search for and that your capacity and margins support." },
-        { title: "Check policy before creative", text: "Each service is checked against platform policy and local rules before ads are written." },
+        { title: "Choose the services to promote", text: "We lead with the treatments people search for and your capacity and margins support." },
+        { title: "Check policy before creative", text: "Every service is checked against platform policy and local rules before a word of copy is written." },
         { title: "Build service pages", text: "Clear pages covering the treatment, the doctors, what to expect and how to book." },
         { title: "Run search and local", text: "Google Search and Maps visibility capture patients ready to book." },
-        { title: "Automate appointment follow-up", text: "WhatsApp confirmations and reminders reduce missed appointments." },
-        { title: "Measure booked consultations", text: "Reporting follows each enquiry through to a booked appointment." },
+        { title: "Automate appointment follow-up", text: "WhatsApp confirmations and reminders cut missed appointments." },
+        { title: "Measure booked consultations", text: "Reporting follows every enquiry through to a booked appointment." },
       ],
     },
     {
@@ -71,7 +71,7 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Can hospitals and clinics advertise on Meta and Google?",
-      a: "Yes, within policy. Many treatments and services can be advertised, but some medicines and procedures are restricted, and ads cannot imply a reader has a condition. We check each service before building campaigns.",
+      a: "Yes, within policy. Many treatments and services can be advertised. Some medicines and procedures are restricted, and ads can never imply a reader has a condition. We check every service before a campaign is built.",
     },
     {
       q: "How has Meta's 2025 health data restriction affected advertising?",
@@ -79,7 +79,7 @@ const content: DetailContent = {
     },
     {
       q: "Do you use patient testimonials?",
-      a: "Only with documented patient consent and after checking platform policy and local rules. Many claims that work in other industries are not allowed in healthcare.",
+      a: "Only with documented patient consent, and only after checking platform policy and local rules. Many claims that work in other industries are prohibited in healthcare, and we treat that line as absolute.",
     },
     {
       q: "How do you track appointments without sharing health data?",
@@ -87,7 +87,7 @@ const content: DetailContent = {
     },
     {
       q: "Do you work with single-doctor clinics?",
-      a: "We work best with clinics, hospital groups and health brands that have an acquisition budget and a team able to respond to enquiries quickly.",
+      a: "We do our best work with clinics, hospital groups and health brands that have an acquisition budget and a team ready to respond to enquiries fast.",
     },
   ],
 };

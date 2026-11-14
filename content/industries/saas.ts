@@ -6,12 +6,12 @@ const content: DetailContent = {
   eyebrow: "SaaS",
   question: "What does a SaaS paid acquisition agency do?",
   answer:
-    "A SaaS paid acquisition agency buys trials, demos and sign-ups through Google, LinkedIn and Meta at a cost the business model can repay. Campaignly plans channel mix from your annual contract value, sales cycle and CAC payback target, imports pipeline data into the ad platforms, and reports on qualified demos, opportunities and revenue.",
+    "A SaaS paid acquisition agency buys trials, demos and sign-ups through Google, LinkedIn and Meta at a cost your business model can repay. Campaignly sets the channel mix from your annual contract value, sales cycle and CAC payback target, imports pipeline data into the ad platforms, and reports on qualified demos, opportunities and revenue.",
   sections: [
     {
       kind: "table",
       heading: "Channels by SaaS model",
-      intro: "Channel choice follows the economics. A tool that costs a little per month cannot afford the same acquisition as an enterprise platform.",
+      intro: "The economics choose the channel. A low-priced monthly tool cannot afford the acquisition an enterprise platform can, and we plan accordingly.",
       caption: "SaaS channel fit by business model",
       columns: ["Model", "Typical motion", "Channels that usually fit"],
       rows: [
@@ -34,8 +34,8 @@ const content: DetailContent = {
       kind: "steps",
       heading: "How the programme runs",
       steps: [
-        { title: "Model the economics", text: "ACV, conversion rates by stage and payback target set the maximum cost per demo or trial." },
-        { title: "Capture high-intent search", text: "Category, competitor-alternative and problem queries on Google." },
+        { title: "Model the economics", text: "ACV, stage conversion rates and payback target set the ceiling on cost per demo or trial." },
+        { title: "Capture high-intent search", text: "Category, competitor-alternative and problem queries on Google, captured first." },
         { title: "Reach the buying committee", text: "LinkedIn and retargeting to the roles involved in the decision." },
         { title: "Fix the conversion path", text: "Demo and trial pages, onboarding emails and qualification." },
         { title: "Import pipeline", text: "Opportunities and revenue from your CRM sent back to Google and LinkedIn." },
@@ -63,7 +63,7 @@ const content: DetailContent = {
   faqs: [
     {
       q: "Should SaaS companies bid on competitor names?",
-      a: "Often yes, with an honest comparison page and ads that do not misuse trademarks in ad text. Competitor-alternative searches can be high intent, but the landing page must earn the switch.",
+      a: "Often yes, with an honest comparison page and ads that respect trademarks in ad text. Competitor-alternative searches carry high intent, and the landing page has to earn the switch.",
     },
     {
       q: "When does LinkedIn advertising make sense for SaaS?",
@@ -71,11 +71,11 @@ const content: DetailContent = {
     },
     {
       q: "How do you measure SaaS campaigns?",
-      a: "Qualified demos or activated trials, opportunities, revenue and CAC payback. Sign-ups alone are tracked but do not define success.",
+      a: "Qualified demos or activated trials, opportunities, revenue and CAC payback. Sign-ups are tracked; they never define success.",
     },
     {
       q: "Do you work with early-stage SaaS?",
-      a: "We work best with SaaS companies that have product-market signals, a defined customer and budget to test. Very early products usually need customer discovery before paid acquisition.",
+      a: "We do our best work with SaaS companies that have product-market signals, a defined customer and budget to test. Very early products gain more from customer discovery before paid acquisition.",
     },
   ],
 };

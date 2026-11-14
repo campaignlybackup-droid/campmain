@@ -15,28 +15,28 @@ export const metadata = buildMetadata("/about/");
 const beliefs = [
   {
     q: "Why advertising-first?",
-    a: "Because advertising is where spend, data and results meet. It is the fastest way to test a message, and the most honest measure of whether a market wants what you sell.",
+    a: "Because advertising is where spend, data and results meet. It is the fastest way to test a message and the most honest verdict on whether a market wants what you sell.",
   },
   {
     q: "Why not compete on price?",
-    a: "Cheap marketing is expensive when it wastes the budget behind it. We would rather work with fewer businesses and do the work properly than discount the thinking.",
+    a: "Cheap marketing is the most expensive kind when it wastes the budget behind it. We choose to work with fewer businesses and do the work properly. The thinking is never discounted.",
   },
   {
     q: "Why transparency by default?",
-    a: "Your accounts, data and results belong to you. When you can see what we see, decisions get better and trust does not depend on reports we control.",
+    a: "Your accounts, data and results belong to you. When you see exactly what we see, decisions get sharper and trust rests on facts, never on reports we control.",
   },
   {
     q: "Why AI-enabled?",
-    a: "AI speeds up analysis, creative iteration and lead response. It does not replace judgement; it gives our team more time for it.",
+    a: "AI accelerates analysis, creative iteration and lead response. Judgement stays human, and AI gives our team more time to exercise it.",
   },
 ];
 
 const engagement = [
-  { t: "Apply", d: "Tell us about the business, the budget and what has or has not worked so far." },
-  { t: "Diagnostic conversation", d: "We discuss goals, numbers and constraints, and say plainly whether we are the right fit." },
-  { t: "Written plan", d: "If we are, you receive a plan with priorities, channels, budget logic and how success will be measured." },
-  { t: "Build and launch", d: "Tracking, accounts, creative and pages are prepared, then campaigns go live." },
-  { t: "Report and improve", d: "Regular updates show results, what changed and what comes next." },
+  { t: "Apply", d: "Tell us about the business, the budget and what has and has not worked so far." },
+  { t: "Diagnostic conversation", d: "We go through goals, numbers and constraints, and tell you plainly whether we are the right fit." },
+  { t: "Written plan", d: "If we are, you receive a plan with priorities, channels, budget logic and the exact measures of success." },
+  { t: "Build and launch", d: "Tracking, accounts, creative and pages are built properly, then campaigns go live." },
+  { t: "Report and improve", d: "Regular updates show results, what changed and what comes next. No surprises, ever." },
 ];
 
 export default function AboutPage() {
@@ -65,7 +65,8 @@ export default function AboutPage() {
           <p className="text-lead md:col-span-8">
             Campaignly (Campaignly Media) is an advertising-first, AI-enabled digital growth partner for scaling
             businesses with real acquisition budgets. We run paid media, search, creative, conversion and automation for
-            companies in India, the USA, Canada and the UAE.
+            companies in India, the USA, Canada and the UAE, and we hold every engagement to one standard: growth you
+            can measure in revenue.
           </p>
         </div>
       </section>
