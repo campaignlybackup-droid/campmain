@@ -125,3 +125,15 @@ Clients stay anonymous, so the check does not use a list of their names. Instead
 - The header and footer show the Campaignly C symbol, and the favicons match your current site.
 - Copy pass: removed about 50 "X, not Y" constructions, replaced question-style section headings with plain headings (FAQ sections keep their questions), and removed the question label above each page intro.
 - Re-run on the new build: build and lint clean; crawl, JSON-LD, placeholder and client-name gates pass; 45 pages load with 0 errors; axe 0 violations at 360px and 1280px; Lighthouse mobile on Home 100 / 100 / 100 / 100, LCP 1.0 s.
+
+## Update, 14 November 2026: visual redesign
+
+Light theme with gold brand accents, floating glass header, gradient headlines, rounded card sections,
+a CSS-only 3D hero dashboard, service illustrations, scroll reveals, pointer tilt and spotlight effects.
+All motion is CSS plus one small client script (`components/Motion.tsx`) and switches off under
+`prefers-reduced-motion`. No animation library, no images added beyond the existing logo.
+
+- Typecheck, ESLint and build: clean, 45 pages
+- QA gates 2, 3, 5, 6, 7: pass (`CA` and `C` added to approved terms for market codes and creative variant labels)
+- axe-core: 45 pages x 2 widths, 0 violations
+- Lighthouse (mobile): Home 99 / 100 / 100 / 100, LCP 1.1 s, CLS 0; Meta ads page 100 across, LCP 1.0 s

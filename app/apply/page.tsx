@@ -23,7 +23,7 @@ export default function ApplyPage() {
       <Breadcrumbs path="/apply/" />
       <section className="container-site pt-12 pb-16 md:pt-20 md:pb-20">
         <p className="eyebrow">Apply to Partner</p>
-        <h1 className="mt-6 max-w-4xl text-display-xl">{getPage("/apply/").h1}</h1>
+        <h1 className="rise mt-6 max-w-4xl text-display-xl"><span className="text-gradient animate">{getPage("/apply/").h1}</span></h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">
           Campaignly works with a limited number of businesses at a time so each one gets senior attention. This form
           takes about three minutes and tells us enough to decide whether we can help.
@@ -46,7 +46,7 @@ export default function ApplyPage() {
             <ol className="mt-6 border-t border-line">
               {next.map((n, i) => (
                 <li key={n} className="grid grid-cols-[2.5rem_1fr] gap-3 border-b border-line py-5 text-mute">
-                  <span aria-hidden="true" className="font-display text-xl text-gold">
+                  <span aria-hidden="true" className="font-display text-xl text-gold-deep">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span>{n}</span>

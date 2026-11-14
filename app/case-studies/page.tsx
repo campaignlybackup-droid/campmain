@@ -19,7 +19,7 @@ export default function CaseStudiesHub() {
       <Breadcrumbs path="/case-studies/" />
       <section className="container-site pt-12 pb-16 md:pt-20">
         <p className="eyebrow">Proof</p>
-        <h1 className="mt-6 text-display-xl">{getPage("/case-studies/").h1}</h1>
+        <h1 className="rise mt-6 text-display-xl"><span className="text-gradient animate">{getPage("/case-studies/").h1}</span></h1>
         <p className="mt-8 max-w-3xl text-lead text-mute">
           Results from Campaignly growth programmes. Clients are anonymised, and every figure states the period it covers.
         </p>
@@ -30,7 +30,7 @@ export default function CaseStudiesHub() {
             <li key={c.slug} className="border-b border-line">
               <Link href={`/case-studies/${c.slug}/`} className="group block py-8">
                 <span className="text-sm text-mute">{c.client}</span>
-                <span className="mt-2 block font-display text-2xl group-hover:text-gold md:text-3xl">{c.headline}</span>
+                <span className="mt-2 block font-display text-2xl group-hover:text-gold-deep md:text-3xl">{c.headline}</span>
               </Link>
             </li>
           ))}

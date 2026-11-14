@@ -130,3 +130,7 @@ Crawlability
 Firmographics
 Walkthroughs
 FAQPage      # schema.org type name in JSON-LD
+
+# Homepage design labels: market codes and creative variant letters
+CA
+C

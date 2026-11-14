@@ -71,7 +71,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
     <div ref={navRef} className="flex items-center">
       {/* Desktop */}
       <nav aria-label="Main" className="hidden lg:block">
-        <ul className="flex items-center gap-8 text-[0.95rem]">
+        <ul className="flex items-center gap-7 text-[0.95rem] font-medium">
           {groups.map((g, gi) => {
             const panelId = `${baseId}-panel-${gi}`;
             const expanded = open === String(gi);
@@ -96,7 +96,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
                   aria-expanded={expanded}
                   aria-controls={panelId}
                   onClick={() => setOpen(expanded ? null : String(gi))}
-                  className="grid size-8 place-items-center text-mute hover:text-paper"
+                  className="grid size-8 place-items-center text-mute hover:text-ink"
                 >
                   <span className="sr-only">{`${g.label} menu`}</span>
                   <svg
@@ -112,7 +112,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
                 <div
                   id={panelId}
                   hidden={!expanded}
-                  className="absolute top-full left-0 z-50 mt-3 w-80 border border-line bg-ink p-2 shadow-2xl"
+                  className="absolute top-full -left-4 z-50 mt-4 w-80 rounded-2xl border border-line bg-paper p-2 shadow-[0_24px_60px_-20px_rgb(40_30_90/0.3)]"
                 >
                   <ul>
                     {g.items.map((it) => (
@@ -120,7 +120,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
                         <Link
                           href={it.href}
                           aria-current={pathname === it.href ? "page" : undefined}
-                          className="block px-4 py-3 text-[0.95rem] text-mute hover:bg-ink-raised hover:text-paper aria-[current=page]:text-gold"
+                          className="block rounded-xl px-4 py-3 text-[0.95rem] text-mute transition-colors hover:bg-canvas hover:text-ink aria-[current=page]:text-gold-deep"
                         >
                           {it.label}
                         </Link>
@@ -152,24 +152,24 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
         aria-expanded={mobileOpen}
         aria-controls={`${baseId}-mobile`}
         onClick={() => setMobileOpen((v) => !v)}
-        className="inline-flex min-h-11 items-center gap-3 px-1 text-[0.95rem] lg:hidden"
+        className="inline-flex min-h-11 items-center gap-3 rounded-xl px-3 text-[0.95rem] font-medium lg:hidden"
       >
         <span>Menu</span>
         <span aria-hidden="true" className="relative block h-3 w-5">
           <span
-            className={`absolute left-0 block h-px w-5 bg-paper transition-transform duration-200 ${mobileOpen ? "top-1.5 rotate-45" : "top-0"}`}
+            className={`absolute left-0 block h-[1.5px] w-5 rounded bg-ink transition-transform duration-200 ${mobileOpen ? "top-1.5 rotate-45" : "top-0"}`}
           />
           <span
-            className={`absolute left-0 block h-px w-5 bg-paper transition-transform duration-200 ${mobileOpen ? "top-1.5 -rotate-45" : "top-3"}`}
+            className={`absolute left-0 block h-[1.5px] w-5 rounded bg-ink transition-transform duration-200 ${mobileOpen ? "top-1.5 -rotate-45" : "top-3"}`}
           />
         </span>
       </button>
       <div
         id={`${baseId}-mobile`}
         hidden={!mobileOpen}
-        className="fixed inset-x-0 top-[4.5rem] bottom-0 z-40 overflow-y-auto border-t border-line bg-ink lg:hidden"
+        className="fixed inset-x-3 top-[5.25rem] bottom-3 z-40 overflow-y-auto rounded-3xl border border-line bg-paper shadow-[0_24px_60px_-20px_rgb(40_30_90/0.35)] lg:hidden"
       >
-        <nav aria-label="Main mobile" className="container-site py-8">
+        <nav aria-label="Main mobile" className="px-6 py-4">
           {groups.map((g) => (
             <div key={g.href} className="border-b border-line py-6">
               <Link href={g.href} className="font-display text-2xl">
@@ -178,7 +178,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
               <ul className="mt-4 grid gap-1">
                 {g.items.map((it) => (
                   <li key={it.href}>
-                    <Link href={it.href} className="block py-2 text-mute hover:text-paper">
+                    <Link href={it.href} className="block py-2 text-mute hover:text-ink">
                       {it.label}
                     </Link>
                   </li>
@@ -199,7 +199,7 @@ export function SiteNav({ groups, links }: { groups: NavGroup[]; links: NavLink[
             <Link
               href="/apply/"
               data-cta="nav_mobile_apply"
-              className="inline-flex min-h-12 items-center justify-center bg-gold px-6 font-medium text-ink"
+              className="btn btn-primary"
             >
               Apply to Partner
             </Link>

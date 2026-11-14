@@ -5,7 +5,7 @@ export function ConsentSettingsButton() {
     <button
       type="button"
       onClick={() => window.dispatchEvent(new Event("cm:consent-settings"))}
-      className="link-quiet hover:text-paper"
+      className="link-quiet hover:text-ink"
     >
       Cookie settings
     </button>

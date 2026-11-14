@@ -60,7 +60,7 @@ export default function AboutPage() {
       <Breadcrumbs path="/about/" />
       <section className="container-site pt-12 pb-20 md:pt-20 md:pb-28">
         <p className="eyebrow">About</p>
-        <h1 className="mt-6 text-display-xl">{page.h1}</h1>
+        <h1 className="rise mt-6 text-display-xl"><span className="text-gradient animate">{page.h1}</span></h1>
         <div className="mt-12 grid gap-10 md:grid-cols-12">
           <p className="text-lead md:col-span-8">
             Campaignly (Campaignly Media) is an advertising-first, AI-enabled digital growth partner for scaling
@@ -70,7 +70,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section aria-labelledby="beliefs" className="border-t border-line py-20 md:py-28">
+      <section aria-labelledby="beliefs" className="py-20 md:py-28">
         <div className="container-site grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <h2 id="beliefs" className="text-display-lg">
@@ -89,8 +89,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section aria-labelledby="method" className="border-t border-line bg-ink-raised py-20 md:py-28">
-        <div className="container-site">
+      <section aria-labelledby="method" className="container-site py-6 md:py-10">
+        <div className="panel reveal px-4 py-12 sm:px-6 md:px-14 md:py-20">
           <h2 id="method" className="max-w-3xl text-display-lg">
             The Campaignly method
           </h2>
@@ -106,7 +106,7 @@ export default function AboutPage() {
 
       <StatsStrip />
 
-      <section aria-labelledby="engagement" className="border-t border-line py-20 md:py-28">
+      <section aria-labelledby="engagement" className="py-20 md:py-28">
         <div className="container-site grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <h2 id="engagement" className="text-display-lg">
@@ -116,7 +116,7 @@ export default function AboutPage() {
           <ol className="border-t border-line lg:col-span-7 lg:col-start-6">
             {engagement.map((s, i) => (
               <li key={s.t} className="grid grid-cols-[3rem_1fr] gap-4 border-b border-line py-7">
-                <span aria-hidden="true" className="font-display text-2xl text-gold tabular-nums">
+                <span aria-hidden="true" className="font-display text-2xl text-gold-deep tabular-nums">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
@@ -130,8 +130,8 @@ export default function AboutPage() {
       </section>
 
       {showFounder ? (
-        <section aria-labelledby="founder" className="border-t border-line bg-ink-raised py-20 md:py-28">
-          <div className="container-site grid gap-12 lg:grid-cols-12">
+        <section aria-labelledby="founder" className="container-site py-6 md:py-10">
+          <div className="panel reveal px-4 py-12 sm:px-6 md:px-14 md:py-20 grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-4">
               <p className="eyebrow">Founder</p>
               <h2 id="founder" className="mt-5 text-display-lg">
@@ -155,7 +155,7 @@ export default function AboutPage() {
         </section>
       ) : null}
 
-      <section aria-labelledby="markets" className="border-t border-line py-20 md:py-28">
+      <section aria-labelledby="markets" className="py-20 md:py-28">
         <div className="container-site">
           <h2 id="markets" className="text-display-lg">
             Where we work
@@ -163,7 +163,7 @@ export default function AboutPage() {
           <ul className="mt-10 grid border-t border-line sm:grid-cols-2 lg:grid-cols-4">
             {markets.map((m) => (
               <li key={m.href} className="border-b border-line py-6 sm:pr-6">
-                <Link href={m.href} className="font-display text-2xl hover:text-gold">
+                <Link href={m.href} className="font-display text-2xl hover:text-gold-deep">
                   {`Campaignly in ${m.label === "USA" || m.label === "UAE" ? `the ${m.label}` : m.label}`}
                 </Link>
                 <p className="mt-2 text-sm text-mute">

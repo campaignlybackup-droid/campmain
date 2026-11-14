@@ -39,31 +39,38 @@ export function HubTemplate({
       <JsonLd data={graph({ ...webPageNode(path, "CollectionPage"), mainEntity: itemList }, breadcrumbNode(path))} />
       <Breadcrumbs path={path} />
       <section className="container-site pt-12 pb-16 md:pt-20 md:pb-24">
-        <p className="eyebrow">{eyebrow}</p>
-        <h1 className="mt-6 max-w-5xl text-display-xl">{page.h1}</h1>
+        <p className="eyebrow fade-up">{eyebrow}</p>
+        <h1 className="rise mt-6 max-w-5xl text-display-xl"><span className="text-gradient animate">{page.h1}</span></h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">{intro}</p>
       </section>
-      <section aria-labelledby="hub-list" className="border-t border-line py-20 md:py-28">
+      <section aria-labelledby="hub-list" className="py-16 md:py-24">
         <div className="container-site">
           <h2 id="hub-list" className="text-display-md">
             {listHeading}
           </h2>
-          <ul className="mt-10 border-t border-line">
+          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((it, i) => (
-              <li key={it.href} className="border-b border-line">
-                <Link href={it.href} className="group grid items-baseline gap-2 py-7 md:grid-cols-12 md:gap-6">
-                  <span aria-hidden="true" className="text-sm text-mute tabular-nums md:col-span-1">
+              <li key={it.href} className="reveal" style={{ ["--i" as string]: i % 3 }}>
+                <Link
+                  href={it.href}
+                  data-tilt="5"
+                  data-spot=""
+                  className="card card-hover spot group flex h-full flex-col p-7 md:p-8"
+                >
+                  <span aria-hidden="true" className="chip font-display text-sm font-bold tabular-nums">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="font-display text-2xl transition-colors group-hover:text-gold md:col-span-4 md:text-3xl">
-                    {it.label}
-                  </span>
-                  <span className="text-mute md:col-span-6">
+                  <span className="mt-8 font-display text-2xl font-bold tracking-[-0.02em]">{it.label}</span>
+                  <span className="mt-3 text-[0.975rem] text-mute">
                     {it.summary}
                     {it.meta ? <span className="mt-1 block text-sm">{it.meta}</span> : null}
                   </span>
-                  <span aria-hidden="true" className="hidden text-right text-gold transition-transform group-hover:translate-x-1 md:col-span-1 md:block">
-                    →
+                  <span
+                    aria-hidden="true"
+                    className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-semibold text-gold-deep"
+                  >
+                    Explore
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                   </span>
                 </Link>
               </li>

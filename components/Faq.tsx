@@ -11,15 +11,15 @@ export function Faq({ items, heading = "Frequently asked questions" }: { items: 
           </h2>
         </div>
         <div className="md:col-span-8">
-          <ul className="border-t border-line">
+          <ul className="grid gap-3">
             {items.map((f) => (
-              <li key={f.q} className="border-b border-line">
-                <details className="group">
+              <li key={f.q} className="reveal">
+                <details className="group card overflow-hidden px-5 transition-shadow open:shadow-[0_24px_50px_-28px_rgb(40_30_90/0.35)] md:px-7">
                   <summary className="flex min-h-14 cursor-pointer list-none items-start justify-between gap-6 py-5 text-lg font-medium [&::-webkit-details-marker]:hidden">
-                    <h3 className="font-sans text-[1.0625rem] font-medium tracking-normal md:text-lg">{f.q}</h3>
+                    <h3 className="font-display text-[1.0625rem] font-semibold tracking-[-0.01em] md:text-lg">{f.q}</h3>
                     <span
                       aria-hidden="true"
-                      className="mt-1 text-xl leading-none text-gold transition-transform duration-200 group-open:rotate-45"
+                      className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full border border-line-strong text-lg leading-none transition-all duration-300 group-open:rotate-45 group-open:border-ink group-open:bg-ink group-open:text-white"
                     >
                       +
                     </span>

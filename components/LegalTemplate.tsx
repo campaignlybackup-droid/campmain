@@ -17,7 +17,7 @@ export function LegalTemplate({ path, updated, sections }: { path: PagePath; upd
       <JsonLd data={graph(webPageNode(path), breadcrumbNode(path))} />
       <Breadcrumbs path={path} />
       <article className="container-site pt-12 pb-24 md:pt-20">
-        <h1 className="text-display-xl">{page.h1}</h1>
+        <h1 className="rise text-display-xl"><span className="text-gradient animate">{page.h1}</span></h1>
         <p className="mt-6 text-sm text-mute">
           Last updated: <time dateTime={updated}>{new Date(updated).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}</time>
         </p>
@@ -31,7 +31,7 @@ export function LegalTemplate({ path, updated, sections }: { path: PagePath; upd
                 </p>
               ))}
               {s.items ? (
-                <ul className="mt-4 list-disc space-y-2 pl-6 text-mute marker:text-gold">
+                <ul className="mt-4 list-disc space-y-2 pl-6 text-mute marker:text-gold-deep">
                   {s.items.map((i) => (
                     <li key={i}>{i}</li>
                   ))}

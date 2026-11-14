@@ -35,7 +35,7 @@ export default async function BlogHub() {
       <Breadcrumbs path="/blog/" />
       <section className="container-site pt-12 pb-16 md:pt-20 md:pb-20">
         <p className="eyebrow">Insights</p>
-        <h1 className="mt-6 text-display-xl">{getPage("/blog/").h1}</h1>
+        <h1 className="rise mt-6 text-display-xl"><span className="text-gradient animate">{getPage("/blog/").h1}</span></h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">
           Direct answers to the questions founders and marketing heads ask us about paid media, search, creative and
           automation. Each article answers one question, cites its sources and states its date.
@@ -46,7 +46,7 @@ export default async function BlogHub() {
               <li key={c.slug}>
                 <Link
                   href={`/blog/category/${c.slug}/`}
-                  className="inline-flex min-h-11 items-center border border-line-strong px-4 text-[0.95rem] hover:border-paper"
+                  className="inline-flex min-h-11 items-center border border-line-strong px-4 text-[0.95rem] hover:border-ink"
                 >
                   {c.label} <span className="ml-2 text-mute">{c.count}</span>
                 </Link>

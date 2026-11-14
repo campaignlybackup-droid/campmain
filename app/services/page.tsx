@@ -14,8 +14,8 @@ export default function ServicesHub() {
       listHeading="Nine services"
       items={services.map((s) => ({ href: s.href, label: s.label, summary: s.summary }))}
     >
-      <section aria-labelledby="method-h" className="border-t border-line bg-ink-raised py-20 md:py-28">
-        <div className="container-site">
+      <section aria-labelledby="method-h" className="container-site py-6 md:py-10">
+        <div className="panel reveal px-4 py-12 sm:px-6 md:px-14 md:py-20">
           <h2 id="method-h" className="max-w-3xl text-display-lg">
             How the services fit together
           </h2>

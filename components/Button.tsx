@@ -1,14 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "text";
+type Variant = "primary" | "gold" | "secondary" | "text";
 
 const styles: Record<Variant, string> = {
-  primary:
-    "inline-flex min-h-12 items-center justify-center gap-2 bg-gold px-6 py-3 text-[0.95rem] font-medium text-ink transition-colors duration-200 hover:bg-paper",
-  secondary:
-    "inline-flex min-h-12 items-center justify-center gap-2 border border-line-strong px-6 py-3 text-[0.95rem] font-medium text-paper transition-colors duration-200 hover:border-paper",
-  text: "group inline-flex min-h-11 items-center gap-2 text-[0.95rem] font-medium text-paper",
+  primary: "btn btn-primary",
+  gold: "btn btn-gold",
+  secondary: "btn btn-ghost",
+  text: "group inline-flex min-h-11 items-center gap-2 text-[0.95rem] font-semibold text-ink",
 };
 
 export function ButtonLink({
@@ -31,12 +30,17 @@ export function ButtonLink({
     variant === "text" ? (
       <>
         <span className="link-quiet">{children}</span>
-        <span aria-hidden="true" className="text-gold transition-transform duration-200 group-hover:translate-x-1">
+        <span aria-hidden="true" className="text-gold-deep transition-transform duration-200 group-hover:translate-x-1">
           →
         </span>
       </>
     ) : (
-      children
+      <>
+        {children}
+        <span aria-hidden="true" className="btn-arrow">
+          →
+        </span>
+      </>
     );
   const cls = `${styles[variant]} ${className}`;
   if (external) {

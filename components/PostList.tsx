@@ -18,7 +18,7 @@ export function PostList({ posts }: { posts: PostMeta[] }) {
               </span>
             </span>
             <span className="md:col-span-8">
-              <span className="block font-display text-2xl transition-colors group-hover:text-gold md:text-3xl">{p.h1}</span>
+              <span className="block font-display text-2xl transition-colors group-hover:text-gold-deep md:text-3xl">{p.h1}</span>
               <span className="mt-2 block text-mute">{p.description}</span>
             </span>
           </Link>

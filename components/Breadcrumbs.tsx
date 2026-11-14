@@ -20,12 +20,12 @@ export function Breadcrumbs({ path, items }: { path?: PagePath; items?: Crumb[] 
           return (
             <li key={item.path} className="flex items-center gap-2">
               {last ? (
-                <span aria-current="page" className="text-paper">
+                <span aria-current="page" className="text-ink">
                   {item.label}
                 </span>
               ) : (
                 <>
-                  <Link href={item.path} className="link-quiet hover:text-paper">
+                  <Link href={item.path} className="link-quiet hover:text-ink">
                     {item.label}
                   </Link>
                   <span aria-hidden="true" className="text-line-strong">

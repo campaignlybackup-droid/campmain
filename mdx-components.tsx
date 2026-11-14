@@ -4,7 +4,7 @@ import { isValidElement, type AnchorHTMLAttributes, type ReactNode } from "react
 import { TableScroll } from "@/components/TableScroll";
 
 function A({ href = "", children, ...rest }: AnchorHTMLAttributes<HTMLAnchorElement>) {
-  const cls = "text-paper underline decoration-gold/60 underline-offset-4 hover:decoration-gold";
+  const cls = "text-ink underline decoration-gold/70 underline-offset-4 hover:decoration-gold";
   if (href.startsWith("/")) {
     return (
       <Link href={href} className={cls}>
@@ -40,10 +40,10 @@ const components: MDXComponents = {
   h2: (p) => <h2 {...p} className="mt-14 text-display-md" />,
   h3: (p) => <h3 {...p} className="mt-10 text-2xl" />,
   p: (p) => <p {...p} className="mt-5 text-mute" />,
-  ul: (p) => <ul {...p} className="mt-5 list-disc space-y-2 pl-6 text-mute marker:text-gold" />,
-  ol: (p) => <ol {...p} className="mt-5 list-decimal space-y-2 pl-6 text-mute marker:text-gold" />,
+  ul: (p) => <ul {...p} className="mt-5 list-disc space-y-2 pl-6 text-mute marker:text-gold-deep" />,
+  ol: (p) => <ol {...p} className="mt-5 list-decimal space-y-2 pl-6 text-mute marker:text-gold-deep" />,
   li: (p) => <li {...p} className="pl-1" />,
-  strong: (p) => <strong {...p} className="font-medium text-paper" />,
+  strong: (p) => <strong {...p} className="font-semibold text-ink" />,
   a: A,
   table: (p) => (
     <TableScroll label={tableLabel(p.children)} className="mt-8">

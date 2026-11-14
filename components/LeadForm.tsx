@@ -118,7 +118,7 @@ export function LeadForm({
 
   if (status === "success") {
     return (
-      <div ref={successRef} tabIndex={-1} role="status" className="border border-gold/50 p-8 outline-none md:p-10">
+      <div ref={successRef} tabIndex={-1} role="status" className="rounded-3xl border border-gold/50 bg-gold-tint p-8 outline-none md:p-10">
         <p className="eyebrow">Received</p>
         <h2 className="mt-4 text-display-md">{successHeading}</h2>
         <p className="mt-4 text-mute">{successBody}</p>
@@ -128,7 +128,7 @@ export function LeadForm({
 
   const errorList = fields.filter((f) => errors[f.name]);
   const inputCls =
-    "mt-2 block w-full border border-line-strong bg-ink px-4 py-3 text-paper placeholder:text-mute/70 focus:border-gold focus:outline-none aria-[invalid=true]:border-red-text";
+    "mt-2 block w-full rounded-xl border border-line-strong bg-paper px-4 py-3 text-ink transition-shadow placeholder:text-mute/70 focus:border-gold focus:shadow-[0_0_0_4px_rgb(201_168_76/0.18)] focus:outline-none aria-[invalid=true]:border-red-text";
 
   return (
     <form noValidate onSubmit={onSubmit} aria-describedby={`${uid}-req`} className="grid gap-7">
@@ -239,7 +239,7 @@ export function LeadForm({
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex min-h-12 items-center justify-center bg-gold px-8 font-medium text-ink transition-colors hover:bg-paper disabled:opacity-60 sm:justify-self-start"
+        className="btn btn-primary px-8 disabled:opacity-60 sm:justify-self-start"
       >
         {status === "submitting" ? "Sending…" : submitLabel}
       </button>

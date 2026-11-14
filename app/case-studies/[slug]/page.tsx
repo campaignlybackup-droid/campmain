@@ -45,12 +45,12 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       <Breadcrumbs items={crumbs} />
       <article className="container-site pt-12 pb-20 md:pt-20">
         <p className="eyebrow">{c.client}</p>
-        <h1 className="mt-6 max-w-4xl text-display-lg">{c.headline}</h1>
+        <h1 className="rise mt-6 max-w-4xl text-display-lg"><span className="text-gradient animate">{c.headline}</span></h1>
         <dl className="mt-14 grid gap-10 border-t border-line pt-10 sm:grid-cols-2 lg:grid-cols-3">
           {c.results.map((r) => (
             <div key={r.label} className="flex flex-col">
               <dt className="text-mute">{r.label}</dt>
-              <dd className="order-first font-display text-5xl text-gold">{r.value}</dd>
+              <dd className="order-first font-display text-5xl text-gold-deep">{r.value}</dd>
               <dd className="mt-2 text-sm text-mute">{r.period}</dd>
             </div>
           ))}

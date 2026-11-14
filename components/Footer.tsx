@@ -18,11 +18,11 @@ const socialLabels: Record<keyof typeof siteConfig.social, string> = {
 function Column({ title, items }: { title: string; items: readonly { href: string; label: string }[] }) {
   return (
     <div>
-      <h2 className="eyebrow">{title}</h2>
+      <h2 className="label">{title}</h2>
       <ul className="mt-5 grid gap-2.5 text-[0.95rem]">
         {items.map((i) => (
           <li key={i.href}>
-            <Link href={i.href} className="link-quiet text-mute hover:text-paper">
+            <Link href={i.href} className="link-quiet text-mute hover:text-ink">
               {i.label}
             </Link>
           </li>
@@ -40,7 +40,20 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-line">
+    <footer className="relative isolate overflow-hidden">
+      <div aria-hidden="true" className="aurora opacity-70">
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
+      <div className="container-site pt-8">
+        <p
+          className="reveal font-display text-[clamp(2.75rem,1rem+7.5vw,8.5rem)] leading-[0.95] font-extrabold tracking-[-0.05em]"
+        >
+          <span className="text-gradient animate">{brand.tagline}</span>
+        </p>
+      </div>
       <div className="container-site grid gap-14 py-16 md:py-20 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <Wordmark size="footer" />
@@ -48,21 +61,20 @@ export function Footer() {
             Campaignly Media is an advertising-first, AI-enabled growth partner for scaling businesses in India, the USA,
             Canada and the UAE.
           </p>
-          <p className="mt-6 font-display text-xl">{brand.tagline}</p>
-          {(c.email || tel || wa || c.address) && (
+                    {(c.email || tel || wa || c.address) && (
             <address className="mt-8 grid gap-2 text-[0.95rem] not-italic text-mute">
               {c.email && (
-                <a href={`mailto:${c.email}`} className="link-quiet hover:text-paper">
+                <a href={`mailto:${c.email}`} className="link-quiet hover:text-ink">
                   {c.email}
                 </a>
               )}
               {tel && c.phone && (
-                <a href={tel} className="link-quiet hover:text-paper">
+                <a href={tel} className="link-quiet hover:text-ink">
                   {c.phone}
                 </a>
               )}
               {wa && (
-                <a href={wa} data-cta="footer_whatsapp" rel="noopener" target="_blank" className="link-quiet hover:text-paper">
+                <a href={wa} data-cta="footer_whatsapp" rel="noopener" target="_blank" className="link-quiet hover:text-ink">
                   WhatsApp
                 </a>
               )}
@@ -88,26 +100,26 @@ export function Footer() {
           />
         </div>
       </div>
-      <div className="border-t border-line">
-        <div className="container-site flex flex-col gap-4 py-8 text-sm text-mute md:flex-row md:items-center md:justify-between">
+      <div className="container-site">
+        <div className="flex border-t border-line flex-col gap-4 py-8 text-sm text-mute md:flex-row md:items-center md:justify-between">
           <p>
             © {year} {c.legalName ?? brand.displayName}. All rights reserved.
           </p>
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
             {socials.map((k) => (
               <li key={k}>
-                <a href={c.social[k] ?? undefined} rel="noopener me" target="_blank" className="link-quiet hover:text-paper">
+                <a href={c.social[k] ?? undefined} rel="noopener me" target="_blank" className="link-quiet hover:text-ink">
                   {socialLabels[k]}
                 </a>
               </li>
             ))}
             <li>
-              <Link href="/privacy-policy/" className="link-quiet hover:text-paper">
+              <Link href="/privacy-policy/" className="link-quiet hover:text-ink">
                 Privacy policy
               </Link>
             </li>
             <li>
-              <Link href="/terms/" className="link-quiet hover:text-paper">
+              <Link href="/terms/" className="link-quiet hover:text-ink">
                 Terms
               </Link>
             </li>

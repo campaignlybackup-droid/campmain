@@ -46,7 +46,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <Breadcrumbs items={crumbs} />
       <section className="container-site pt-12 pb-16 md:pt-20">
         <p className="eyebrow">Insights</p>
-        <h1 className="mt-6 text-display-xl">{label}</h1>
+        <h1 className="rise mt-6 text-display-xl"><span className="text-gradient animate">{label}</span></h1>
         <p className="mt-8 max-w-3xl text-lead text-mute">{categories[category].description}</p>
       </section>
       <section aria-label={`${label} articles`} className="container-site pb-24">

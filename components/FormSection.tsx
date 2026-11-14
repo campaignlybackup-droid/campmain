@@ -26,14 +26,14 @@ export function FormSection(props: {
 
   if (!endpoint && !fallback) {
     return props.aside ? (
-      <section aria-label="Next steps" className="border-t border-line py-16 md:py-24">
+      <section aria-label="Next steps" className="py-16 md:py-24">
         <div className="container-site max-w-3xl">{props.aside}</div>
       </section>
     ) : null;
   }
 
   return (
-    <section aria-labelledby="form-heading" className="border-t border-line py-16 md:py-24">
+    <section aria-labelledby="form-heading" className="py-16 md:py-24">
       <div className="container-site grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-7">
           <h2 id="form-heading" className="text-display-md">
@@ -45,7 +45,7 @@ export function FormSection(props: {
             ) : fallback ? (
               <p className="text-lead text-mute">
                 Send the details below to{" "}
-                <a href={fallback.href} className="text-paper underline underline-offset-4">
+                <a href={fallback.href} className="text-ink underline underline-offset-4">
                   {fallback.label}
                 </a>{" "}
                 and we will reply.

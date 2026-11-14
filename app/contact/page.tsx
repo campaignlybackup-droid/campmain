@@ -26,7 +26,7 @@ export default function ContactPage() {
       <Breadcrumbs path="/contact/" />
       <section className="container-site pt-12 pb-20 md:pt-20 md:pb-28">
         <p className="eyebrow">Contact</p>
-        <h1 className="mt-6 text-display-xl">{getPage("/contact/").h1}</h1>
+        <h1 className="rise mt-6 text-display-xl"><span className="text-gradient animate">{getPage("/contact/").h1}</span></h1>
         <p className="mt-10 max-w-3xl text-lead text-mute">
           The fastest way to start is the partner application. It goes straight to the team and asks only what we need
           to give you a useful answer.
@@ -38,7 +38,7 @@ export default function ContactPage() {
         </div>
       </section>
       {details.length || c.address || c.hours ? (
-        <section aria-labelledby="details" className="border-t border-line py-20 md:py-28">
+        <section aria-labelledby="details" className="py-20 md:py-28">
           <div className="container-site grid gap-12 lg:grid-cols-12">
             <h2 id="details" className="text-display-lg lg:col-span-4">
               Contact details

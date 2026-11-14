@@ -16,7 +16,7 @@ function slugId(s: string) {
     .slice(0, 60);
 }
 
-const linkCls = "underline decoration-line-strong underline-offset-4 hover:decoration-paper";
+const linkCls = "underline decoration-gold underline-offset-4 hover:decoration-ink";
 
 function Sources({ section }: { section: Section }) {
   if (!section.sources?.length) return null;
@@ -50,8 +50,10 @@ function Body({ section }: { section: Section }) {
         <ul className="border-t border-line">
           {section.items.map((it) => (
             <li key={it} className="flex gap-4 border-b border-line py-4">
-              <span aria-hidden="true" className="text-gold">
-                +
+              <span aria-hidden="true" className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-gold-tint text-gold-deep">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="m5 12 5 5 9-10" />
+                </svg>
               </span>
               <span className="text-mute">{it}</span>
             </li>
@@ -97,7 +99,7 @@ function Body({ section }: { section: Section }) {
         <ol className="border-t border-line">
           {section.steps.map((s, i) => (
             <li key={s.title} className="reveal grid grid-cols-[3rem_1fr] gap-4 border-b border-line py-7">
-              <span aria-hidden="true" className="font-display text-2xl text-gold tabular-nums">
+              <span aria-hidden="true" className="grid size-10 place-items-center rounded-full bg-ink font-display text-sm font-bold text-white tabular-nums">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
@@ -113,7 +115,7 @@ function Body({ section }: { section: Section }) {
         <dl className="border-t border-line">
           {section.items.map((m) => (
             <div key={m.term} className="grid gap-2 border-b border-line py-6 sm:grid-cols-[12rem_1fr] sm:gap-6">
-              <dt className="font-display text-xl text-gold">{m.term}</dt>
+              <dt className="font-display text-xl font-bold tracking-[-0.02em] text-gold-deep">{m.term}</dt>
               <dd className="text-mute">{m.def}</dd>
             </div>
           ))}
@@ -173,10 +175,12 @@ function SectionBlock({ section, index }: { section: Section; index: number }) {
   const raised = index % 2 === 1;
   const stacked = section.kind === "table" || section.kind === "scope";
   return (
-    <section aria-labelledby={id} className={`border-t border-line py-20 md:py-28 ${raised ? "bg-ink-raised" : ""}`}>
-      <div className={`container-site ${stacked ? "" : "grid gap-12 lg:grid-cols-12"}`}>
+    <section aria-labelledby={id} className={raised ? "container-site py-6 md:py-10" : "py-16 md:py-24"}>
+      <div
+        className={`${raised ? "panel px-4 py-12 sm:px-6 sm:py-14 md:px-12 md:py-20" : "container-site"} ${stacked ? "" : "grid gap-12 lg:grid-cols-12"}`}
+      >
         <div className={stacked ? "max-w-3xl" : "lg:col-span-4"}>
-          <h2 id={id} className="text-display-lg">
+          <h2 id={id} className="reveal text-display-lg">
             {section.heading}
           </h2>
           {section.intro ? <p className="mt-6 text-mute">{section.intro}</p> : null}
@@ -207,7 +211,7 @@ export function DetailTemplate({ content, extraSchema = [] }: { content: DetailC
         <SectionBlock key={s.heading} section={s} index={i} />
       ))}
       {content.related.length ? (
-        <section aria-label="Related pages" className="border-t border-line py-20 md:py-28">
+        <section aria-label="Related pages" className="py-16 md:py-24">
           <div className="container-site grid gap-16 lg:grid-cols-2">
             {content.related.map((r) => (
               <RelatedLinks key={r.heading} id={`rel-${slugId(r.heading)}`} heading={r.heading} items={r.items} />
@@ -216,7 +220,7 @@ export function DetailTemplate({ content, extraSchema = [] }: { content: DetailC
         </section>
       ) : null}
       {content.faqs.length ? (
-        <div className="border-t border-line">
+        <div>
           <Faq items={content.faqs} heading="Frequently asked questions" />
         </div>
       ) : null}

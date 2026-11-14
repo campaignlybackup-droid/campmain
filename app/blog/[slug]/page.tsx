@@ -94,15 +94,15 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <article className="container-site pt-12 pb-20 md:pt-20">
         <header className="max-w-4xl">
           <p className="eyebrow">
-            <Link href={`/blog/category/${meta.category}/`} className="hover:text-paper">
+            <Link href={`/blog/category/${meta.category}/`} className="hover:text-ink">
               {categories[meta.category].label}
             </Link>
           </p>
-          <h1 className="mt-6 text-display-lg">{meta.h1}</h1>
+          <h1 className="rise mt-6 text-display-lg"><span className="text-gradient animate">{meta.h1}</span></h1>
           <dl className="mt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-mute">
             <div className="flex gap-2">
               <dt>By</dt>
-              <dd className="text-paper">{authorName}</dd>
+              <dd className="text-ink">{authorName}</dd>
             </div>
             <div className="flex gap-2">
               <dt>Published</dt>
@@ -127,7 +127,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </div>
       </article>
       {relatedPages.length || morePosts.length ? (
-        <section aria-label="Related" className="border-t border-line py-20 md:py-24">
+        <section aria-label="Related" className="py-20 md:py-24">
           <div className="container-site grid gap-16 lg:grid-cols-2">
             {relatedPages.length ? <RelatedLinks id="rel-services" heading="Related services" items={relatedPages} /> : null}
             {morePosts.length ? <RelatedLinks id="rel-posts" heading="Related insights" items={morePosts} /> : null}

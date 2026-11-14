@@ -11,7 +11,7 @@ export default function NotFound() {
   return (
     <section className="container-site py-28 md:py-40">
       <p className="eyebrow">Error 404</p>
-      <h1 className="mt-6 max-w-3xl text-display-xl">This page does not exist.</h1>
+      <h1 className="rise mt-6 max-w-3xl text-display-xl"><span className="text-gradient animate">This page does not exist.</span></h1>
       <p className="mt-8 max-w-xl text-lead text-mute">
         It may have moved during our site rebuild. These are the most useful places to continue.
       </p>

@@ -109,13 +109,13 @@ export function Tracking({ ga4Id, pixelId }: { ga4Id: string | null; pixelId: st
     <section
       role="region"
       aria-label="Cookie consent"
-      className="fixed inset-x-0 bottom-0 z-[60] border-t border-line-strong bg-ink-raised"
+      className="fixed inset-x-3 bottom-3 z-[60] rounded-2xl border border-line bg-paper shadow-[0_24px_60px_-20px_rgb(40_30_90/0.35)]"
     >
       <div className="container-site flex flex-col gap-5 py-6 md:flex-row md:items-center md:justify-between">
         <p className="max-w-2xl text-[0.95rem] text-mute">
           We use analytics and advertising cookies to understand which pages and campaigns work. They load only if you
           accept. See our{" "}
-          <a href="/privacy-policy/" className="text-paper underline underline-offset-4">
+          <a href="/privacy-policy/" className="text-ink underline underline-offset-4">
             privacy policy
           </a>
           .
@@ -124,11 +124,11 @@ export function Tracking({ ga4Id, pixelId }: { ga4Id: string | null; pixelId: st
           <button
             type="button"
             onClick={() => choose("denied")}
-            className="min-h-11 border border-line-strong px-5 text-[0.95rem] hover:border-paper"
+            className="btn btn-ghost min-h-11 py-2"
           >
             Decline
           </button>
-          <button type="button" onClick={() => choose("granted")} className="min-h-11 bg-gold px-5 text-[0.95rem] font-medium text-ink hover:bg-paper">
+          <button type="button" onClick={() => choose("granted")} className="btn btn-primary min-h-11 py-2">
             Accept
           </button>
         </div>
