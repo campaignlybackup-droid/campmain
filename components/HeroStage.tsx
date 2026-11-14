@@ -7,7 +7,7 @@ import { siteConfig } from "@/content/site.config";
  */
 export function HeroStage() {
   return (
-    <div aria-hidden="true" data-stage="" className="stage relative mx-auto mt-16 w-full max-w-5xl select-none max-sm:overflow-x-clip max-sm:px-1 max-sm:pb-10 md:mt-20">
+    <div aria-hidden="true" data-stage="" className="stage relative mx-auto w-full max-w-5xl select-none max-sm:overflow-x-clip max-sm:px-1 max-sm:pb-10">
       <div className="stage-enter">
         <div className="stage-inner aspect-[4/3] sm:aspect-[16/10]">
           {/* Base window */}
@@ -51,7 +51,7 @@ export function HeroStage() {
                       <stop offset="100%" stopColor="#c9a84c" stopOpacity="0" />
                     </linearGradient>
                     <linearGradient id="hs-line" x1="0" x2="1">
-                      <stop offset="0%" stopColor="#5b47d6" />
+                      <stop offset="0%" stopColor="#14121c" />
                       <stop offset="100%" stopColor="#c9a84c" />
                     </linearGradient>
                   </defs>
@@ -85,7 +85,7 @@ export function HeroStage() {
               <div className="col-span-4 hidden flex-col gap-3 rounded-2xl border border-line/70 bg-white p-4 sm:flex md:p-5">
                 <span className="text-[0.7rem] font-semibold tracking-wide text-mute uppercase">Channel mix</span>
                 {[
-                  ["Meta ads", "w-[82%]", "from-[#5b47d6] to-[#8b78ff]"],
+                  ["Meta ads", "w-[82%]", "from-[#14121c] to-[#e9a46a]"],
                   ["Google Ads", "w-[68%]", "from-[#c9a84c] to-[#e4cf8c]"],
                   ["SEO and AI", "w-[46%]", "from-[#3fb5d6] to-[#8fe0f2]"],
                   ["WhatsApp", "w-[58%]", "from-[#22a05a] to-[#6fd39a]"],
@@ -105,13 +105,13 @@ export function HeroStage() {
           <div className="layer float-a -top-6 -left-3 w-[34%] sm:-left-8 sm:w-[24%]" style={{ transform: "translateZ(90px)" }}>
             <div className="glass overflow-hidden p-2.5 md:p-3">
               <div className="flex items-center gap-2">
-                <span className="size-5 rounded-full bg-gradient-to-br from-gold to-[#8b78ff] md:size-6" />
+                <span className="size-5 rounded-full bg-gradient-to-br from-gold to-[#e9a46a] md:size-6" />
                 <span className="flex-1">
                   <span className="bar w-3/4" />
                   <span className="mt-1 block text-[0.55rem] font-medium text-mute md:text-[0.6rem]">Sponsored</span>
                 </span>
               </div>
-              <div className="relative mt-2 grid aspect-square place-items-center overflow-hidden rounded-xl bg-[radial-gradient(circle_at_30%_20%,#fff6dc,transparent_60%),linear-gradient(135deg,#efe7ff,#e6f6fb)]">
+              <div className="relative mt-2 grid aspect-square place-items-center overflow-hidden rounded-xl bg-[radial-gradient(circle_at_30%_20%,#fff6dc,transparent_60%),linear-gradient(135deg,#f6efe0,#e6f6fb)]">
                 {siteConfig.logo ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={siteConfig.logo} alt="" width={121} height={108} className="w-1/2 drop-shadow-[0_12px_18px_rgb(133_96_15/0.35)]" />
@@ -137,7 +137,7 @@ export function HeroStage() {
               <p className="mt-3 text-[0.6rem] font-semibold text-ink md:text-[0.68rem]">
                 Sponsored <span className="font-normal text-mute">· Ad</span>
               </p>
-              <p className="mt-1 text-[0.72rem] leading-snug font-semibold text-[#3b2fbf] md:text-[0.82rem]">
+              <p className="mt-1 text-[0.72rem] leading-snug font-semibold text-[#1a4fd6] md:text-[0.82rem]">
                 The offer your buyers search for
               </p>
               <span className="bar mt-2 h-1.5 w-full" />
@@ -174,8 +174,8 @@ export function HeroStage() {
             <div className="glass p-4">
               <span className="text-[0.62rem] font-semibold tracking-wide text-mute uppercase">Funnel</span>
               {[
-                ["Visitors", "w-full", "bg-[#d9d2ff]"],
-                ["Leads", "w-[72%]", "bg-[#b6a8ff]"],
+                ["Visitors", "w-full", "bg-[#efe6cf]"],
+                ["Leads", "w-[72%]", "bg-[#e4cf8c]"],
                 ["Qualified", "w-[50%]", "bg-[#e4cf8c]"],
                 ["Customers", "w-[32%]", "bg-gold"],
               ].map(([label, w, bg]) => (

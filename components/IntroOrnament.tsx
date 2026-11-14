@@ -32,7 +32,7 @@ export function IntroOrnament() {
               />
               <defs>
                 <linearGradient id="io-g" x1="0" x2="1">
-                  <stop offset="0%" stopColor="#5b47d6" />
+                  <stop offset="0%" stopColor="#14121c" />
                   <stop offset="100%" stopColor="#c9a84c" />
                 </linearGradient>
               </defs>

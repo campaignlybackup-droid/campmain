@@ -86,7 +86,7 @@
     color: var(--color-ink);
   }
   :focus-visible {
-    outline: 2px solid var(--color-violet);
+    outline: 2px solid var(--color-gold-deep);
     outline-offset: 3px;
     border-radius: 4px;
   }
@@ -115,36 +115,29 @@
     }
   }
 
-  /* Pill label above headings */
+  /* Label above headings: a gold rule and small caps */
   .eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
     width: fit-content;
     font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--color-gold-deep);
-    background: linear-gradient(100deg, var(--color-gold-tint), #f4efff);
-    border: 1px solid rgb(201 168 76 / 0.28);
-    border-radius: 999px;
-    padding: 0.4rem 0.85rem;
     line-height: 1.2;
   }
   .eyebrow::before {
     content: "";
-    width: 0.4rem;
-    height: 0.4rem;
-    border-radius: 999px;
-    background: var(--color-gold);
-    box-shadow: 0 0 0 3px rgb(201 168 76 / 0.2);
+    width: 1.75rem;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--color-gold), transparent);
   }
   .on-ink .eyebrow {
     color: var(--color-gold-soft);
-    background: rgb(255 255 255 / 0.06);
-    border-color: rgb(228 207 140 / 0.25);
   }
 
   /* Plain small label (footer columns) */
@@ -159,7 +152,7 @@
 
   /* Gradient headline text. Darkest stop is ink, lightest stop keeps 4.6:1 on white. */
   .text-gradient {
-    background: linear-gradient(100deg, var(--color-ink) 0%, #3b2f8f 45%, #9a6b12 100%);
+    background: linear-gradient(100deg, var(--color-ink) 0%, #4a3410 55%, #9a6b12 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -171,7 +164,7 @@
     margin-bottom: -0.12em;
   }
   .on-ink .text-gradient {
-    background-image: linear-gradient(100deg, #ffffff 0%, #d9d2ff 45%, var(--color-gold-soft) 100%);
+    background-image: linear-gradient(100deg, #ffffff 0%, #f6e7b8 50%, var(--color-gold) 100%);
   }
 
   /* Buttons */
@@ -236,6 +229,14 @@
     border-color: var(--color-ink);
     transform: translateY(-2px);
   }
+  .on-ink .btn-ghost {
+    background: rgb(255 255 255 / 0.04);
+    color: #fff;
+    border-color: rgb(255 255 255 / 0.22);
+  }
+  .on-ink .btn-ghost:hover {
+    border-color: var(--color-gold-soft);
+  }
   .btn .btn-arrow {
     transition: transform 300ms var(--ease-out-expo);
   }
@@ -267,8 +268,8 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: radial-gradient(120% 80% at 100% 0%, #2c2560 0%, transparent 55%),
-      radial-gradient(90% 70% at 0% 100%, #3a2c10 0%, transparent 60%), var(--color-ink);
+    background: radial-gradient(90% 70% at 85% 0%, rgb(201 168 76 / 0.28) 0%, transparent 60%),
+      radial-gradient(70% 60% at 0% 100%, rgb(201 168 76 / 0.12) 0%, transparent 60%), #0e0d13;
     color: #fff;
     border-radius: 2rem;
   }
@@ -291,7 +292,7 @@
     border-radius: inherit;
     opacity: 0;
     transition: opacity 300ms;
-    background: radial-gradient(28rem circle at var(--mx) var(--my), rgb(201 168 76 / 0.14), rgb(91 71 214 / 0.06) 40%, transparent 70%);
+    background: radial-gradient(28rem circle at var(--mx) var(--my), rgb(201 168 76 / 0.16), rgb(201 168 76 / 0.04) 45%, transparent 70%);
   }
   .spot:hover::before {
     opacity: 1;
@@ -322,7 +323,7 @@
     height: 3rem;
     border-radius: 1rem;
     color: var(--color-gold-deep);
-    background: linear-gradient(140deg, var(--color-gold-tint), #f1edff);
+    background: linear-gradient(140deg, var(--color-gold-tint), #fff);
     border: 1px solid rgb(201 168 76 / 0.25);
   }
 
@@ -415,19 +416,19 @@
   left: -10rem;
 }
 .aurora > span:nth-child(2) {
-  --c: rgb(139 120 255 / 0.28);
+  --c: rgb(255 196 140 / 0.26);
   --s: 40rem;
   top: -14rem;
   right: -12rem;
 }
 .aurora > span:nth-child(3) {
-  --c: rgb(120 210 235 / 0.3);
+  --c: rgb(150 205 225 / 0.22);
   --s: 36rem;
   bottom: -18rem;
   right: 8%;
 }
 .aurora > span:nth-child(4) {
-  --c: rgb(255 170 190 / 0.22);
+  --c: rgb(228 207 140 / 0.3);
   --s: 30rem;
   bottom: -14rem;
   left: 12%;
@@ -508,7 +509,7 @@
   z-index: 70;
   transform-origin: 0 50%;
   transform: scaleX(0);
-  background: linear-gradient(90deg, var(--color-gold), var(--color-violet));
+  background: linear-gradient(90deg, var(--color-gold-deep), var(--color-gold));
   pointer-events: none;
 }
 
@@ -742,4 +743,99 @@
 }
 .on-ink .method-card:hover {
   background: rgb(255 255 255 / 0.07);
+}
+
+/* ---------- Kinetic tagline: each word takes the gold in turn ---------- */
+.kinetic > span {
+  display: block;
+  color: rgb(255 255 255 / 0.14);
+  -webkit-text-stroke: 1px rgb(255 255 255 / 0.22);
+}
+.kinetic > span:first-child {
+  color: var(--color-gold);
+  -webkit-text-stroke: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .kinetic > span,
+  .kinetic > span:first-child {
+    color: rgb(255 255 255 / 0.12);
+    -webkit-text-stroke: 1px rgb(255 255 255 / 0.22);
+    animation: kinetic 6s var(--ease-out-expo) infinite;
+  }
+  .kinetic > span:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .kinetic > span:nth-child(3) {
+    animation-delay: 4s;
+  }
+}
+@keyframes kinetic {
+  0%,
+  30% {
+    color: var(--color-gold);
+    -webkit-text-stroke-color: transparent;
+    transform: translateX(-0.12em);
+  }
+  36%,
+  100% {
+    color: rgb(255 255 255 / 0.12);
+    -webkit-text-stroke-color: rgb(255 255 255 / 0.22);
+    transform: none;
+  }
+}
+
+/* ---------- Bento ---------- */
+.bento {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 40rem) {
+  .bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 64rem) {
+  .bento {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: minmax(10.5rem, auto);
+  }
+  .bento-xl {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .bento-wide {
+    grid-column: span 2;
+  }
+  .bento-tall {
+    grid-row: span 2;
+  }
+}
+
+/* Method rail: a gold line that fills once the section is on screen */
+.rail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.25rem;
+  height: 2px;
+  background: rgb(255 255 255 / 0.1);
+  overflow: hidden;
+}
+.rail::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-soft));
+  transform-origin: 0 50%;
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal .rail::after {
+    transform: scaleX(0);
+    transition: transform 1.8s var(--ease-out-expo) 0.3s;
+  }
+  .js .reveal.is-in .rail::after {
+    transform: scaleX(1);
+  }
 }

@@ -41,7 +41,7 @@ export function Footer() {
 
   return (
     <footer className="relative isolate overflow-hidden">
-      <div aria-hidden="true" className="aurora opacity-70">
+      <div aria-hidden="true" className="aurora opacity-70 [mask-image:linear-gradient(to_bottom,transparent,#000_45%)]">
         <span />
         <span />
         <span />
@@ -58,8 +58,7 @@ export function Footer() {
         <div className="lg:col-span-4">
           <Wordmark size="footer" />
           <p className="mt-5 max-w-sm text-mute">
-            Campaignly Media is an advertising-first, AI-enabled growth partner for scaling businesses in India, the USA,
-            Canada and the UAE.
+            Advertising-first growth partner for India, the USA, Canada and the UAE.
           </p>
                     {(c.email || tel || wa || c.address) && (
             <address className="mt-8 grid gap-2 text-[0.95rem] not-italic text-mute">

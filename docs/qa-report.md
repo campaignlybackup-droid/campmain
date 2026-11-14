@@ -137,3 +137,14 @@ All motion is CSS plus one small client script (`components/Motion.tsx`) and swi
 - QA gates 2, 3, 5, 6, 7: pass (`CA` and `C` added to approved terms for market codes and creative variant labels)
 - axe-core: 45 pages x 2 widths, 0 violations
 - Lighthouse (mobile): Home 99 / 100 / 100 / 100, LCP 1.1 s, CLS 0; Meta ads page 100 across, LCP 1.0 s
+
+## Update, 14 November 2026: own identity, minimal homepage copy
+
+Black-and-gold identity (no violet), dark hero with the kinetic tagline, bento services grid,
+method rail, industry pills and compact market tiles. Homepage copy cut by roughly two thirds;
+H1, title, description, schema, internal links and every inner page's direct answer, sections
+and FAQs unchanged.
+
+- QA gates 2, 3, 5, 6, 7: pass. axe: 45 pages x 2 widths, 0 violations.
+- Lighthouse (mobile): Home 99 / 100 / 100 / 100 (one run 92 on TBT variance; two reruns 99), 260 KiB, LCP 1.1 s, CLS 0.
+- Reference site measured the same way: 50 / 86 / 77 / 92, 14.7 MB, LCP 7.0 s, contrast, heading-order and image-alt audits failing.

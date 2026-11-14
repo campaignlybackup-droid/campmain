@@ -5,7 +5,7 @@ import { whatsappHref } from "@/lib/contact";
 /** Every page ends with one primary CTA (Apply), plus WhatsApp when a number is configured. */
 export function CtaBand({
   heading = "Grow with a partner that shows you the numbers.",
-  body = "Tell us where the business is today and where it needs to be. If we are the right fit, you get a written plan built on your own data.",
+  body = "Tell us where you are and where you need to be. If we fit, you get a written plan built on your data.",
 }: {
   heading?: string;
   body?: string;
