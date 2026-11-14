@@ -162,3 +162,11 @@ social images regenerated on navy.
 
 - QA gates: 15 pass. axe: 45 pages x 2 widths, 0 violations. Headless load: 0 errors.
 - Lighthouse (mobile): Home 98 / 100 / 100 / 100, LCP 1.2 s, CLS 0; Meta ads 99 / 100 / 100 / 100.
+
+## Update: old-site data approved ("use all")
+
+- Contact: founder@campaignlymedia.com, WhatsApp +91 97296 10902, Instagram and LinkedIn. GA4 G-0KHRJC7R9J (loads only after cookie consent). Founded 2021.
+- Stats: $1M+ ad spend, 1,200+ campaigns, 45,000+ qualified leads, 98% retention, labelled "Since 2021". Left out: 4.9x average ROAS, "4x growth rate", "5x ROAS guaranteed" (an average across industries is not meaningful, and no result is guaranteed).
+- Five anonymised case studies with narratives; every figure carries its period.
+- 223 old URLs redirected (one 301 hop each, simulated against the build: 446/446 with and without trailing slash). Old server scripts return 410.
+- Results: QA 15/15 PASS; headless 51 pages, 0 errors; axe 51 pages x 2 widths, 0 violations; Lighthouse home 97/100/100/100, case study 100/100/100/100.

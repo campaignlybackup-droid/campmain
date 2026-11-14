@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!c) return { robots: { index: false } };
   return pageMetadata({
     path: `/case-studies/${slug}/`,
-    title: `${c.client}: Case Study | Campaignly`.slice(0, 59),
+    title: [`${c.client}: Case Study | Campaignly`, `${c.client}: Case Study`, c.client].find((t) => t.length <= 59) ?? c.client.slice(0, 59),
     description: c.headline.slice(0, 154),
   });
 }
